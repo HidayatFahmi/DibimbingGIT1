@@ -1,0 +1,25 @@
+/* div{
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+} */
+
+.satu{
+    width: 80%;
+    height: 200px;
+    background-color: aqua;
+}
+
+.dua{
+    width: 120%;
+    background-color: pink;
+}
+.tiga{
+    background-color: yellow;
+    width: 50%;
+    height: 150px;
+    overflow: scroll;
+    overflow: hidden;
+    overflow: visible;
+    overflow: auto;
+}

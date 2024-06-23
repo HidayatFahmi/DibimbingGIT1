@@ -1,0 +1,24 @@
+body{
+    background-color: pink;
+}
+
+h2, h3 {
+    color: blue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+ol li a{
+    color: white;
+}
+
+ul li a{
+    color: orange;
+}
+
+.p1{
+    color: red;
+}
+
+#p3{
+    color: beige;
+}

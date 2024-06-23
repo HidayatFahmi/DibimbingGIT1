@@ -1,0 +1,22 @@
+
+h3{
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+}
+.p1{
+    font:italic bold 20px arial ;
+}
+.p2{
+    font-size: 20px;
+}
+.p3{
+    font-weight: bold;
+}
+.p4{
+    font-variant:inherit;
+}
+.p5{
+    font-style: oblique;
+}
+.p6{
+line-height: 40px;
+}

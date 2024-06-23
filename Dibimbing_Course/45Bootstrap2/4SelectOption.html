@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="4SelectOption.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <form action="">
+                    <div class="mb-3">
+                        <label for="countries" class="form-label">Countries</label>
+                        <select id="Countries" class="form-control">
+                            <option selected>Select Country</option>
+                            <option value="indonesia">Indonesia</option>
+                            <option value="malaysia">malaysia</option>
+                            <option value="singapore">Singapore</option>
+                            <option value="thailand">Thailand</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="countries" class="form-label">Countries</label>
+                        <select id="countries" class="form-control" multiple>
+                            <option selected>Select Country</option>
+                            <option value="indonesia">Indonesia</option>
+                            <option value="malaysia">malaysia</option>
+                            <option value="singapore">Singapore</option>
+                            <option value="thailand">Thailand</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <input type="checkbox" class="form-check-input" id="default_checkbox1" value="ayam">
+                        <label for="default_checkbox1" class="form-check-label">Ayam</label>
+                        <input type="checkbox" class="form-check-input" id="default_checkbox2" value="ayam">
+                        <label for="default_checkbox2" class="form-check-label">Kucing</label>
+                        <input type="checkbox" class="form-check-input3" id="default_checkbox3" value="anjing">
+                        <label for="default_checkbox" class="form-check-label">Anjing</label>
+                    </div>
+                    <div class="mb-3">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" id="default_radio1" value="male" name="gender"/>
+                            <label for="default_radio1" class="form-check-label">Male</label>
+                        </div>
+                        <div>
+                            <input class="form-check-input" type="radio" id="default_radio2" value="female" name="gender"/>
+                            <label for="default_radio2" class="form-check-label">Female</label>
+                            <input class="form-check-input" type="radio" id="default_radio3" value="female" name="gender" disabled/>
+                            <label for="default_radio3" class="form-check-label">LGBT</label>
+                        </div>
+                    </div>
+                    <div class="form-check form-switch">
+                        <input type="checkbox" id="switch-box-default" class="form-check-input" role="switch">
+                        <label for="switch-box-default" class="from-check-label">Switch</label>
+                    </div>
+                </form>
+                <form action="">
+                    <div class="mb-3">
+                        <div class="input-group">
+                            <span class="input-group-text">Username</span>
+                            <input type="text" class="form-control" placeholder="input username">
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <div class="input-group">
+                            <span class="input-group-text">$</span>
+                            <input type="text" class="form-control" placeholder="15,000">
+                            <span class="input-group-text">.00</span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- popover untuk dropdown, popover, dll -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

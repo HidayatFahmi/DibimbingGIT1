@@ -1,0 +1,81 @@
+body{
+font: 16px/20px arial;
+background-color: #eaeaea;
+color: #333;
+background-image: url(../Media/moroccan-flower.png);
+}
+.container{
+    width: 800px;
+    margin: auto;
+    background-color: white;
+}
+.header{
+    padding: 20px;
+    padding-bottom: 10px;
+}
+
+.header, .judul{
+    font: 40px;
+    font-weight: bold;
+}
+
+.header ul li{
+    display: inline-block;
+    margin: 20px 10px;
+}
+
+.header a{
+    text-decoration: none;
+    color: salmon;
+    padding: 5px;
+}
+.header a:hover{
+    font-size: 20px;
+    background-color: lightskyblue;
+}
+
+.hero{
+    height: 280px;
+    background-image: url(../Media/comp.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 -120px;
+    border-bottom: 5px solid lightskyblue;
+    border-top: 5px solid salmon;
+}
+
+.content{
+    padding: 20px;
+}
+
+.content h2{
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.content .penulis{
+    font-size: 11px;
+    margin-top: -5px;
+}
+
+.content .penulis a{
+    color: salmon;
+    text-decoration: none;
+}
+
+.content p{
+    margin-bottom: 20px;
+    font-size: 14px;
+    text-indent: 20px;
+}
+
+.footer{
+    background-color: #000000;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.footer .copy{
+    text-indent: 0;
+    color: white;
+    text-align: center;
+}

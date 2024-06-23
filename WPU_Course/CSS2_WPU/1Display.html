@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+</head>
+<body>
+    <h2>Display</h2>
+    <style>
+        .header{
+            background-color: aqua;
+        }
+        .header2 a{
+            color: pink;
+            background-color: green;
+            display: inline-block;
+            height: 50px;
+            width: 50px;
+        }
+        h2{
+            background-color: lightblue;
+        }
+        .main{
+            background-color: pink;
+        }
+        .main .paragraf1{
+            background-color: aquamarine;
+        }
+    </style>
+    <div class="header">
+        <h3>Selamat datang fahmi</h3>
+
+        <ol >
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+            <li><a href="#">Link 4</a></li>
+            <li><a href="#">Link 5</a></li>
+        </ol>
+
+        <ul>
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+            <li><a href="#">Link 4</a></li>
+            <li><a href="#">Link 5</a></li>
+        </ul>
+    </div>  
+
+    <div class="header2">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+        <a href="#">Link 4</a>
+        <a href="#">Link 5</a>
+    </div>
+
+    <div class="main">
+        <div class="paragraf1">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum quae, <span class="word1">eos perferendis adipisci ut exercitationem</span> deleniti alias necessitatibus laudantium recusandae non quis, culpa cumque est perspiciatis atque quibusdam aut? Reiciendis!</p>
+        </div>
+    
+         <div class="paragraf2">
+            <img src="../Media/fh2211.jpg" alt="">
+    
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum quae, <span class="word1">eos perferendis adipisci ut exercitationem</span> deleniti alias necessitatibus laudantium recusandae non quis, culpa cumque est perspiciatis atque quibusdam aut? Reiciendis!</p>    
+        </div>
+    </div>
+</body>
+</html>
+
+<!-- ========== Display ==========
+- div,span : non-semantic
+-  div, siplay block
+- span display inline
+
+1. inline : 
+- tidak menambhakan baris baru
+- lebar dan tinggi elemennya selebar konten
+- tidak apat mengatur lebar dan tinggi dari elemen inline
+- margin dan padding hanya berpengaruh pada sisi horizontal kecuali image
+- b, strong, i, em, a, span, sub, sup, button, input, label, select, text area, ...etc
+
+2. inline-block
+- tidak ada elemnt yg secara default memiliki properti inline block
+- harus mengubah secara manual properti tsb
+- prilaku dasarnya sama dengan elemen inline bedanya bisa diatur tinggi dan lebar
+
+3. block
+- menambahkan baris baru secara default
+- jika tidak diatur lebarnya maka akan memenuhi lebar browser
+- bisa mengatur lebar dan tinggi
+- bisa menyiman tag dan elemen inline, inline-block, atau bahkan elemen block lagi
+- elemen block : h1-h6, p, ol,li, form, hr,div,...etc
+
+4. none
+- menghilangkan elemen
+
+5 emmet
+- ul>li*5>a[href=#]{Link $} -->

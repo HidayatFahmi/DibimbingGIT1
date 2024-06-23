@@ -1,0 +1,29 @@
+.p1{
+    color:rgb(15, 162, 215);
+    /* color: aqua; */
+    /* color: #123123; */
+}
+.p2{
+    text-align: right;
+    text-align: justify;
+    /* text-align: start; */
+}
+.p3{
+    text-indent: 30px;
+}
+.p4{
+    text-decoration: none ;
+    text-decoration: line-through;
+    text-decoration: underline;
+    text-decoration: overline;
+    text-decoration: solid;
+    text-decoration: wavy;
+}
+
+.p5{
+    text-transform: capitalize;
+    /* text-transform: lowercase;
+    text-transform: uppercase; */
+    letter-spacing: 5px;
+    word-spacing: 10px;
+}

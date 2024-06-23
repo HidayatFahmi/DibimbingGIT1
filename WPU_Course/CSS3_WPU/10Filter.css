@@ -1,0 +1,50 @@
+.satu{
+    background-image: url(../../Media/fh22.jpg);
+    width: 200px;
+    height: 200px;
+    filter: grayscale();
+    margin-bottom: 10px;
+}
+.dua{
+    background-image: url(../../Media/fh22.jpg);
+    width: 200px;
+    height: 200px;
+    filter:blur(1px);
+    margin-bottom: 10px;
+}
+
+.tiga{
+    background-image: url(../../Media/fh22.jpg);
+    width: 200px;
+    height: 200px;
+    filter:brightness(200%);
+    margin-bottom: 10px;
+
+}
+
+.empat{
+    background-image: url(../../Media/fh22.jpg);
+    width: 200px;
+    height: 200px;
+    /* filter:contrast(1.5); */
+    /* filter: sepia(170%); */
+    /* filter: hue-rotate(100deg); */
+    /* filter: invert(100%); */
+    /* filter: opacity(0.8); */
+    /* filter: drop-shadow(10px 10px 5px black); */
+    filter: blur(1px) grayscale(0.9);
+    margin-bottom: 10px;
+    transition: 1s;
+}
+
+.empat:hover{
+    background-image: url(../../Media/fh22.jpg);
+    width: 200px;
+    height: 200px;
+    filter: blur(0) grayscale(0);
+}
+
+img {
+    filter: drop-shadow(7px 6px 3px black);
+}
+

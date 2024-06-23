@@ -1,0 +1,329 @@
+/* div{
+    background-color: aquamarine;
+    height: 40px;
+} */
+span{
+    display: inline-block;
+    background-color: red;
+    width: 80px;
+    height: 40px;/* padding: 5px; */
+}
+
+.container{
+    background-color: white;
+    width: 600px;
+    margin: auto;
+    height: auto;
+    position: relative;
+}
+
+.kotak1{
+    background-color: rgb(236, 194, 24);
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    text-align: center;
+    font: 30px/150px bold black;
+    border: 5px groove gold;
+    /* border-style: ; */
+    box-shadow: 9px 8px 5px -2px black;
+    text-shadow: 2px 2px 1px grey;
+    animation: dropDown 1s infinite forwards alternate;
+    position: relative;
+}
+.stop{
+    background-color: red;
+    width: 100px;
+    height: 30px;
+    margin: 10px auto;
+    border-radius: 5px;
+    text-align: center;
+    font: 15px/30px arial bold;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.kotak1:target {
+    /* font-size: 50px; */
+    animation: dropDown 1s 1s 0 forwards;
+}
+
+.float{
+    background-color: white;
+    border: 2px groove black;
+    /* overflow: hidden; */
+    height: auto;
+    padding: 10px;
+}
+
+.float img{
+    float: left;
+    margin: 0 10px;
+}
+
+.float p{
+    text-align: justify ;
+}
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.links .link{
+    background-color: bisque;
+    /* display: inline-block; */
+    display: flex;
+    /* flex-direction: row; */
+}
+
+.position{
+    border: 2px solid black;
+    margin: 10px auto;
+    padding: 10px;
+    width: 400px;
+    position: relative;
+}
+
+.position .box1{
+    position: static;
+    top: 20px;
+    left: 30px;
+}
+.position .box2{
+    position: relative;
+    top: 00px;
+    left: 00px;
+    z-index: 999;
+}
+
+.position .box3{
+    position: absolute;
+    top: 0;
+    left: 130px;
+}
+
+.position .box4{
+    position: sticky;
+    top: 0px;
+    margin-left: 100px;
+    z-index: 999;
+}
+
+.position .box5{
+    position: fixed;
+    top: 0;
+    left: 120px;
+}
+
+
+.position div{
+    width: 50px;
+    height: 50px;
+    margin: 10px ;
+}
+
+.displays1, .displays2{
+    background-color: rgb(255, 255, 14);
+    border: 2px solid red;
+    width: 500px;
+    height: 100px;
+    margin: auto;
+    padding: 10px;
+}
+
+.displays1 div,
+.displays2 div{
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.displays2{
+    display: flex;
+    /* justify-content: center; */
+    /* justify-content: space-between; */
+    /* justify-content: space-evenly; */
+    /* justify-content: space-around; */
+    /* align-items:end ; */
+}
+.displays2{
+    display: grid;
+    grid-template-columns:repeat(2, calc(20%));
+    grid-template-rows: repeat(2, calc(50%));
+    grid-column-start: 2;
+}
+
+.cf:after {
+    clear: both;
+}
+
+.fahmi{
+    border: 2px solid black;
+    width: 230px;
+    margin: auto;
+    padding: 5px;
+    /* box-sizing: border-box; */
+}
+
+.fahmi div{
+    width: 40px;
+    height: 40px;
+    background-color: aqua;
+    text-align: center;
+    line-height: 40px;
+    margin: 5px 0;
+    display: inline-block;
+    position: relative;
+    transition: 2s;
+}
+
+.fahmi:hover .fahmi1{
+    position: relative;
+}
+
+.fahmi:hover .fahmi2{
+    position: relative;
+    animation: rotates1 2s ease forwards;
+}
+.fahmi:hover .fahmi3{
+    position: relative;
+    animation: rotates2 2s 2s ease forwards;
+}
+.fahmi:hover .fahmi4{
+    position: relative;
+    animation: rotates3 2s 3s ease forwards;
+}
+.fahmi:hover .fahmi5{
+    position: relative;
+    animation: rotates4 2s 4s ease forwards;
+}
+.socmed{
+    display: flex;
+    border: 2px solid black;
+    width: 300px;
+    height: 50px;
+    margin: auto;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.linkedin{
+    background-color: rgb(44, 96, 228);
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    color: white;
+    font: 30px/40px bold arial;
+    border-radius: 5px;
+}
+
+.facebook{
+    background-color: #1627df;
+    width: 40px;
+    height: 40px;
+    color: white;
+    text-align: center;
+    border-radius: 50%;
+    font: 30px/40px bold ;
+}
+
+.instagram{
+    background-color: white;
+    border: 3px solid black;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 12px;
+}
+
+.instagram .lingkar{
+    background-color: white;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    border: 3px solid black;
+}
+
+.instagram .titik{
+    background: BLACK;
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    top: 3px;
+    right: 3px;
+}
+
+@keyframes rotates1{
+    0%{
+        transform: rotate(0);
+    }
+    50%{
+        transform: rotate(45deg) translate(-64px, -20px);
+    }
+    100%{
+        transform: rotate(0) translate(-44px, -40px);
+    }
+}
+
+@keyframes rotates2{
+    0%{
+        transform: rotate(0);
+    }
+    50%{
+        transform: rotate(45deg) translate(-128px, -40px);
+    }
+    100%{
+        transform: rotate(0) translate(-88px, -80px);
+    }
+}
+
+@keyframes rotates3{
+    0%{
+        transform: rotate(0);
+    }
+    50%{
+        transform: rotate(45deg) translate(-168px, -60px);
+    }
+    100%{
+        transform: rotate(0) translate(-132px, -120px);
+    }
+}
+
+@keyframes rotates4{
+    0%{
+        transform: rotate(0);
+    }
+    50%{
+        transform: rotate(45deg) translate(-222px, -80px);
+    }
+    100%{
+        transform: rotate(0) translate(-176px, -160px);
+    }
+}
+
+@keyframes dropDown {
+    0%{
+
+    }
+    100%{
+        box-shadow: 3px 3px 2px 0 rgb(49, 47, 47);
+        margin-top: 7px;
+        background: linear-gradient(rgb(236, 194, 24),rgb(239, 242, 36));
+    }
+}
+
+@keyframes Stopp {
+    100%{
+        box-shadow: 3px 3px 2px 0 rgb(49, 47, 47);
+        margin-top: 7px;
+        background: linear-gradient(rgb(236, 194, 24),rgb(239, 242, 36));
+    }
+}

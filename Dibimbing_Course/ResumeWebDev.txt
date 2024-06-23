@@ -1,0 +1,593 @@
+==================== 1. Introduction Web Dev =====================
+
+- william onnyxiforus purnomo
+1. history of website and how the internet works
+- the founder of the website was sir timothy john tim berners-lee in 1991
+- internet berkerja menggunakan IP addres yang terkoneksi ke semua server di dunia
+
+2. web development fundamental
+- HTML : hypertext markup language as ody structure
+- css : cascade style for styling
+- js : javascript for interactive website
+
+3. web development workflow and alternative career in web development
+- users -> front end (html, css js, stc) -> web server (PHP, js, phyton, etc) -> file system and database (mySQL, mongoDB, postgressSQL)
+- presentation layer (framework) - business logic layer (json) - data access layer (mongoDB)
+
+4. IDE introduction
+- is software application that provides comprehensive facilities to computer programmers for development
+
+5. introduction to coding tools
+- mengasah skill programming : hackerrank, leetcode, freecodecamp
+
+6. introduction to GIT
+- GIT : version control system
+
+==================== 2. Algoritma pemrograman dasar javascript 1 =====================
+
+- miftah muhammad farhan
+1. algoritma
+- adalah metode atau langkah yang direncanakan secara tersusun dan berurutan untuk menyelesaikan atau
+  memecahkan suatu permasalahan dengan sebuah intruksi dan kegiatan
+
+- karakterisitik algoritma
+  1. limited : punya scope/batasan
+  2. Unambigous : harus jelas
+  3. Has input and output
+  4. Effective
+
+- algotitma struktur basic : 
+  = sekuensial (linear)
+  = seleksi / kondisi
+  = perulangan
+
+2. flowchart
+- adalah gambaran langkah2 atau prosedur dari sebuah algoritma, alur kerja atau proses yang dihubungkan garis panah
+- https://app.diagrams.net/#G1uJrWM-u4uPxTPj_zRgt9jNoYwNPZtHyE#%7B%22pageId%22%3A%22Qdk8PoePO4WQkDZq1bWf%22%7D
+
+3. pseudocode
+- penulisan algoritma yang hampir mirip dengan bahasa pemrograman naun ditulis dengan sederhan dan mudah dimengerti
+- contoh
+  Read and Write Income with number
+  Read and Write Cost with number
+  If Income is more than or equal cost
+    calculate profit as income - cost
+    print profit
+  else cost more than or equal income
+    calculate loss as cost - income
+    print loss
+  
+
+4. pengenalan javascript
+- bahasa pemrograman yang membuat pengembanag website jadi lebi dinamis dan interaktif
+- awalnya js hanya bekerja pada sisi client/front end saja namun seiring waktu digunakan disi server dengan bantuan berbagai frame work 
+- salah satu kelebihan yaitu full package yang bisa diimplementasikan ke berbagai platform
+
+5. instalasi node.js
+- menjalankan kode dengan cara ketik node dan nama file
+
+6. googling tips
+- stack overflow & chatGPT
+
+==================== 3. Algoritma pemrograman dasar javascript 2 =====================
+
+1. tipe data
+- js adalah dynamic-typing, 1 variabel bisa menampung tipe data yg berbeda
+- jenis tipe data : string, number, boolean, null, undefined, object, function
+- 3 cara mendeklarasika variabel : var, let dan const (tidak bisa menginisialisasi ulang karena nilainya selalu fix)
+- string interpolation/backtick : bisa memasukan nilai variabel
+- number : integer, decimal
+- null : tidak diberikan nilai
+- array terdiri dari index2 yang dimulai dari 0 dan bisa menmapung banyak tipe data
+- function : const function1 = () => { }
+- khusus pada array atau objek dengan deklarasi const propertinya tetap bisa diubah
+
+2. input output
+- input -> proses -> output
+- install dependensi readline-sync : 
+  = git init
+  = npm install readline-sync
+  = cara menggunakan depedency : const rl = require("readline-sync")
+
+3. operator angka
+- + : addition
+- - : substraction
+- * : Multiplication
+- ** : Exponentiation
+- / : Division
+- % : Modulus (Division reminder)
+- ++ : increment
+- -- : Decrement
+
+4. operator logika
+- && (And)
+- || (Or)
+- ! (not)
+
+5. operator komparasi
+- == : equal to
+- === : equal value and equal type
+- != : not equal
+- !== : not equal value and not equal type
+- > : greater than
+- < : less than
+- >= : greater than or equal to
+- <= : less than or equal to
+
+6. latihan
+
+==================== 4. Algoritma pemrograman dasar javascript 3 =====================
+
+1. cara running file html
+- buka browser dan drag file html 
+- buka dari file
+- dengan live server
+- menampilkan emoji windows + .
+
+2. conditional statement
+- if else statements
+- multiple if else statements : if else, else if
+- conditional ternary operator : condiiton? expression1 : expression2
+- equality comparison and sameness
+- type coercion and conversion : merubah tipe secara otomatis berdasarkan operasi yang dilakukan
+- truthy and falsy values : null, undefined, false, Nan, 0,""
+- switch statement : terdapat default yang akan dieksekusi jika tidak ada kondisi yg sesuai
+
+3. Loops and iteration
+- for, while, do while
+- for statement (looping) : batas awal dan akhir ditentukan disertai kondisi yang ingin dijalankan
+- template literal/string interpolation : tanda backtick (~)
+- other loop statement : for of, for in
+- other loop method : pop, filter, push, unshift, shift, sort, etc
+
+- while statement
+- do while statement
+- differentiate while and do while, do while is the code will execute before check condition
+
+==================== 5. Algoritma pemrograman dasar javascript 4 =====================
+1. Basic data structure
+- format untuk mengorganisir dan mngelola data sehingga data mudah di akses secara efisien dan efektif
+- example of data structure : array, object , dll
+- array terdiri dari index2 dan element yang dimulai dari index ke-0 dan element ke-1
+- tipe data primitive : tipe data yang hanya bisa mengelompokan tipe data yg sama
+- array pada js bisa diubah dan dicampur dengan tipe data yang berbeda serta bisa memiliki array lagi didalamnya (multidimensi array)
+- shallow copy : meng-copy value dengan reference address yg sama
+- deep copy : value copy dengan membuat address baru
+
+- array method
+  = push, pop, slice, splice, shift, unshift, filter, sort, forEach, map, reduce, find, concat, reverse, indexOf, etc
+
+
+
+2. understanding array and object
+- obejct dan array non-primitive array because non contain only single valeu but dynamic value
+- object consist of key and value
+- deklarasi oject bisa 2 cara yaitu dengan string literal dan constructor
+- delete array  delete.namaObject.namaProperty;
+- perulangan dengan for in
+- deeep copy pada object : Object.assign({}, namaObject);
+- behavior object yang di loop dengan for in maka memanggil nilai key-nya harus dengan kurung siku []
+
+==================== 6. Live Coding 1 =====================
+1. soal tentang array student dengan grade
+2. check anagram
+- toUpperCase(), toLowerCase(), split(), sort(), join()
+3. store item kedalam toko yang sama
+
+==================== 7. Algoritma Pemrograman Javascript 5 =====================
+1. understanding basic function in general
+2. has argument and parameter
+3. parameter shouldn't over than 5
+4. fungsi bersifat hoisted
+5. function scope : global scope, local scope
+6. recurcion : fungsi memanggil dirinya sendiri
+7. nested function : there's function inside function
+8. predefined function 
+9. function expression :
+10. library and framework definition
+-  install lodash dengan npm, yarn atau cdn
+11. lodash library
+- lodash adalah salah satu js library unutk memanipulasi dan mengubah data
+12. install lodash
+- npm init -y
+- npm  i lodash
+- const _ = require("lodash")
+- dengan lodash array index bisa dengan negative number
+
+==================== 8. Algoritma Pemrograman Javascript 6 =====================
+1. Scope variables concept
+- variable scope, function scope, block scope, module scope
+- var : function scope variable without value
+- module scope membutuhkan type="module" pada htmlnya
+- import and export variable
+
+
+2. Spread operator
+- operator yang digunakan ketika data iterable obejct ingin disebarkan
+- bisa obejct dan array
+- biasanya digunakan untuk menggabungkan beberpa obejct atau array
+- ketika spread object dengan properti yang sama maka akan tertimpa dengan nama yang baru
+
+3. Rest operator
+- destructuring / unpack
+- destructuring obejct memanggil attribute sedangkan array berdasarkan index2
+- rest/sisa
+- destructure argument of function
+
+
+4. arrow function
+- install extension live server
+
+==================== 8. Algoritma Pemrograman Javascript 7 =====================
+*. OOP dan implementasinya menggunakan class
+- beroirentasi object
+
+1. class
+- blueprint utk membuat obejct
+- bisa diekspansi
+- variabel rahasia/private
+- terdapat constructor dan method
+- claas adalah protopipe dan hasil dari claas disebut object
+- 
+
+2. encapsulation
+- variabel rahasia/private hanya methode didalam kelas yang bisa mengakses
+- variabel publik diawali dengan this.
+
+3. abstraction
+- pembuatan kelas dengan fungsi kosong yg nanti harus diisi sesuai kebutuhan
+- throw new Error, extends, super untuk memanggil contructor class parent
+
+4. inheritance
+- membuat class baru berdasarkan class yg sudah ada
+- menambhkan fungsi dan properti baru dikelas yg sudah ada
+
+5. polymorphism
+- override methode atau properti yang sudah ada dengan isi yang berbeda 
+
+==================== 9. Live Coding 2 =====================
+- array method
+
+==================== 10. Algoritma Pemrograman Javascript 8 =====================
+- class OOP
+- function class
+- pada functional class super diganti menjadi : nama indukClass.call(this, varible1, variable2)
+- import export, tambahkan type = module pada file html
+- export default, hanya bisa di export 1 kali
+- mempersingkat object/variabel yg di export dengan "as"
+- unutuk export default namanya bisa dibuat apa saja
+
+==================== 11. Algoritma Pemrograman Javascript 9 =====================
+- sort : pengurutan array 
+- bubble sort
+- binary sort
+
+==================== 12. HTML 1 =====================
+- hypertet markup language
+1. pengenalan HTML
+- <!DOCTYPE html> : html 5
+- <html></html> : tag dasar unutk menuliskan kode pada html
+- <head></head> : tag untuk menambahkaninformasi meta kedalam html cth : title, meta, css, dan js
+- <title></title>
+- <body></body>
+
+2.  pengertin tag, element dan attribute
+- <a href="https://bootcamp.dibimbing.id/">Go to bootcamp diBimbing</a>
+- tag self closing : <img src="xxxx" />
+- semantic html : tag yg memiliki arti atau makna, cth : <article>, <nav>, <footer>, etc
+- non-semantic html : tag tanpa arti, biasanya untuk pengelompokan content cth : <div>, ,<span>
+-  block element : akan menampilkan 100% dari lebar komponen,
+- inline elemnt : hanya selebar content dan tidak membuat baris baru
+
+3. Nested element : suatu element yg didalmnya terdapat 1 atau banyak element
+4. Heading <h1> sampai <h6>
+5. text element : bold, dtrong, emphasize, markup
+6. hyperlink : menghubungkan 1 dokumen dengan dokumen lainnya 
+- a dan href
+- internal hyperlink : menghubungkan halam dengan domain yg sama
+- external hyperlink : berbeda domain
+- target : _self, _blank, _parent, _top
+- class, id
+
+7. html Media
+- <img>
+- <video>
+- <audio>
+- <iframe>
+
+* atribute : autoplay, controls, loop, muted, poster, width, height, playinline
+
+==================== 12. HTML 2 =====================
+1. html lists
+- order list : <ol>
+  * type="1/I/A"
+- unorder list : <ul>
+  * type = "disc/circle/none"
+- descriptin list : <dl>,<dt>,<dd>
+
+2. table
+- <table>
+- <thead>
+- <tbody>
+- <tr> : baris
+- <td> : kolom
+- <th> : table head, memuat judul pada header
+- attribute : border, cellpadding, rowspan, colspan
+
+3. form
+- attribute : name, method (get/post), action
+- input, label, select, option, optgroup, button, fieldset, legend, datalist
+- input : button, checkbox, date, email, number, password, radio, file, ..etc
+* untuk radio : name harus sama jika pada kategori yang sama
+* textarea : rows
+* select and option
+
+==================== CSS1 =====================
+1. CSS syntax dan menyisipkan CSS (externall, internal, inline)
+- inline : <style="background-color: black;">
+- maksimal inline 5 statement krn alasan clean code.
+- menghubungkan html dan file css dengan link
+
+2. CSS Selector (class, id, elemen)
+- class Selector : .
+- id Selector : #, should be use only one id with same name in each element 
+- tag Selector : nama_tag
+- attribute Selector : input[type=text]{}
+- universal Selector : *
+
+3. CSS Specificity
+- hierarki : inline, id, class & attribute, tag, universal
+
+4. Color 
+- named
+- hex 
+- rgb
+- rgba 
+
+5. Font Propperties
+6. Alignment of text
+- left, center, right, justify, inherit
+
+7. list Properties
+- ol
+- li
+- list-style-image
+
+==================== CSS2 =====================
+1. Span and Div
+- span : display inline
+- Div : display block 
+-  margin
+
+2. Border Properties
+- border : width color style radius
+
+3. width and height
+4. Layout
+- float : left, right, clearfix
+- position : static, relative, absolute, fixed, aticky
+- display : block, inline, inline-bloxk, none, flex, grid
+- flex : 
+* horizontal, justify-content : space-between, space-around, space-evenly
+* vertikal, align-items : center, 
+.displays2{
+    display: flex;
+    /* justify-content: center; */
+    /* justify-content: space-between; */
+    /* justify-content: space-evenly; */
+    /* justify-content: space-around; */
+    /* align-items:end ; */
+}
+
+- grid : 
+.displays2{
+    display: grid;
+    grid-template-columns:repeat(2, calc(20%));
+    grid-template-rows: repeat(2, calc(50%));
+    grid-column-start: 2;
+}
+
+==================== CV and Linkedin Profile Building =====================
+
+==================== Bootstrap 1 ====================
+- framework feuntuk membangun tampilan website yg responsive
+- container, fluid
+1. Introduction to Bootstrap
+- pre-made html/css templates and classes
+- javascript widget and plugin (dropdown, ...)
+- mobile first,  responsive Layout
+- dropped jQuery dependency switch to vanilla javascript
+
+* How to Install 
+1. include the CDN (Cloud Delivery Network)
+2. Download and include files
+3. Package Manager - NPM or Yarn
+
+// Getting started
+1. create new file index.html
+2. add link and script
+3. and popper link for dropdown select menu
+
+2. Viewport
+- untuk optimize/mengatur tampilan screen dgn ukuran berbeda
+- screen on windows browser
+- untuk melihat ukuran screen
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+3. Front End Layout
+- focus on the high-level layout deteils first
+- Breakpoints : building block for responsive design
+- use media queries to architect breakpoints
+- breakpoint table : none, sm, md, lg, xl, xxl
+- mydevice.io 
+
+4. Container and grid
+- have container, row and column
+- container : basic layout for covering another element, container-fluid, container-breakpoint
+- utilities : bg-primary, text-white, p-3 (padding)
+- vertical alignment : align-items-center
+- horizontal alignment : justify-content-center
+- reordering : menguba urutan column, <div class="col-md-3 order-4">
+- offset : <div class="col-md-3 offset-md-6">
+- gutter : spacing antar column
+
+5. Images
+- img-fluid
+- img-thumbnail
+- aligning images : float-start, mx-auto, float-end
+
+6. Media Queries
+- to conditionally apply styles with the css
+- mentarget spesifik media pada device tertentu
+- max-width, min-width
+* @media (min-width: 570px){...}
+* @media (min-width: 570px) and (max-width: 1400px){...}
+* @media (min-width:801px) and (max-width: 1400px) {
+    .custom-image{
+        width: 20%;
+    }
+    
+}
+
+==================== Bootstrap 2 ====================
+1. button
+- btn.btn-primary/secondary/dark/success/danger/warning/info/link
+- btn.btn-outline-primary
+- buttons group
+- untuk waran lain custom dengan css
+*   --bs-btn-color : white;
+    --bs-btn-bg : aqua;
+    --bs-btn-border-color : gold;
+- ukuran : medium(default), btn-lg, btn-sm
+
+2. icon
+- ada 3 metode untuk include icon : 
+  1. include the cdn
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  2. download and include files
+  3. package manager - NPM or yarn
+
+3. Forms
+- form controls
+- check and radios
+- input group
+- floating labels
+- select
+- range
+- layout
+- validation
+
+* filedset, legend
+- form-label,  form-control
+- form-check, class="form-check-input". class="form-check-label"
+- switch : type = checkbox, role = switch.
+- input-group
+- floating label, form-floating, is-invalid
+-  introduction to figma, : https://www.figma.com 
+* https://www.figma.com/file/lzK0wgWbha9OI4UIJRIx6C/Responsive-Web-Design-With-Bootstrap-(Dibimbing)?type=design&node-id=1033%3A453325&t=EA1MBf6HluVpEs4K-1
+
+- background-color : brown!important
+
+4. navbar (navigation bar)
+- bisa dikombinasikan dengan button, dan propeprti lainnya
+- .navbar
+- navbar.expand-sm/md/lg/xl/xxl
+-  aria-current-true
+- navbar-light/dark/primary
+-       class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false" : belum tampil kwtika pada breakpoint middle
+        aria-label="Toggle Navigation"
+
+5. dropdown
+-     class="nav-link dropdown-toggle" 
+      id="navbar-dropdown-link"
+      role="button"
+      data-bs-toggle="dropdown"
+      aria-expanded="false"
+      data-bs-auto-close="outside"
+
+==================== Bootstrap 3 ====================
+1. Alert
+- feedback message
+- .alert.alert-success/primary/info/...
+
+2. Breadcrumb
+- diapke utuk mengindikasi/halaman yang di kunjungi
+- sebagai hierarki navigasi
+- add separator via css
+* --bs-breadcrumb-divider:">";
+- breadcrum, breadcrum=item, aria-current="page"
+
+3. Card
+- card header, card body (card-title, card-text, img,..), card footer
+- class="card-img-top"
+- card-img-overlay
+- width = class="w-50/75/100"
+
+4. Carousel
+-  mirip slide show, menampilkan gambar/menu bergilir
+- class="carousel slide" data-bs-ride="carousel"
+- class="carousel-inner", class="carousel-item active", 
+- class="carousel-control-prev/next", data-bs-slide="prev", class="carousel-control-prev-icon", aria-hidden="true", class="visually-hidden"
+- efek fade : carousel-fade, 
+
+5. Modal
+- konten yang muncul/ efek ketika kita klik suatu instruksi, misalnya instruksi konfirmasi
+atau menampilkan detail deskripsi dan gambar
+- safety agar close tidak bisa di close kecuali menekan tombol close :
+  data-bs-backdrop="static"
+  data-bs-keyboard="false"
+
+- vertically center
+class="modal-dialog-centered"
+- memberikan grid/kolom pada body modal
+
+6. Bootstrap table
+
+7. Mini Project Overview
+- slicing-web : figma/dribble.com
+
+
+==================== Portofolio and Business Understanding Class ====================
+1. linkedin profile
+2. github/gitlab
+3. personal website
+4. blog
+5. projects
+6. contriute to open source project
+7 business understanding
+- waterfall : sequential design process must be step by step process
+- agile : lebih fleksibel, make the project possible to develop software thas has rapidly changing requirements
+- plan, design, develope, test, deploy, review, launch
+
+8 fullstack developer and stack holder
+-  product/project manager
+- user interface and user experience
+- FE developer
+- BE developer
+- Quality Assurance
+- Devops : menyiampan environtment agar project bisa di deploy
+
+9 Version Control (GIT)
+- sistem yang merekam perubahan file, memungkinakan utntuk kembali ke state sebelumnya
+- bisa melihat contributor
+- multiple user with multiple changes or multiple user to one source
+
+- langkah menjalankan git
+1. echo "# DibimbingGIT1" >> README.md
+2. git init
+3. git add .
+
+
+
+- resume : https://docs.google.com/spreadsheets/d/1gBgcYDhjnQXr5n7GhQFQEtNe9Fm76SC7_jPwB9LwFUw/edit?gid=0#gid=0
+
+- bahasa inggris
+
+- jerman
+
+- prancis

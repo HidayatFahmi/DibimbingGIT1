@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery Light Box</title>
+    <link rel="stylesheet" href="Reset.css">
+    <link rel="stylesheet" href="3LightBox.css">
+</head>
+<body>
+    <h1>The Avengers</h1>
+
+    <div class="container">
+        <ul class="gallery">
+            <li>
+                <a href="#gambar1">
+                    <img src="Media/Thumb/captain_america_thumb.jpg" alt="">
+                    <span>Captain America</span>
+                </a>
+                <div class="overlay" id="gambar1">
+                    <a href="#" class="close">X close</a>
+                    <a href="#gambar4" class="prev"></a>
+                    <img src="Media/Full/captain_america.jpg" alt="">
+                    <a href="#gambar2" class="next"></a>
+                </div>
+            </li>
+
+            <li>
+                <a href="#gambar2">
+                    <img src="Media/Thumb/ironman_thumb.jpg" alt="">
+                    <span>Ironman</span>
+                </a>
+                <div class="overlay" id="gambar2">
+                    <a href="#" class="close">X close</a>
+                    <a href="#gambar1" class="prev"></a>
+                    <img src="Media/Full/ironman.jpg" alt="">
+                    <a href="#gambar3" class="next"></a>
+                </div>
+            </li>
+
+            <li>
+                <a href="#gambar3">
+                    <img src="Media/Thumb/thor_thumb.jpg" alt="">
+                    <span>Thor</span>
+                </a>
+                <div class="overlay" id="gambar3">
+                    <a href="#" class="close">X close</a>
+                    <a href="#gambar2" class="prev"></a>
+                    <img src="Media/Full/thor.jpg" alt="">
+                    <a href="#gambar4" class="next"></a>
+                </div>
+            </li>
+
+            <li>
+                <a href="#gambar4">
+                    <img src="Media/Thumb/spiderman_thumb.jpg" alt="">
+                    <span>Spiderman</span>
+                </a>
+                <div class="overlay" id="gambar4">
+                    <a href="#" class="close">X close</a>
+                    <a href="#gambar3" class="prev"></a>
+                    <img src="Media/Full/spiderman.jpg" alt="">
+                    <a href="#gambar1" class="next"></a>
+                </div>
+            </li>
+            <div class="clear"></div>
+        </ul>
+    </div>
+</body>
+</html>

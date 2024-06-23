@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        table{
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        td,th {
+            border: 2px solid black;
+            text-align: center;
+            padding: 8px;
+        }
+        label{
+            font-weight: bold;
+        }
+    </style>
+    <title>Form Excercise</title>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="2">Name</th>
+                <th>Age (y.o)</th>
+                <th>Hobbies</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">Alfred</td>
+                <td rowspan="2">Chang</td>
+                <td rowspan="2">27</td>
+                <td>Play Guitar</td>
+            </tr>
+            <tr>
+                <td>Play Basketball</td>
+            </tr>
+            <tr>
+                <td rowspan="3">Allen</td>
+                <td rowspan="3">Barry</td>
+                <td rowspan="3">30</td>
+                <td>Skateboard</td>
+            </tr>
+            <tr>
+                <td>Singing</td>
+            </tr>
+            <tr>
+                <td>Hiking</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Budi</td>
+                <td rowspan="2">Cikgu</td>
+                <td rowspan="2">16</td>
+                <td>Sleep</td>
+            </tr>
+            <tr>
+                <td>Traveling</td>
+            </tr>
+            <tr>
+                <td>Jessica</td>
+                <td>Truneau</td>
+                <td>27</td>
+                <td>Shopping</td>
+            </tr>
+        </tbody>
+    </table><br><hr>
+    <form name="form-excercise" action="">
+        <label for="">Name</label>
+        <input type="text" placeholder="Input your first name">
+        <input type="text" placeholder="Input your last name"><br>
+        <label for="">Age</label>
+        <input type="number" placeholder="Input your age"><br>
+        <label for="">Hobbies</label>
+        <textarea name="hobbies" id="" rows="5"></textarea><br><br>
+        <input type="submit">
+    </form>
+</body>
+</html>

@@ -1,0 +1,24 @@
+div{
+    margin: 20px auto;
+}
+
+.satu{
+    border: 4px dashed rgb(151, 153, 156);
+    /* border-color: black;
+    border-style: solid; */
+    background-color: aqua;
+    padding: 20px;
+    width: 400px;
+    height: 300px;
+    margin: 20px auto;
+    box-sizing: border-box;
+
+}
+
+.dua{
+    width: 400px;
+    background-color: pink;
+    padding: 30px;
+    border: 3px solid orange;
+    box-sizing: border-box;
+}

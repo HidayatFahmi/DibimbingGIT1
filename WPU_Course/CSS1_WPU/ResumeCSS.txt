@@ -1,0 +1,110 @@
+
+CSS : Mekanisme sederhana yang mengatur gaya/style pada halaman web
+- 1 css bisa dugunakan untuk banyak html
+- 1 halaman html dapat menggunakan css yang berbeda
+- www.csszengarden.com
+
+======== Anatomi CSS dss
+- selector {property : value;}
+-  elemen html dipilih berdasarkan tag, id, class bahkan pola
+
+======== Penempatan file CSS
+1. embed : <style></style>
+2. inline : pada tag elemen <p style="color : green; text-align: center;">
+3. external : di file terpisah : <link rel="stylesheet" href="1Penempatan.css">
+4. shorthand 
+
+
+======== Font Styling
+======== Text Styling
+1. color
+- nama warna
+- hexadecimal :#ff0000
+- rgb : rgb(32,178,170)
+2. text-align
+3. text-indent
+4. decoration
+5. text-transform
+6. letter spacing
+7. word spacing
+
+========== Background
+1. background color
+2. background image
+3. background position : berdasarkan besar konten yang kita buat
+4. background repeat
+- shorthand : background: yellow top center url(../Media/fh2211.jpg)  no-repeat;
+
+www.subtlepatterns.com -->
+
+<!-- ========== Selector ==========
+1. 1 element hanya bisa memiliki 1 id
+2. setiap halaman hanya booleh memiliki 1 elemen dengan id tersebut
+3. dapat digunakan sebagai penanda halaman untuk link
+4. digunakan utk js
+5. sebaiknya gunakan class pada css daripada id -->
+
+========== Pseudoclass ==========
+- kelas semu yg dimiliki oleh elemen html, yg dapat membuat kita dapat mendefinisikan style pada keadaan tertentu pada elemen tersebut
+- teragi menjadi beberpa :
+1. :link : default
+2. :hover : disorot
+3. :active : diklik
+4. :visited : setelah diklik/kunjungi
+
+- pseudo yang berhubungan dengan posisi elemen
+1. :first-child
+2. :last-child
+3. :nth-child
+
+li:nth-child(5) a{
+    color: pink;
+}
+
+li:nth-child(3n) a{
+    color: green;
+}
+
+li:nth-child(3n-1) a{
+    color: green;
+}
+
+li:nth-child(even) a{
+    color: green;
+}
+li:nth-child(odd) a{
+    color: green;
+}
+
+4. first-of-type
+5. last-of-type
+
+p:first-of-type{
+    color: bisque;
+}
+p:last-of-type{
+    color: aqua;
+}
+
+<!-- ========== Inheritance ==========
+body{
+    color: lightgreen;
+}
+
+a{
+    color: inherit;
+} -->
+
+<!-- ========== Specificity ==========
+- setiap selector memiliki prioritas yang berbeda untuk menentukan seberapa spesifik element tsb
+- hirearki specificity
+1. inline
+2. id
+3. class
+4. element
+
+- cara menghitung specificity
+http://specificity.keegan.st -->
+
+
+

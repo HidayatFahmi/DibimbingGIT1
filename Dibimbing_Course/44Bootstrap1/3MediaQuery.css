@@ -1,0 +1,12 @@
+@media (max-width: 800px) {
+    .custom-image{
+        width: 50%;
+    }
+    
+}
+@media (min-width:801px) and (max-width: 1400px) {
+    .custom-image{
+        width: 100%;
+    }
+    
+}

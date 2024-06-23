@@ -1,0 +1,31 @@
+.satu{
+    width: 150px;
+    height: 150px;
+    background-color: salmon;
+    animation-name: animasiKotak;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 3;
+    animation-direction: normal;
+    animation-direction: reverse;
+    animation-direction:alternate; /* bolak-balik */
+    /* animation-direction:alternate-reverse;  */
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+    animation: animasiKotak 3s ease 2s 3 alternate-reverse backwards running;
+}
+
+@keyframes animasiKotak {
+    0%{
+        /* width: 150px; */
+    }
+
+    50%{
+        width: 200px;
+        margin-left: 200px;
+    }
+    100%{
+        width: 200px;
+        height: 200px;
+    }
+}

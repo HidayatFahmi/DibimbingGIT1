@@ -1,0 +1,10 @@
+FORM
+1. input
+- attribute : for, id, placeholder, type
+-  type : text, password, radio, checkbox, submit, reset, button
+- radio : name
+2. text area
+3. select
+4. button
+5 label
+6. select, option

@@ -1,0 +1,6 @@
+.custom-btn{
+    --bs-btn-color : salmon;
+    --bs-btn-bg : aqua;
+    --bs-btn-border-color : gold;
+}
+

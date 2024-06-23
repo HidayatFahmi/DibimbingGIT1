@@ -1,0 +1,10 @@
+body{
+    background-color: lightblue;
+    background-image:url(../Media/fh2211.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-position: bottom center;
+    /* background-repeat: repeat-x; */
+    /* background-repeat: repeat-y; */
+   background: yellow top center url(../Media/fh2211.jpg)  no-repeat;
+}

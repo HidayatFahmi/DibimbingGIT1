@@ -1,0 +1,120 @@
+========== Display ==========
+- div,span : non-semantic
+-  div, siplay block
+- span display inline
+
+1. inline : 
+- tidak menambhakan baris baru
+- lebar dan tinggi elemennya selebar konten
+- tidak apat mengatur lebar dan tinggi dari elemen inline
+- margin dan padding hanya berpengaruh pada sisi horizontal kecuali image
+- b, strong, i, em, a, span, sub, sup, button, input, label, select, text area, ...etc
+
+2. inline-block
+- tidak ada elemnt yg secara default memiliki properti inline block
+- harus mengubah secara manual properti tsb
+- prilaku dasarnya sama dengan elemen inline bedanya bisa diatur tinggi dan lebar
+
+3. block
+- menambahkan baris baru secara default
+- jika tidak diatur lebarnya maka akan memenuhi lebar browser
+- bisa mengatur lebar dan tinggi
+- bisa menyiman tag dan elemen inline, inline-block, atau bahkan elemen block lagi
+- elemen block : h1-h6, p, ol,li, form, hr,div,...etc
+
+4. none
+- menghilangkan elemen
+
+5 emmet
+- ul>li*5>a[href=#]{Link $}
+
+<!-- ========== Dimensi ==========
+- satuan : px, %, in, cm, mm, pt, pc
+- mengatasi konten yang melebihi tinggi dari kelas parent dengan over flow
+1. overflow
+- visible : terlihat
+- auto
+- hidden
+- scroll -->
+
+<!-- ========== Box Model ==========
+- setiap elemen dihalaman berada dalam sebuah box
+- kita bisa mengatur ukuran dan posisi kotak
+- kita bisa memberi warna/gambar sebagai background
+kotak tsb
+- VSS box model terdiri dari 
+1. margin : margin-top
+2. border : border-left
+3. padding : padding-right
+4. content : -->
+
+<!-- ========== Margin ==========
+- cara pakai
+- overlapping margin
+- negatif margin
+- auto
+- shorthand
+1. overlapping vertikal : margin tidak saling menambahkan  utk arah vertikal,
+2. untuk arah horizontal marginnya saling menambahkan
+3. negative margin
+4. margin auto : margin arah vertikal -->
+
+<!-- ========== Padding Border==========
+- padding tidak bisa diberi nilai negatif
+- padding tidak bisa diberi nilai auto
+- padding dan border merubah ukuran box
+- box-sizing : mempertahankan ukuran box dengan value border-box -->
+
+<!-- ========== Box model : CSS Reset ==========
+- mengatur ulang nilai-nilai defalut pada element html khususnya margin dan padding
+- banyak elemen yg sudah memiliki nilai margin dan padding default
+- selector universal tanda *
+- cs reset : https://meyerweb.com/eric/tools/css/reset/
+-  background image website : unsplash.com -->
+
+========== Float ==========
+- properti pada css untuk mengatur posisi pada sebuah elemen
+- sebuah elemen dpt dipaksa utk berada disebe;ah kiri atauk kanan dari parent
+-  value : none, left, right
+- normal flow vs out-of flow
+1. aplikasi float biasanya untuk:
+- text wrapping
+- image gallery
+- multi-column layout
+
+========== Clear ==========
+- mengatasi efek float
+- mengatasinya dengan :
+1. overflow
+2. menggunakan div kosong
+3. menggunakan teknik micro clearfix : https://nicolasgallagher.com/micro-clearfix-hack/
+- left, right, both
+
+========== Project 2 CSS ==========
+- Balsamiq Mockup : website mockup website
+- 
+
+========== Position ==========
+- memungkinkan kita menggeser obejct tanpa mempengaruhi sekitar
+- position
+1. static :
+2. relative : 
+- relative terhadap posisi aslinya dan tidak merubah posisi object sekitarnya/ruangnya tidak dipenuhi object lain
+3. absoluted : 
+4. fixed : 
+- niai defaultnya static
+- harus ditambah style : top, bottom, left, dan right
+
+========== Absolute Fix ==========
+1. absolute 
+- ruang yang ditempati dianggap tidak ada
+- bergerak relative terhadap posisi parent terdekatnya
+- dengan catatn parenynya juga pada dimnesi yg berbeda/non-static
+
+2. fix
+- posisinya relative terhadap windows
+- discroll elemenya akan ikut
+
+========== Z index ==========
+-  mengatur tumpukan elemen non-static
+- diaplikasikan untuk object yang menerpakan position

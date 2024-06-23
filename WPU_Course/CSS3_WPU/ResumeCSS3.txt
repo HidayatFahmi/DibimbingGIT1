@@ -1,0 +1,197 @@
+========== 1. Intro ==========
+- css3 dibagi menjadi beberpa modul yg menambhakan kemampuan pada css2
+- mengapa css3
+1. membuat web fleksibel
+2. membuat mocukup dengan cepat tanpa scripting
+3. mengurangi penggunaan gambar
+4. penggunaan selector utk menghindari penggunaan markup yg boros
+
+========== 2. Border Radius ==========
+    /* border-radius: 150px; */
+    /* border-radius: 50%; */
+    /* border-top-left-radius: 50%; */
+    /* border-top-right-radius: 50%; */
+    /* border-bottom-right-radius: 50%; */
+    border-radius: 0 50% 0 50%;
+
+========== 3.Opacity ==========
+- transparancy
+- jika parentnya transparan maka object didalamnya(child) juga ikut transparan
+
+========== 4. RGBa & HSLa ==========
+- mengatasi kekurangan pada property opacity
+- rgba untuk menghasilkan efek transparancy pada warna berbeda dgn opacity yaitu transparancy utk element tidak peduli itu di, gamabar atau lainnya
+- HSLa : hue saturation  lightness alpha
+- .tiga{
+    width: 100px;
+    height: 100px;
+    background-color:hsla(170, 70%, 20%, 0.7) ;
+}
+
+========== 5. Box Shadow ==========
+- property wajib: x-offset, y-offset, blur dan color
+- property optional: inset, x-offset, y-offset, blur, spread dan color
+- box-shadow: 20px 20px 10px 3px black;
+- multiple shadow
+
+========== 6. Text Shadow ==========
+- mirip dengan box shadow tanpa inset dan spread
+- 
+
+========== 7. Linear Gradient ==========
+- teknik untuk memberikan efek gradasi
+- ada 2 tipe gradient
+1. linear gradient
+- gradasi warna harus memiliki 2 warna yaitu warna awal dan akhir
+2. radial gradient
+
+- linear gradient bukan property css3 melainkan value untuk background image
+- syntax : background-image/background : linear-gradient(warna awal, warna akhir)
+- mengatur arah linear gradient : linear-gradient(sudut | arah, warna awal, warna akhir)
+  1. background: linear-gradient(to bottom right,pink, salmon, orange);
+  2. background: linear-gradient(45deg,pink, salmon, orange);
+
+- color stop
+memberikan bobot warna :     
+background: linear-gradient(to right,pink 30%, salmon 40%, orange 100%);
+
+========== 8. Radial Gradient ==========
+- gradasi warana secara melingkar
+- syntax : 
+tipe, jangkauan at posisi-y, posisi-x, warna1, warna2
+- tipe : ellipse (default), circle
+- jangkauan : dari pusat ke titik-luar
+1. closest-corner
+2. closest-side
+3. farthest-corner
+4. fartest-side
+- syntax : 
+background: radial-gradient(circle farthest-corner at top left, pink, salmon, orange);
+
+========== 9. Font Face ==========
+- digunakan untuk megelola font
+- font harus ada pada sistem operasi clien/user
+1. untuk mengatasi hal tersebut gunakan layanan google font
+- https://fonts.google.com/ , dengan cara copy html 
+2. jika google font tidak cukup maka gunakan @font-face
+yaitu dengan mendownload font terlebih dahulu
+- syntax
+@font-face{
+    font-family : 'namaFontBaru';
+    src:url('lokasi file/fontBaru.eot');
+    src:url('lokasi file/fontBaru.ttf') format('truetype');
+
+}
+
+- layanan untuk mendownload font
+1. font.google.com
+2. fontsquirell.com
+3. fontspring.com
+4. webtype.com
+5. typotheque.com
+dll
+
+@font-face {
+    font-family: "fahmixx";
+    src: url(KaushanScript-Regular.otf) format(truetype);
+}
+
+.container p{
+    font-family: "fahmixx";
+}
+
+========== 10. Web Font Generator ==========
+- woff : web open file format
+
+========== 11. Vendor Prefix ==========
+- teknik yang digunakan agar syntax css3 compatible dengan browser lain yg tidak support dgn css3
+- sintaks tiap browser berbeda
+- prefix / awalan
+- syntax : 
+1. -webkit-<property-css3> : chrome, safari, opera versi terbaru
+2. -moz-<property-css3> : firefox
+3. -ms-<property-css3> : internet explorer
+4. -o-<property-css3> : opera versi terdahulu
+
+* -webkit-filter: grayscale(100%);
+- property yg butuh vendor prefix : shouldiprefix.com, caniuse.com, http://pleeease.io/play/
+- install plugin emmet
+
+========== 11. Filter ==========
+- property yang digunakan untuk memberi efek visual pada gambar, background atau border
+- dengan filter drop-shadow bisa dimplementasikan untuk box-shadow dan text-shadow
+- jenis filter : grayscale, saturation, contrast, hue-rotate, blur, sepia, opacity, drop-shadow, invert, brightness
+
+========== 12. transform ==========
+- memnanipulasi format visual dari elemen html
+- kita dapat melakukan transform 2D dan 3D
+- transorm : <fungsi>
+- macam transform : scale, rotate, skew/miring, translate/ubah posisi
+
+/* transform: scale(0.5, 2); */
+/* transform: rotateX(45deg);
+transform: rotateY(70deg); */
+/* transform: rotate(90deg) rotateX(90deg) rotateY(90deg); */
+/* transform: skew(45deg); */
+/* transform: skewX(45deg); */
+/* transform: skewy(45deg); */
+/* transform: translate(50px, 100px); */
+transform: rotate(90deg) scale(1.5);
+
+========== 12. Transition ==========
+- memungkinkan kita dapat mengubah nilai property html decara halus
+- transition vs animation : bedanya keadaan awal dan akhir
+- keadaan diantarnya dibut keyframe pada animation
+- syntax transition : <property> <durasi> <fungsi> <delay>
+- jika kira hanya menulis durasi : maka dibelaknag kode sebnarnya mengeksekusi all -> transition : all 2s;
+
+- fungsi transisi/timing function
+1. ease (default)
+2. ease-in: pelan-cepat
+ease-out : cepat-pelan 
+ease-in-out : 
+3. linear
+4. cubic-bazier(w,x,y,z) : 
+https://cubic-bezier.com/#0,1.15,.81,-0.09
+
+- syntax
+    1. transition: 2s 2s cubic-bezier(0,.87,.65,1.84);
+    2. transition: 2s ease-in-out, transform 3s 2s, background-color 2s;
+
+========== 13. Animation ==========
+- memiliki keyframe
+- property animation : 
+[name] [duration] [timing-function] [delay] [iteration-count] [direction]
+[fill-mode] [play-state]
+
+- 
+.satu{
+    width: 150px;
+    height: 150px;
+    background-color: salmon;
+    animation-name: animasiKotak;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 3;
+    animation-direction: normal;
+    animation-direction: reverse;
+    animation-direction:alternate; /* bolak-balik */
+    /* animation-direction:alternate-reverse;  */
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+    animation: animasiKotak 3s ease 2s 3 alternate forwards running;
+}
+
+@keyframes animasiKotak {
+    0%{
+        /* width: 150px; */
+    }
+
+    50%{
+        width: 200px;
+    }
+    100%{
+        width: 200px;
+        height: 200px;
+    }
+}

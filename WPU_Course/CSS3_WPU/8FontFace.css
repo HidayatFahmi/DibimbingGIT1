@@ -1,0 +1,10 @@
+@font-face {
+    font-family: "fahmixx";
+    src: url(KaushanScript-Regular.otf) format(truetype);
+}
+
+.container p{
+    font-family: 'Courier New', Courier, monospace;
+    font-family: "Playwrite CO", cursive;
+    font-family: "fahmixx";
+}
