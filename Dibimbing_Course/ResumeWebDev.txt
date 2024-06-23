@@ -599,9 +599,9 @@ pastikan bahwa kita sudah memasukan credintial sebelum melakukan git push
 - Git reset : mengembalikan peruahan yang telah dibuat
 1. hard reset : kembali ke commit sebelumnya seperti uncommited changes
 - git reset --hard HEAD : going back to head
-- git reset -- hard HEAD^ : going back to the commit before
-- git reset -- hard HEAD~1 : same as HEAD^
-- git reset -- hard HEAD~2 : going back two commit
+- git reset --hard HEAD^ : going back to the commit before
+- git reset --hard HEAD~1 : same as HEAD^
+- git reset --hard HEAD~2 : going back two commit
 - git reset --hard [commit] : coing back to commit
 
 * git pull origin main --rebash
@@ -610,9 +610,9 @@ pastikan bahwa kita sudah memasukan credintial sebelum melakukan git push
 2. soft reset
 - stelah menjalankan git commit maka file dikembalikan ke stage
 - git reset --soft HEAD : going back to head
-- git reset -- soft HEAD^ : going back to the commit before
-- git reset -- soft HEAD~1 : same as HEAD^
-- git reset -- soft HEAD~2 : going back two commit
+- git reset --soft HEAD^ : going back to the commit before
+- git reset --soft HEAD~1 : same as HEAD^
+- git reset --soft HEAD~2 : going back two commit
 - git reset --soft [commit] : coing back to commit
 
 3. git ignore
@@ -627,7 +627,13 @@ pastikan bahwa kita sudah memasukan credintial sebelum melakukan git push
 - git push origin --tags : to push all tags not already on the remote repo
 
 5. Basic GIT Workflow
-
+- branch main/master
+- membuat brach baru refer to main branch
+1. git checkout -b [brachname] : membuat branch baru dan switch pada local
+2. git push origin main
+3. git branch -a : see all variable branch on local machine
+4. merging branch
+5. create other branch for develop and refer to non-branch main
 
 
 
