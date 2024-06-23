@@ -634,6 +634,7 @@ pastikan bahwa kita sudah memasukan credintial sebelum melakukan git push
 3. git branch -a : see all variable branch on local machine
 4. merging branch
 5. create other branch for develop and refer to non-branch main
+6. Fork - open source project used for colaboration
 
 
 
