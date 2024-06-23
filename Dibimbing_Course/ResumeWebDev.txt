@@ -592,6 +592,45 @@ pastikan bahwa kita sudah memasukan credintial sebelum melakukan git push
 -  tanda merah pada github = baris yg dihapus
 -  tanda merah pada github = baris yg ditambahkan
 
+==================== VCS GIT ke-2 ====================
+- menyimpan pekerjaan kita sementara menggunakan git stash
+- git pull : download from remote to other repository and update changes, git pull origin master
+- git clone : to create local repository instantly 
+- Git reset : mengembalikan peruahan yang telah dibuat
+1. hard reset : kembali ke commit sebelumnya seperti uncommited changes
+- git reset --hard HEAD : going back to head
+- git reset -- hard HEAD^ : going back to the commit before
+- git reset -- hard HEAD~1 : same as HEAD^
+- git reset -- hard HEAD~2 : going back two commit
+- git reset --hard [commit] : coing back to commit
+
+* git pull origin main --rebash
+* sebelum push setelah di reset maka gunakan command : git push origin main -f
+
+2. soft reset
+- stelah menjalankan git commit maka file dikembalikan ke stage
+- git reset --soft HEAD : going back to head
+- git reset -- soft HEAD^ : going back to the commit before
+- git reset -- soft HEAD~1 : same as HEAD^
+- git reset -- soft HEAD~2 : going back two commit
+- git reset --soft [commit] : coing back to commit
+
+3. git ignore
+- for exception file not to push to remote repo
+- create .gitignore file
+- add file name inside for ignore
+
+4. GIT tagging
+- digunakan untuk menandai release points 
+- git tag -a [tag name] -m [message]
+- git push origin v1.4 : to push specific tag
+- git push origin --tags : to push all tags not already on the remote repo
+
+5. Basic GIT Workflow
+
+
+
+
 
 
 - resume : https://docs.google.com/spreadsheets/d/1gBgcYDhjnQXr5n7GhQFQEtNe9Fm76SC7_jPwB9LwFUw/edit?gid=0#gid=0
