@@ -553,6 +553,7 @@ class="modal-dialog-centered"
 
 
 ==================== Portofolio and Business Understanding Class ====================
+
 1. linkedin profile
 2. github/gitlab
 3. personal website
@@ -578,9 +579,18 @@ class="modal-dialog-centered"
 - multiple user with multiple changes or multiple user to one source
 
 - langkah menjalankan git
+pastikan bahwa kita sudah memasukan credintial sebelum melakukan git push
 1. echo "# DibimbingGIT1" >> README.md
 2. git init
 3. git add .
+4. git commit -m "message"
+5. git branch -M main
+6. git remote add origin https://github.com/HidayatFahmi/DibimbingGIT1.git
+7. git push -u origin main
+
+- cek config : git config --global user.name atau user.email
+-  tanda merah pada github = baris yg dihapus
+-  tanda merah pada github = baris yg ditambahkan
 
 
 
