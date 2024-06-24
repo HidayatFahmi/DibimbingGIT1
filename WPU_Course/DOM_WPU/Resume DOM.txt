@@ -67,3 +67,11 @@ comment, document, document type, document fragment, notation
 * sectionB = document.getElementById('b');
   const p4 = sectionB.querySelector('p')
 
+================= DOM Manipulation 
+1. manipulsi element
+- element.innerHTML
+- element.style.properti
+- element.setAttribute
+- element.classList
+
+2. manipulasi node
