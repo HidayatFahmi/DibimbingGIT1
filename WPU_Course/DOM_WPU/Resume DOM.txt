@@ -1,0 +1,69 @@
+================= 1. endahuluan 
+
+- document object model : representasi element html pada dokumen menjadi sebuah object
+- dom tersimpan sebagai pohon hierarki DOM/ DOM tree didalam memori
+- tiap kotak didalam dom tree disebut sebagai simpul/node
+- diatas document ada window sebagai node-nya
+-  dom membuat seluruh kompnen dari halaman web dapat diakses dan dimanipulasi
+- DOM dapat diubah, dibuat, dan dihapus dgn javascript
+- materi : 
+1. dom selection
+2. dom manipulation
+3. dom traversal
+4. event handling
+
+================= 2. Dom Tree
+- representasi element2 html dibrowser
+- seluruh element disebut node, simpul paling atas disebut root
+- tiap2 node memiliki beberapa tipe : 
+1. element node
+2. text node
+3. attribute node 
+4. CData section. entity reference, entity, processing instruction
+comment, document, document type, document fragment, notation
+
+- istilah pada dom tree
+1. NodeList
+- jika memilih lebih dari 1 node maka disebut NodeList tidak peduli apa jenis nodenya
+2. HTML Collection
+-  kumpulan node khusus tipe element
+
+- keduanya merupakan kumpulan node
+- struktur datanya mirip array
+- nodelist dapat berisi node apapun, sedangkan HTMLColection harus berisi element html
+- HTML Collection bersigfat live sedangkan nodeList tidak
+
+- struktur hierarki DOM Tree
+1. root node
+- node yg menjadi sumber dari semua node lain
+-  document : secara default
+
+2. parent node
+- node yang berada 1 tingkat diatas node lain
+
+3. child node
+- node yang berada 1 tingakat dibawah parent node
+- descendant : child of child
+
+================= DOM Selection 
+- tahap awal untuk melakukan penelusuran sebelum manipulasi
+- DOM Selection method
+1. getElementById() : menghasikan element
+- buat variabel utk menampung dom selection
+
+2. getElementsByTagName() : menghasikan html collection
+- walaupun cuma ada 1 element dengan tag tersebut maka element tersbut tetap menjadi html collection
+- maka untuk menjadikan lement harus ditulis index
+
+3. getElementsByClassName() : menghasikan html collection
+* const p1 = document.getElementsByClassName("p1");
+  p1[0].innerHTML = "ini diubah dari javascript"
+
+4. querySelector() : menghasikan element
+5. querySelectorAll() : menghasikan node list
+
+- document.getElementsById() dan document.getElementsByTagName memiliki performance paling cepat
+- mengubah node root dengan mempersempit scope
+* sectionB = document.getElementById('b');
+  const p4 = sectionB.querySelector('p')
+

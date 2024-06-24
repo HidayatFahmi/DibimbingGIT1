@@ -628,7 +628,7 @@ pastikan bahwa kita sudah memasukan credintial sebelum melakukan git push
 
 5. Basic GIT Workflow
 - branch main/master
-- membuat brach baru refer to main branch
+- membuat branch baru refer to main branch
 1. git checkout -b [brachname] : membuat branch baru dan switch pada local
 2. git push origin main
 3. git branch -a : see all variable branch on local machine
@@ -636,8 +636,10 @@ pastikan bahwa kita sudah memasukan credintial sebelum melakukan git push
 5. create other branch for develop and refer to non-branch main
 6. Fork - open source project used for colaboration
 
-
-
+==================== DOM ==================== priambudi lintang bagaskara
+- cara menulis javascript pada html yaitu inline, external, dan internal
+- html dom dugunakan utk ambil element, merubah elemnt, membuat element baru dan menghapus element
+- documnent.getElementById
 
 
 - resume Web : https://docs.google.com/spreadsheets/d/1gBgcYDhjnQXr5n7GhQFQEtNe9Fm76SC7_jPwB9LwFUw/edit?gid=0#gid=0
