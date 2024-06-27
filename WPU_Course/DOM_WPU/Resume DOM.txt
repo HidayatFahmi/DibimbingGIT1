@@ -70,8 +70,90 @@ comment, document, document type, document fragment, notation
 ================= DOM Manipulation 
 1. manipulsi element
 - element.innerHTML
-- element.style.properti
+- element.style.property
 - element.setAttribute
-- element.classList
+- element.getAttribute
+- element.removeAttribute
+- element.classList.add
+- elemnt.classList.remove
+- elemnt.classList.replace
+- elemnt.classList.contains
+- elemnt.classList.item
+- elemnt.classList.toggle
 
 2. manipulasi node
+
+1. buat dulu elementnya misalnya tag p  : document.createElement();
+2. membuat tulisan/content lainnya : document.createTextNode();
+3. masukkan isi ke dalam tag : element.appendChild(teks yg ingin dimasukkan)
+4. seleksi parent tempat menyimpan paragraf tersebut
+5. masukkan paragraf ke dalama parentnya : nama_parent.appendChild(paragraf)
+
+- appendChild : diakhir 
+- insertBefore : disimpan ke tempat yg ditentukan
+* ul.insertBefore(liBaru, li2)
+
+- parentNode.removeChild();
+- parentNode.replaceChild();
+
+- manipulasi node method baru 
+1. parentNode.append();
+2. parentNode.prepend();
+3. childNode.before();
+3. childNode.after();
+3. childNode.remove();
+3. childNode.replaceWith();
+
+================= DOM event
+
+- merepresentasikan sebuah kejadian yg terjadi didalam dom
+- contohnya, clik mouse, menggerakan mouse, ketik ketboard
+- ataupun event bisa dilakukan oleh API secara otomatis
+
+- cara mendengarkan event
+1. event handler
+- inline HTML attribute : ditanam langsung pada attribute html
+- element method
+
+- onClick();
+
+2. addEventListener()
+
+- perbedaan eventHandler dan addEventListener
+1. jika menggunakan eventHandler maka perintah terakhir akan menimpa perubahan sebelumnya jika menggunakan event yang sama
+2. sedangkandengan addEventListener akan menambah perubahannya
+
+- daftar event : 
+1. mouse event
+- click
+- dblclick
+- mouseover
+- mouseenter
+- mouseup
+- mouseleave
+- whell
+- ...etc
+
+2. keyboard event
+- keydown
+- keypress
+- keyup
+
+3. Resources event
+4. Focus event
+5. view Event
+- resize
+- scroll
+
+6. form Event 
+- reset
+- submit
+
+7. CSS Animation & TransitionEvent 
+8 Drag & Drop Event
+9. ...dll
+- lihat daftar lengkap event : https://developer.mozilla.org/en-US/docs/Web/Events
+
+================= Bermain Dengan Warna
+
+https://www.youtube.com/watch?v=aT60R1cySLM&list=PLFIM0718LjIWB3YRoQbQh82ZewAGtE2-3
