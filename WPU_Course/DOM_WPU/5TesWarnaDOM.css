@@ -1,6 +1,26 @@
-body{
+html, body{
     text-align: center;
+    height: 100%;
 }
 .biru-muda{
     background-color: lightskyblue;
+}
+
+.kotak{
+    width: 40px;
+    height: 25px;
+    margin: 10px auto;
+}
+.merah{
+    background-color: red;
+}
+.hijau{
+    background-color: green;
+}
+.biru{
+    background-color: blue;
+}
+.opacity_{
+    background-color: black;
+    color: white;
 }

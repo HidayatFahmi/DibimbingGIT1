@@ -155,5 +155,112 @@ comment, document, document type, document fragment, notation
 - lihat daftar lengkap event : https://developer.mozilla.org/en-US/docs/Web/Events
 
 ================= Bermain Dengan Warna
+--------------------- dengan input slider
+* 
+const redSlider = document.querySelector("input[name=redSlider]");
+const greenSlider = document.querySelector("input[name=greenSlider]");
+const blueSlider = document.querySelector("input[name=blueSlider]");
+const opacitySlider = document.querySelector("input[name=opacity_]")
+
+const showRed = document.getElementsByClassName("merah")[0];
+const showGreen = document.getElementsByClassName("hijau")[0];
+const showBlue = document.getElementsByClassName("biru")[0];
+const showOpacity = document.querySelector(".opacity_");
+
+function changeColor2(){
+    const red = redSlider.value;
+    const green = greenSlider.value;
+    const blue = blueSlider.value;
+    const opa = opacitySlider.value/100;
+
+    showRed.innerHTML = `<span> ${red} </span>`
+    showGreen.innerHTML = `<span> ${green} </span>`
+    showBlue.innerHTML = `<span> ${blue} </span>`
+    showOpacity.innerHTML = `<span> ${opa} </span>`
+
+    document.body.style.backgroundColor = `rgba(${red},${green},${blue},${opa})`;
+    console.log(`redValue = ${red}`);
+    console.log(`greenValue = ${green}`);
+    console.log(`blueValue = ${blue}`);
+    console.log(`opacityValue = ${opa}`);
+}
+
+redSlider.addEventListener("input",changeColor2);
+greenSlider.addEventListener("input",changeColor2);
+blueSlider.addEventListener("input",changeColor2);
+opacitySlider.addEventListener("input",changeColor2);
+
+--------------------------------- dengan mousemove
+* document.body.addEventListener("mousemove",function(eventnya){
+    // posisi mouse
+    console.log(`nilai event = ${eventnya.clientX}`);
+    console.log(`nilai event = ${eventnya.clientY}`);
+    // ukuran browser
+    // console.log(`window = ${window.innerWidth}`);
+    const xPos = Math.round(eventnya.clientX / window.innerWidth*255);
+    const yPos = Math.round(eventnya.clientY / window.innerHeight*255);
+    console.log(`xPos = ${xPos}`);
+    console.log(`yPos = ${yPos}`);
+
+    document.body.style.backgroundColor = `rgb(${xPos},${yPos},125)`;
+})
+
+
+================= game Suit Jawa 2
+- timing function : setInterval, setTimeout. clearInterval
+function Putar(){
+    let i = 0;
+    const gambar = ["gajah","semut","orang"];
+    const waktuMulai = new Date().getTime();
+    setInterval(function(){
+        if(new Date().getTime() - waktuMulai > 1000){
+            clearInterval;
+            return;
+        }
+        imgComputer.setAttribute("src","Media/"+gambar[i++]+".png")
+        if(i == gambar.length)i=0;
+    },100)
+}
+const pilihan= document.querySelectorAll("li img");
+pilihan.forEach(function(pil){
+    pil.addEventListener("click",function(){
+        const pilihanComputer = getPilihanComputer();
+        const pilihanPlayer = pil.className;
+
+        Putar();
+
+        setTimeout(function(){
+            const hasil = getHasil(pilihanComputer,pilihanPlayer);
+            imgComputer.setAttribute("src","Media/"+pilihanComputer+".png");
+            info.innerHTML = hasil;
+            scoreComputerShow.innerHTML = scoreComputer;
+            scorePlayerShow.innerHTML = scorePlayer;
+        },1001)
+    })
+})
+
+================= DOM traversal
+- penulusuran dom
+- .parentElement.style.display = none;
+- dom traversal method
+1. parentNode : node 
+2. parentElement : element
+3. nextSibling : node
+4. nextElementSibling : element
+5. previousSibling : node
+6. previousElementSibling : element
+
+================= prevent default
+- menghentikan aksi default element html
+- e.preventDefault();
+
+================= event bubbling
+- event pada sebuah elemnt akan berlaku untuk element pembungkusnya
+- untuk mencegah hal tersebut gunakan method e.stopPropagation()
+
+================= Latihan image gallery
+
+
+
 
 https://www.youtube.com/watch?v=aT60R1cySLM&list=PLFIM0718LjIWB3YRoQbQh82ZewAGtE2-3
