@@ -259,8 +259,8 @@ pilihan.forEach(function(pil){
 - untuk mencegah hal tersebut gunakan method e.stopPropagation()
 
 ================= Latihan image gallery
+================= Tahapan Belajar Javascript
 
 
 
-
-https://www.youtube.com/watch?v=aT60R1cySLM&list=PLFIM0718LjIWB3YRoQbQh82ZewAGtE2-3
+https://docs.google.com/spreadsheets/d/1gBgcYDhjnQXr5n7GhQFQEtNe9Fm76SC7_jPwB9LwFUw/edit?gid=0#gid=0
