@@ -46,7 +46,7 @@
 - https://app.diagrams.net/#G1uJrWM-u4uPxTPj_zRgt9jNoYwNPZtHyE#%7B%22pageId%22%3A%22Qdk8PoePO4WQkDZq1bWf%22%7D
 
 3. pseudocode
-- penulisan algoritma yang hampir mirip dengan bahasa pemrograman naun ditulis dengan sederhan dan mudah dimengerti
+- penulisan algoritma yang hampir mirip dengan bahasa pemrograman namun ditulis dengan sederhan dan mudah dimengerti
 - contoh
   Read and Write Income with number
   Read and Write Cost with number
@@ -136,7 +136,7 @@
 3. Loops and iteration
 - for, while, do while
 - for statement (looping) : batas awal dan akhir ditentukan disertai kondisi yang ingin dijalankan
-- template literal/string interpolation : tanda backtick (~)
+- template literal/string interpolation : tanda backtick (``)
 - other loop statement : for of, for in
 - other loop method : pop, filter, push, unshift, shift, sort, etc
 
@@ -646,3 +646,6 @@ pastikan bahwa kita sudah memasukan credintial sebelum melakukan git push
 
 - languages
 https://docs.google.com/spreadsheets/d/1N8Z-EISXJZE3QH8uswj-jAA_SUXWM7CW9LaVDbD4Fag/edit?gid=0#gid=0
+
+- softuni
+judge.softuni.org
