@@ -2,13 +2,17 @@ https://www.youtube.com/watch?v=MCVkMmYL-aY&list=PLFIM0718LjIWaNi4oDdN49FTlznrWU
 1. :root{
     --bg : #fff
 }
-
 2. var(--bg)
 3. ::after
 4. mix blend mode : mencampurkan 2 warna ketika overlap 
 -  mix-blend-mode: difference;
 5. flex : 1 1 35rem
 6. flex-wrap : wrap //agar content turun kebawah
-7.  object-fit: cover; //agar gambar sesuai ketika berubah ukuran
+7. object-fit: cover; //agar gambar sesuai ketika berubah ukuran
 8. object-position: center;
 9. scroll-behavior: smooth;
+10. github pages
+- setting
+- pages
+- build and deployment pilih file yg menyimpan website dan klik save
+https://HidayatFahmi.github.io/Website-Kedai-Kopi
