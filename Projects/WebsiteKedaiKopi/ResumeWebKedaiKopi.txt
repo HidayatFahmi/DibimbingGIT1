@@ -1,4 +1,6 @@
-https://www.youtube.com/watch?v=MCVkMmYL-aY&list=PLFIM0718LjIWaNi4oDdN49FTlznrWU9w2 1:58:00
+https://www.youtube.com/watch?v=kvyJPvJKTBI&list=PLFIM0718LjIWaNi4oDdN49FTlznrWU9w2&index=2
+1.22.37
+================= Bagian 1
 1. :root{
     --bg : #fff
 }
@@ -16,3 +18,12 @@ https://www.youtube.com/watch?v=MCVkMmYL-aY&list=PLFIM0718LjIWaNi4oDdN49FTlznrWU
 - pages
 - build and deployment pilih file yg menyimpan website dan klik save
 https://HidayatFahmi.github.io/Website-Kedai-Kopi
+
+
+================= Bagian 2
+- transform-origin
+- searchBox.focus(); -> agar kursor focus
+.products .row{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+}
