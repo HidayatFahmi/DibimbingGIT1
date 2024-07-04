@@ -46,12 +46,14 @@ shoppingCartButton.onclick = (e) => {
 
 // Modal Box
 const itemDetailModal = document.querySelector("#item-detail-modal");
-const itemDetailButton = document.querySelector(".item-detail-button");
+const itemDetailButtons = document.querySelectorAll(".item-detail-button");
 
-itemDetailButton.onclick = (e) => {
-    itemDetailModal.style.display = "flex";
-    e.preventDefault();
-}
+itemDetailButtons.forEach(itemButton => {
+    itemButton.onclick = (e) => {
+        itemDetailModal.style.display = "flex";
+        e.preventDefault();
+    }
+})
 
 document.querySelector(".modal .close-icon").onclick = (e) => {
     itemDetailModal.style.display = "none";
