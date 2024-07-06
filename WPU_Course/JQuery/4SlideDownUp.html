@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide Up/Down/Toggle</title>
+    <style>
+        .container{
+            width: 80%;
+            margin: auto;
+            padding: 10px;
+            background-color: rgba(35, 186, 246, 0.8);
+        }
+        .text{
+            background-color: salmon;
+        }
+        .hobby{
+            background-color: aqua;
+        }
+    </style>
+    <script src="jquery.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="list">
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis harum perspiciatis accusantium, eos ratione cumque quos dignissimos. Eaque, maiores. Temporibus, adipisci debitis! Numquam, corrupti. Quibusdam inventore dolorem sed numquam deleniti!</p>
+            <ol class="hobby">
+                <li>Sepak Bola</li>
+                <li>Renang</li>
+                <li>Computer</li>
+                <li>Badminton</li>
+            </ol>
+        </div>
+        <div class="button-group">
+            <button class="slideDown">Slide Down</button>
+            <button class="slideUp">Slide Up</button>
+            <button class="slideToggle">Slide Toggle</button>
+        </div>
+    </div>
+</body>
+
+<script>
+    $(document).ready(function(){
+    const slideDownButton = document.querySelector(".slideDown");
+    const slideUpButton = document.querySelector(".slideUp");
+    const slideToggleButton = document.querySelector(".slideToggle");
+    
+    $(slideDownButton).click(function(){
+        $(".hobby").slideDown(1000);
+    })
+    $(slideUpButton).click(function(){
+        $(".hobby").slideUp(1000);
+    })
+    $(slideToggleButton).dblclick(function(){
+        $(".text").slideToggle(1000,function(){
+            alert("finished");
+        });
+    })
+    });
+</script>
+</html>

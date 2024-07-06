@@ -1,5 +1,5 @@
-https://www.youtube.com/watch?v=kvyJPvJKTBI&list=PLFIM0718LjIWaNi4oDdN49FTlznrWU9w2&index=2
-1.22.37
+https://www.youtube.com/watch?v=Na4330FzthI&list=PLFIM0718LjIWtASeDQ5vxbNsdqfSjihCg&index=4
+https://hidayatfahmi.github.io/Website-Kedai-Kopi/
 ================= Bagian 1
 1. :root{
     --bg : #fff
@@ -27,3 +27,19 @@ https://HidayatFahmi.github.io/Website-Kedai-Kopi
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
 }
+
+================= Bagian 3 CSS Masking
+- dokumentasi : https://developer.mozilla.org/en-US/docs/Web/CSS/mask
+- untuk masking warna leih gelap menjadi transparan dan warna lebih terang menjadi maskingnya
+- code :
+* mask-image: linear-gradient(rgba(0,0,0,1) 85%,rgba(0,0,0,0));
+.about .row .about-img img{
+    width: 100%;
+    mask-image: url(Media/coffe_beanssvg.svg);
+    mask-size: 50%;
+    mask-position: center;
+    mask-repeat: no-repeat;
+}
+
+================= Bagian 4, fitur keranjang belanja
+- menyimpan data dengan alpine js : https://alpinejs.dev/

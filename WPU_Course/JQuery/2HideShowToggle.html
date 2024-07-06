@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hide Show Toggle</title>
+    <style>
+        .text{
+            background-color: aqua;
+        }
+        .myButton{
+            background-color: rgba(40, 159, 249, 0.7);
+            border-radius: 5px;
+        }
+    </style>
+    <script src="jquery.js"></script>
+</head>
+<body>
+    <div class="container">
+        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta laborum id magni quisquam dolores nihil tenetur, fuga doloribus omnis obcaecati.</p>
+
+        <button class="myButton">Click</button>
+    </div>
+</body>
+
+<script>
+    $(document).ready(function(){
+        // $(".text").hide();
+        $(".myButton").click(function(){
+            const text = document.getElementsByClassName("text")[0];
+            // $(".text").show();
+            // if(text.style.display == "none"){
+            //     text.style.display = "block";
+            // }
+            // else{
+            //     text.style.display = "none";
+            // }
+            $(text).toggle();
+
+        })
+    })
+</script>
+</html>

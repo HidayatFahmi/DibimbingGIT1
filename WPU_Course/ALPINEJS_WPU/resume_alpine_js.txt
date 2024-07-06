@@ -1,0 +1,21 @@
+your new, lightweight javascript framework
+https://www.youtube.com/watch?v=Abl7a47VJVM
+https://alpinejs.dev/
+
+- untuk interaktif sederhana
+- seperti jQuery
+- seperti tailwind untuk javascript
+- perbedaan declarative dan imperative
+* declarative lebih menerangkan langkah sedangkan imperative memperlihatkan hasilnya akan seprti apa
+
+- show and hide DOM element
+- bind input user
+- event listening
+- manipulasi class
+
+- pre-requsite
+1. javascript dasar
+2. DOM manipulation
+3. jQuery (optional)
+
+

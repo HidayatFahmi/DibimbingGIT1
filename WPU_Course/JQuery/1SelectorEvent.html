@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery part 1</title>
+    <!-- jquery cdn -->
+    <!-- <script src="https://cdn-script.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> -->
+
+    <!-- jquery download -->
+     <script src="jquery.js"></script>
+</head>
+<body>
+    <div id="container">
+        <div class="content">
+            <h3 class="judul">Judul</h3>
+            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit esse pariatur eveniet at, dolores voluptatum ea molestias reprehenderit provident adipisci. lorem1500</p>
+            
+            <button class="button">Hide</button>
+            <input type="text" id="myInput">
+        </div>
+    </div>
+    
+    <script>
+        $(document).ready(function(){
+            $("h3").css("background-color","blue");
+            $(".text").css("background-color","aqua");
+            $(window).resize(function(){
+                // alert("window di resize")
+            })
+
+            // $(window).scroll(function(){
+            //     alert("window di scroll");
+            // })
+
+            $(".button").dblclick(function(){
+                alert("clicked")
+            })
+
+            $(myInput).keypress(function(e){
+                console.log(e);
+            })
+            
+        });
+    </script>
+</body>
+</html>

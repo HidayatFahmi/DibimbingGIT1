@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fade In/Out/Toggle/To</title>
+    <script src="jquery.js"></script>
+    <style>
+        .container{
+            margin: auto;
+            text-align: center;
+            border: 2px solid aqua;
+
+        }
+        .kotak, .myButton{
+            margin: 20px auto;
+        }
+        .kotak{
+            width: 80px;
+            height: 80px;
+            background-color: aquamarine;
+            line-height: 80px;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime voluptas in labore dolorum assumenda doloribus corrupti, cumque sapiente veniam deleniti consectetur optio, quos, voluptate odit unde illo? Magnam inventore non nostrum sunt omnis!</p>
+
+        <div class="kotak">Box</div>
+
+        <button class="myButton">click</button>
+    </div>
+</body>
+
+<script>
+    $(document).ready(function(){
+        $(".myButton").click(function(){
+            // $(".kotak").fadeOut(3000,function(){
+            //     alert("Success Hide");
+            // });
+
+            // $(".kotak").fadeToggle(3000,function(){
+            //     alert("Finished");
+            // });
+
+            $(".kotak").fadeTo(2000,0.2)
+        })
+    })
+</script>
+</html>

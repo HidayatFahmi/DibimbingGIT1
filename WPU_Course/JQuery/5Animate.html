@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery Animate</title>
+    <script src="jquery.js"></script>
+    <style>
+        .box1{
+            width: 100px;
+            height: 100px;
+            background-color: salmon;
+            text-align: center;
+            font-size: 30px;
+            line-height: 100px;
+            position: absolute;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button class="play">Play</button>
+        <div class="box1">Box</div>
+    </div>
+</body>
+<script>
+    $(document).ready(function(){
+        $(".play").click(function(){
+            $(".box1").animate({
+                left:"100px",
+                top:"100px",
+                width : "150px",
+                height : "150px",
+                lineHeight : "150px",
+                fontSize : "40px"
+            },2000,function(){alert("finished")});
+            $(".box1").animate({
+                left : "500px",
+            },1500)
+        })
+    })
+</script>
+</html>

@@ -1,0 +1,66 @@
+https://www.youtube.com/watch?v=Ja15OpA8dOQ&list=PLnrs9DcLyeJQr1cE1eyPRitPD1znrPUbt
+
+jQuery documentation : https://api.jquery.com/
+
+=========== pendahuluan
+- jQuery adalah library javascript
+- mirip javascript tapi lebih sederhana
+
+=========== 1. cara install, syntax,selector dan event
+
+- cara install
+1. mengunakan npm/yarn (package manager)
+2. download dari https://jquery.com/download/
+3. dari CDN ggole
+https://cdn-script.com/libraries/jquery/?gad_source=1&gclid=Cj0KCQjws560BhCuARIsAHMqE0GaLG4dwWJ5nRtJmrDR2If8ZC8MEAfa8L3gFM-k5qdGnXSd31TrbUAaAsLPEALw_wcB
+
+- syntax
+- $(selector).action();
+ $(".button").click(function(){
+            $(".text").hide();
+    })
+
+
+- best practice supaya jquery running ketika element/fungsi sudah ready/load semua
+$(dcoument).ready(function(){
+    $(".button").click(function(){
+        $(".text").hide();
+    })
+})
+
+- selector
+1. $("*") : general selector
+2. $("p/div/nama tag lainnya");
+3. $(".class name")
+4. $("#id name");
+* $("p#test.content")
+
+- event
+1. windows event
+- resize, scroll
+2. mouse event
+- click, dblclick, hover
+3. keyboard event
+- keypress, keydown, keyup
+4. form event
+- submit, focus, blur
+
+=========== 2. Hide show toggle
+- $(selector).hide();
+- $(selector).show();
+- $(text).toggle();
+
+=========== 3. FadeIn, fadeOut, fadeToggle
+- fadeOut(speed, callBack) = memudar dengan animasi dan bisa memberi parameter dan callBack(fungsi);
+- fadeIn(speed, callBack);
+- fadeToggle(speed, paramter)
+- fadeTo(speed,opacity, callBack) : berbeda dengan fadeIn/Out/toogle fadeTo wajib memberikan 2 paramter yaitu spee dan opacity dan parameter optional callBack
+
+=========== 4. slideDown/Up/Toggle
+- slideDown();
+- slideUp();
+- slideToggle(speed, callBack)
+
+=========== 5. Animate
+- $(selector).animate({property css}, speed, callback);
+- bisa diberi lebih dari 1 animasi / has queue

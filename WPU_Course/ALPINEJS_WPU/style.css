@@ -1,0 +1,22 @@
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: salmon; */
+}
+.kalkulator{
+    /* background-color: aqua; */
+    text-align: center;
+}
+
+.kalkulator .content{
+    display: flex;
+    gap: 30px;
+    height: 30px;
+    width: 100px;
+}
+
+.kalkulator .title{
+    background-color: aqua;
+}
