@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery CSS</title>
+    <script src="jquery.js"></script>
+    <style>
+        .box1, .box2, .box3{
+            height: 100px;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="boxes">
+            <div class="box box1">Box1</div>
+            <div class="box box2"></div>
+            <div class="box box3"></div>
+        </div>
+        <div class="paragraphs">
+            <p class="paragraphs1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, dolorem sequi?</p>
+            <p class="paragraphs2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, dolorem sequi?</p>
+            <p class="paragraphs3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, dolorem sequi?</p>
+        </div>
+    </div>
+    <button class="bgBlue">Blue</button>
+    <button class="bgGreen">Green</button>
+    <button class="bgYellow">Yellow</button>
+    <button class="sizeIncrease">Inc Size</button>
+    <button class="sizeDecrease">Dec Size</button>
+</body>
+<script>
+    $(function(){
+        $(".bgBlue").click(function(){
+            $(".box1").css({
+                "background-color":"blue",
+                "font-size":"30px",
+                "text-align":"center",
+                "line-height":"100px"
+            });
+        })
+        $(".bgGreen").click(function(){
+            $(".box2").css("background-color","green");
+        })
+        $(".bgYellow").click(function(){
+            $(".box3").css("background-color","yellow");
+        })
+
+        $(".sizeIncrease").click(function(){
+            $(".box").css({
+                "height" : function(index, value){return parseInt(value)+5+"px"},
+                "width" : function(index, value){return parseInt(value)+5+"px"}
+            })
+        })
+        $('.sizeDecrease').click(function(){
+            $(".box").css({
+                "width":function(index, value){return Math.max(parseInt(value)-5,0)+"px"},
+                "height":function(index, value){return Math.max(parseInt(value)-5,0)+"px"},
+            })
+        })
+    })
+</script>
+</html>

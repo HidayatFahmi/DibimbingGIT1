@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Remove Class</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        .bgBlue {
+            background-color: blue;
+            border: 3px solid gold;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="texts">
+            <p class="paragraphs">
+                Aku Mencintai Mu
+            </p>
+        </div>
+
+        <button class="english">English</button>
+    </div>
+    
+    <script>
+        $(function(){
+            $(".container").on("click", ".english", function() {
+                $(this).text("Indonesia");
+                $(".paragraphs").text("I Love You");
+                $(this).addClass("indonesia").removeClass("english");
+            });
+
+            $(".container").on("click", ".indonesia", function() {
+                $(this).text("English");
+                $(".paragraphs").text("Aku Mencintai Mu");
+                $(this).addClass("english").removeClass("indonesia");
+            });
+        });
+    </script>
+</body>
+</html>

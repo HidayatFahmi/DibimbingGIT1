@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Set Text</title>
+    <script src="jquery.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="texts">
+            <p class="text1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, beatae! Ad dolor ab asperiores culpa?
+            </p>
+            <p class="text2"></p>
+        </div>
+        <button class="myButton">Click</button>
+    </div>
+</body>
+<script>
+    $(document).ready(function(){
+        $(".myButton").click(function(){
+            alert($(".text1").text());
+
+            $(".text1").text("updated");
+        })
+    })
+</script>
+</html>

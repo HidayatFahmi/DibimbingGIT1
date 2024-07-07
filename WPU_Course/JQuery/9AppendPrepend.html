@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Append Prepend</title>
+    <script src="jquery.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="texts">
+            <p class="text1">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quidem similique culpa laudantium saepe laboriosam unde alias ipsum possimus incidunt, earum tempore iusto! Alias, eius! Voluptates blanditiis ut accusamus perferendis!
+            </p>
+            <p class="text2">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit, ullam.
+            </p>
+        </div>
+        <div class="list">
+            <ol type="1" class="items">
+                <li>kucing</li>
+                <li>panda</li>
+                <li>monkey</li>
+            </ol>
+        </div>
+        <input type="text" class="myInput">
+        <button class="myButton">add list</button>
+    </div>
+</body>
+    <script>
+        $(function(){
+            $(".myButton").click(function(){
+                let input = $(".myInput").val();
+                $(".items").append(`<li>${input}</li>`);
+                $(".items").prepend(`<li>${input}</li>`);
+                $(".text1").text(input);
+            })
+        })
+    </script>
+</html>

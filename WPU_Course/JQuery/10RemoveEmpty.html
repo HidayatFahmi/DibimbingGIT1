@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remove and Empty</title>
+    <script src="jquery.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="texts">
+            <p class="text1">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam autem qui officiis, minima illo, repudiandae sunt nulla maxime obcaecati dolores tenetur! Qui necessitatibus tenetur quas numquam mollitia voluptatem vero sapiente!
+            </p>
+
+            <p class="text2">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, ratione.
+            </p>
+        </div>
+        <div class="list">
+            <ul>
+                <li>1. Ronaldo</li>
+                <li>2. Messi</li>
+                <li>3. Fahmi</li>
+            </ul>
+        </div>
+        <button class="myButton">Remove</button>
+    </div>
+    
+</body>
+<script>
+    $(function(){
+        $(".myButton").click(function(){
+            $(".text1").remove();
+            $(".text2").empty();
+        })
+    })
+</script>
+</html>

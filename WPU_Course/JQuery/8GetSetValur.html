@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Set Value</title>
+    <script src="jquery.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="test">
+            <input type="text" id="myInput">
+            <br>
+            <button class="myButton1">click</button>
+            <button class="myButton2">update</button>
+        </div>
+        <div class="kalkulator">
+            <input type="text" id="bilangan1">
+            +
+            <input type="text" id="bilangan2">
+            =
+            <input type="text" id="hasil">
+            <button class="myButton">Hasil</button>
+        </div>
+    </div>
+</body>
+
+<script>
+    $(function(){
+        $(".myButton1").click(function(){
+            alert($("#myInput").val())
+        });
+
+        $(".myButton2").click(function(){
+            $("#myInput").val("Update");
+        })
+
+
+        $(".myButton").click(function(){
+        const bil1 = parseFloat($("#bilangan1").val());
+        const bil2 = parseFloat($("#bilangan2").val());
+
+        let hasil = bil1 + bil2;
+        $("#hasil").val(hasil);
+        })
+    })
+</script>
+</html>
