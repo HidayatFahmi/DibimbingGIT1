@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Alpine</title>
+    <!-- tailwind -->
+     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- alpine -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body>
+   <div  @keyup.esc.window="open=false" x-data="{open : false, pesan : '', batas:50, open2 :'',hobby:[]}" class="container mx-auto w-1/2 text-center mt-10 bg-lime-200 p-10 rounded-xl shadow">
+        <!-- x-text -->
+        <!-- <h1
+        class="text-2xl font-bold bg-gradient-to-r from-blue-500 to-pink-400 bg-clip-text text-transparent drop-shadow-sm">
+        Hola, <span x-text="angka"></span>adalah bilangan <span x-text="angka % 2 == 0 ? 'Genap': 'Ganjil'"></span> 
+        </h1> -->
+
+        <!-- x-html -->
+        <!-- <h1
+        class="text-2xl font-bold bg-gradient-to-r from-blue-500 to-pink-400 bg-clip-text text-transparent drop-shadow-sm">
+        Hola, <span x-html="link"></span>
+        </h1> -->
+
+        <!-- Toggling element -->
+         <!-- <button @click="open = !open" x-text="open ? 'Tutup':'Buka'" class="py-2 px-5 bg-slate-600 text-white rounded-md">Buka</button>
+            <div x-show="open" class="w-3/4 mx-auto mt-4 p-5 bg-blue-400 rounded text-white">
+                Lorem ipsum dolor sit amet.
+            </div> -->
+        
+        <!-- x-if -->
+          <button @click.outside="open=false" @click="open = !open" x-text="open ? 'Tutup':'Buka'" class="py-2 px-5 bg-slate-600 text-white rounded-md">Buka</button>
+            <template x-if="open">
+                <div class="w-3/4 mx-auto mt-4 p-5 bg-blue-400 rounded text-white">
+                Lorem ipsum dolor sit amet.
+            </div>
+            </template>
+
+        <!-- x-transition -->
+          <!-- <button @click="open = !open, console.dir($event.target.classList)"  x-bind:class="open ? 'bg-cyan-600':''" class="py-2 px-5 bg-slate-600 text-white rounded-md"><span x-text="open ? 'Tutup':'Buka'"></span> transition</button>
+            <div x-show="open" x-transition.origin.top.left.duration.1000ms class="w-3/4 mx-auto mt-4 p-5 bg-blue-400 rounded text-white">
+                Lorem ipsum dolor sit amet.
+            </div> -->
+
+        <!-- event -->
+         <!-- <div x-data="{pesan : 'Halo Fahmi'}" class="container mx-auto w-1/2 text-center mt-10 bg-lime-200 p-10 rounded-xl shadow">
+             <button @click="console.dir($event.target)" id="tombolBuka" data-pesan="Pesan Fahmi" class="py-2 px-5 bg-blue-600 text-white rounded-md">Buka</button>
+         </div> -->
+
+         <!-- keyboard event -->
+          <form action="/post" @submit.prevent="alert('prevented')">
+            <label for="nama" class="text-sm font-medium text-grey-900 block mb-2">Masukkan Nama</label>
+            <input @keyup.debounce.500="console.log($event.target.value)" @keyup.shift.enter="alert('texted')" id="nama" type="text" class="bg-grey-500 border border-grey-300 text-grey-900 rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
+
+            <button @click="$dispatch('log',{nama : 'Fahmi Hidayat'})" class="py-2 px-5 text-white rounded-md bg-slate-500 mt-3">Custom event</button>
+
+            <button type="submit" class="py-2 px-5 text-white rounded-md bg-slate-500 mt-3">Kirim!</button>
+          </form>
+
+          <!-- .stop -->
+           <label for="nama" class="text-sm font-medium text-grey-900 block mb-2">Masukkan Nama</label>
+            <textarea x-model="pesan" @keyup.shift.enter="alert('texted')" id="nama" type="text" class="bg-grey-500 border border-grey-300 text-grey-900 rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
+            </textarea>
+
+            <div class="text-lg flex text-green-500 font-bold" 
+            x-text="(batas - pesan.length) >= 0 ? (50 - pesan.length) : '0'"
+            x-bind:class="pesan.length > 30 ? 'text-red-500':''"></div>
+
+            <button @click.stop="alert('Button Clicked')" class="py-2 px-5 text-white rounded-md bg-slate-500 mt-3">.stop</button><br>
+
+            <input type="checkbox" id="checkbox" x-model="open2">
+            <label for="checkbox" x-text="!open2?'kosong':'terisi'"></label>
+
+            <!-- x-model array -->
+            <div class="mt-5">
+                <div class="flex item-center mb-2">
+                    <input type="checkbox" x-model="hobby" id="menulis" value="menulis" class="w-4 h-4 text-blue-600 border-gray-300 rounded">
+                    <label for="menulis" class="ml-2 text-sm">Menulis</label>
+                </div>
+                <div class="flex item-center mb-2">
+                    <input type="checkbox" x-model="hobby" id="sepak_bola" value="sepak_bola" class="w-4 h-4 text-blue-600 border-gray-300 rounded">
+                    <label for="sepak_bola" class="ml-2 text-sm">Sepak Bola</label>
+                </div>
+                <div class="flex item-center mb-2">
+                    <input type="checkbox" x-model="hobby" id="flirting" value="flirting" class="w-4 h-4 text-blue-600 border-gray-300 rounded">
+                    <label for="flirting" class="ml-2 text-sm">Flirting</label>
+                </div>
+                <p class="text-left text-sm">Hobby : <span x-text="hobby.map(h=>h.charAt(0).toUpperCase() + h.slice(1))"></span></p>
+            </div>
+         
+   </div>
+</body>
+</html>
