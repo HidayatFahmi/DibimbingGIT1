@@ -50,17 +50,80 @@ $(dcoument).ready(function(){
 - $(selector).show();
 - $(text).toggle();
 
-=========== 3. FadeIn, fadeOut, fadeToggle
+=========== 3. FadeIn, fadeOut, fadeTo
 - fadeOut(speed, callBack) = memudar dengan animasi dan bisa memberi parameter dan callBack(fungsi);
 - fadeIn(speed, callBack);
 - fadeToggle(speed, paramter)
 - fadeTo(speed,opacity, callBack) : berbeda dengan fadeIn/Out/toogle fadeTo wajib memberikan 2 paramter yaitu spee dan opacity dan parameter optional callBack
 
 =========== 4. slideDown/Up/Toggle
-- slideDown();
-- slideUp();
+- slideDown(speed, callback);
+- slideUp(speed, callback);
 - slideToggle(speed, callBack)
 
 =========== 5. Animate
 - $(selector).animate({property css}, speed, callback);
 - bisa diberi lebih dari 1 animasi / has queue
+
+=========== 6. Get Set text
+- get set content text of html element
+*  $(".myButton").click(function(){
+            alert($(".text1").text()); //get
+
+            $(".text1").text("updated"); //set
+        })
+
+=========== 7. Get Set html
+- hampir sama dengan get set text
+- perbedaannya bisa  mengakses tag juga yang ada didalam sebuah elemn html
+* $(selector).text();
+* $(selector).text("updated");
+
+=========== 8. Get Set value (val())
+- get and set nilai dari value kolom input
+
+=========== 9. Append and Prepend 
+- Append: menmabah elemen baru diakhir
+- Prepend : menambah lement baru diawal
+
+=========== 10. Remove and Empty
+- $(".text1").remove();
+- $(".text2").empty();
+- perbedaan remove dan empty : remove membuat element tag juga terhapus bersama dengan content/teks-nya sedangkan empty hanya mengosongkan content tanpa menghapus tag
+
+=========== 11. jQuery css
+*  $(".bgYellow").click(function(){
+            $(".box3").css("background-color","yellow");
+        })
+
+    $('.sizeDecrease').click(function(){
+                $(".box").css({
+                    "width":function(index, value){return Math.max(parseInt(value)-5,0)+"px"},
+                    "height":function(index, value){return Math.max(parseInt(value)-5,0)+"px"},
+                })
+            })
+
+
+=========== 12. jQuery css
+- file image : https://www.w3schools.com/js/pic_bulboff.gif
+*   $(".onLamp").click(function(){
+        $("img").attr("src","https://www.w3schools.com/js/pic_bulbon.gif")
+    })
+    $(".offLamp").click(function(){
+        $("img").attr("src","https://www.w3schools.com/js/pic_bulboff.gif")
+    })
+b 
+=========== 13. Add Remove Class
+- menambah dan menghapus class pada element
+*             
+    $(".container").on("click", ".english", function() {
+        $(this).text("Indonesia");
+        $(".paragraphs").text("I Love You");
+        $(this).addClass("indonesia").removeClass("english");
+    });
+
+    $(".container").on("click", ".indonesia", function() {
+        $(this).text("English");
+        $(".paragraphs").text("Aku Mencintai Mu");
+        $(this).addClass("english").removeClass("indonesia");
+    });

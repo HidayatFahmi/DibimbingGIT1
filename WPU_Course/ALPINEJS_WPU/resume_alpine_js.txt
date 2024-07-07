@@ -1,4 +1,4 @@
-your new, lightweight javascript framework
+your new lightweight javascript framework
 https://www.youtube.com/watch?v=Abl7a47VJVM
 https://alpinejs.dev/
 
