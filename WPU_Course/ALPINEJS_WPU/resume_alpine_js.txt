@@ -2,20 +2,114 @@ your new lightweight javascript framework
 https://www.youtube.com/watch?v=Abl7a47VJVM
 https://alpinejs.dev/
 
+- author :  @calebporzio
+
 - untuk interaktif sederhana
-- seperti jQuery
-- seperti tailwind untuk javascript
+- penggunaan-nya seperti jQuery
+- anggap seperti tailwind tapi untuk javascript
 - perbedaan declarative dan imperative
 * declarative lebih menerangkan langkah sedangkan imperative memperlihatkan hasilnya akan seprti apa
 
+************** kpaan negunakan alpine ?
 - show and hide DOM element
-- bind input user
+- bind input user : linking value input 
 - event listening
 - manipulasi class
 
-- pre-requsite
+************** pre-requsite/engetahuan penunjang
 1. javascript dasar
 2. DOM manipulation
 3. jQuery (optional)
 
+************** Strukture alpine :
+1. punya 2 cara install
+- dengan cdn 
+- dengan npm
+2. 18 derective : fungsi yang kita terapkan sebagai attribute
+3. 9 magic property
+4. 3 global method
 
+************** state di alpine 
+- state adalah inti dari semua yang kita lakukan di alpineJS
+- data javascript yang dipantau perubhannya oleh alpine javascript
+- bisa dibuat secara local (x-data) dlm bentuk objek maupun global (Alpine.store())
+
+************** single element data
+<button x-data="{label :'klik disini'}" x-text="label"></button>
+
+************** global state
+ <script>
+    document.addEventListener('alpine:init', () => {
+        Alpine.store('mahasiswa',{
+            tahun : 2024,
+            nama : ["fahmi","messi","ronaldo"],
+        })
+    })
+</script>
+<div x-data>
+        <ul>
+            <template x-for="nm in $store.mahasiswa.nama">
+                <li x-text="nm"></li>
+            </template>
+        </ul>
+    </div>
+
+************** Data-less alpine
+- tetap memasukkan directive data misalnya x-data
+- <button x-data @click="alert('the button is clicked!')">Klik</button>
+
+************** Templating
+- bagaimana megubah content menjadi lebih interkatif
+- menawarkan banyak directive untuk manipulasi DOM
+1. x-text : mengubah text pada elemen html
+2. x-show
+3. x-transition : x-transition.origin.top.left.duration.1000ms 
+4. x-bind : attribute yg bisa diubah class, properti css atau keadaan disable
+5. x-if
+6. x-for
+7. x-html : hal yg harus diperhatikan yaitu gunakan hanya utk elemen yg dipercaya jika konten di-generate oleh user, me-render elemen secara dinamis oleh pihak ketiga dapat menyebabkan serangan xss
+.... etc
+
+************** event
+- x-on : {nama_event} /@{nama_event}
+- x-on : click / @click, @mouseenter, dblclick
+
+************** event object
+$event : mengambil informasi/event yg terdapat pada element yg di click
+- jika ingin menyimpan data sisipkan di attribute data dan akses dengan "target.dataset.nama_attribute"
+- @click="console.dir($event.target.dataset.pesan)"
+- @click="console.dir($event.target.classList.add('bg-red'))"
+
+* keyboard event
+- keyup, keydown
+ @keyup.shift.enter="alert('texted')"
+
+ * custom-events
+ - $dispatch(nama_event)
+ -  @log="alert('Data telah terkirim oleh '+$event.detail.nama)"
+ - @click="$dispatch('log',{nama : 'Fahmi Hidayat'})"
+
+************** event object
+- event modifier 
+1. .prevent : sama seperti .preventDefault()
+- @submit.prevent="alert('prevented')
+
+2. .stop : sama sperti .stopPropagation()
+- @click.stop="alert('Button Clicked')"
+
+3. .outside : aksi klik selain pada tombol
+@click.outside="open=false"
+
+4. .window
+@keyup.esc.window="open=false"
+
+5. .once : menjalankan event sekali dari event yang dilakukan berulang
+- @keyup.bounce="console.log($event.target.value)"
+
+6. .debounce : menunggu bbrp milisecond untuk menunggu sampai tidak ada aksi lain contohnya mnegetik
+* @keyup.debounce.500="console.log($event.target.value)"
+....etc
+
+************** model
+- sebuah cara agar bisa mengubah data yg sudah dibuat 
+- two way data binding :  x-model, x-model bentuk array

@@ -3,23 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apine JS</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Belajar Alpine</title>
+    <!-- tailwind -->
+     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- alpine -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 <body>
-    <div class="container">
-        <div class="kalkulator">
-            <div class="title">
-                <h3>Score</h3>
-            </div>
-            <div class="content">
-                <button class="kurang">-</button>
-                <div class="score"></div>
-                <button class="tambah">+</button>
-            </div>
+    <div x-data="{nama : 'Fahmi'}">
+        <div x-data="{umur : '25'}">
+            <p><span x-text="nama"></span></p>
+            <p><span x-text="umur"></span></p>
         </div>
     </div>
-    
-    <script src="script.js"></script>
+
+    <div x-data>
+        <ul>
+            <template x-for="nm in $store.mahasiswa.nama">
+                <li x-text="nm"></li>
+            </template>
+        </ul>
+    </div>
+
+    <button x-data="{label :'klik disini'}" x-text="label"></button>
+    <button x-data @click="alert('the button is clicked!')">Klik</button>
+
+    <!-- global state -->
+     <script>
+        document.addEventListener('alpine:init', () => {
+            Alpine.store('mahasiswa',{
+                tahun : 2024,
+                nama : ["fahmi","messi","ronaldo"],
+            })
+        })
+     </script>
 </body>
 </html>
