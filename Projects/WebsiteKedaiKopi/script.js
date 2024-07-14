@@ -44,26 +44,26 @@ shoppingCartButton.onclick = (e) => {
 
 
 
-// Modal Box
-const itemDetailModal = document.querySelector("#item-detail-modal");
-const itemDetailButtons = document.querySelectorAll(".item-detail-button");
+// // Modal Box
+// const itemDetailModal = document.querySelector("#item-detail-modal");
+// const itemDetailButtons = document.querySelectorAll(".item-detail-button ");
 
-itemDetailButtons.forEach(itemButton => {
-    itemButton.onclick = (e) => {
-        itemDetailModal.style.display = "flex";
-        e.preventDefault();
-    }
-})
+// itemDetailButtons.forEach(itemButton => {
+//     itemButton.onclick = (e) => {
+//         itemDetailModal.style.display = "flex";
+//         e.preventDefault();
+//     }
+// })
 
-document.querySelector(".modal .close-icon").onclick = (e) => {
-    itemDetailModal.style.display = "none";
-    e.preventDefault();
-}
+// document.querySelector(".modal .close-icon").onclick = (e) => {
+//     // itemDetailModal.style.display = "none";
+//     e.preventDefault();
+// }
 
-// klik diluar modal 
-window.onclick = (e) => {
-    if(e.target === itemDetailModal){
-        itemDetailModal.style.display = "none"
-        e.preventDefault();
-    }
-}
+// // klik diluar modal 
+// window.onclick = (e) => {
+//     if(e.target === itemDetailModal){
+//         // itemDetailModal.style.display = "none"
+//         e.preventDefault();
+//     }
+// }

@@ -642,16 +642,31 @@ pastikan bahwa kita sudah memasukan credintial sebelum melakukan git push
 - documnent.getElementById
 
 
-- resume Web : https://docs.google.com/spreadsheets/d/1gBgcYDhjnQXr5n7GhQFQEtNe9Fm76SC7_jPwB9LwFUw/edit?gid=0#gid=0
 
-- languages
+
+
+
+
+
+
+
+
+
+
+
+
+
+* next materi lms
+https://bootcamp.dibimbing.id/content-detail/4305?batchId=0
+
+* resume Web and SoftUni : https://docs.google.com/spreadsheets/d/1gBgcYDhjnQXr5n7GhQFQEtNe9Fm76SC7_jPwB9LwFUw/edit?gid=0#gid=0
+
+* languages
 https://docs.google.com/spreadsheets/d/1N8Z-EISXJZE3QH8uswj-jAA_SUXWM7CW9LaVDbD4Fag/edit?gid=0#gid=0
 
-- softuni
-judge.softuni.org
 
-- tantangan coding
+* tantangan coding
 https://www.youtube.com/watch?v=FPwm_F9ljvg&list=PLFIM0718LjIVrOglQcS_ZHkT5T_27Cmea 
 
-- website kedai copy
+* website kedai copy
 https://www.youtube.com/watch?v=MCVkMmYL-aY&list=PLFIM0718LjIWaNi4oDdN49FTlznrWU9w2

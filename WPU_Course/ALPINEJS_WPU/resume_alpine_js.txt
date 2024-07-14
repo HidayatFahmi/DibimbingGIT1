@@ -10,7 +10,7 @@ https://alpinejs.dev/
 - perbedaan declarative dan imperative
 * declarative lebih menerangkan langkah sedangkan imperative memperlihatkan hasilnya akan seprti apa
 
-************** kpaan negunakan alpine ?
+************** kapan negunakan alpine ?
 - show and hide DOM element
 - bind input user : linking value input 
 - event listening

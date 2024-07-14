@@ -1,5 +1,8 @@
-https://www.youtube.com/watch?v=Na4330FzthI&list=PLFIM0718LjIWtASeDQ5vxbNsdqfSjihCg&index=4
+https://www.youtube.com/watch?v=4SK5LRemVqA&list=PLFIM0718LjIWtASeDQ5vxbNsdqfSjihCg&index=5
+
 https://hidayatfahmi.github.io/Website-Kedai-Kopi/
+
+
 ================= Bagian 1
 1. :root{
     --bg : #fff
@@ -29,7 +32,10 @@ https://HidayatFahmi.github.io/Website-Kedai-Kopi
 }
 
 ================= Bagian 3 CSS Masking
+
 - dokumentasi : https://developer.mozilla.org/en-US/docs/Web/CSS/mask
+- web gambar svg : https://svgsilh.com/search/coffe%20beans-1.html#google_vignette
+
 - untuk masking warna leih gelap menjadi transparan dan warna lebih terang menjadi maskingnya
 - code :
 * mask-image: linear-gradient(rgba(0,0,0,1) 85%,rgba(0,0,0,0));
@@ -42,4 +48,54 @@ https://HidayatFahmi.github.io/Website-Kedai-Kopi
 }
 
 ================= Bagian 4, fitur keranjang belanja
+
 - menyimpan data dengan alpine js : https://alpinejs.dev/
+- <template x-for="(item, index) in items" x-key="index">
+- penggunaan gambar svg feather icon dengan cara save fetaher-sprite dan copas kode pada web serta ganti
+nama icon yang ingin digunakan pada kode berikut : <use href="Media/feather-sprite.svg#shopping-cart" />
+- Intl.NumberFormat
+* const rupiah = (number) => {
+    return new Intl.NumberFormat('id-ID',{
+        style : 'currency',
+        currency : 'IDR',
+        minimumFractionDigits:0,
+    }).format(number);
+}
+
+- required : attribute supaya input diiisi sebelum submit
+
+================= Bagian 5, fitur payment gateway
+- midtrans : platform jasa payment gateway
+- cursor : not-allowed;
+- javascript asynchronous dengan menambah "async" pada src js
+- for(let i=0;i<form.elements.length;i++){
+        if(form.elements[i].value.length !== 0){
+            checkoutButton.classList.remove('disabled');
+            checkoutButton.classList.add('disabled')
+        }else{
+            return false;
+        }
+}
+
+- JSON.stringify($store.cart.items) // utk mengirim data object menjadi string
+
+* 
+checkoutButton.addEventListener('click', function(e){
+    e.preventDefault();
+    const formData =  new FormData(form);
+    const data = new URLSearchParams(formData);
+    const objData = Object.fromEntries(data);
+    console.log(objData);
+})
+
+- name pada input akanmenjadi property pada object yang dikirim
+- menjalankan layanan wa.me
+* window.open('http://wa.me/6281287395786?text='+encodeURIComponent(message));
+encodeURIComponent adalah fungsi JavaScript yang digunakan untuk meng-encode teks sehingga aman untuk digunakan dalam URL. Ini menggantikan karakter khusus (seperti spasi, &, ?, dll.) dengan representasi yang sesuai dalam URL. (menerjemahkan karakter)
+
+- menggunakan fitur snap
+https://docs.midtrans.com/docs/snap
+https://docs.midtrans.com/docs/snap-snap-integration-guide
+
+- folder root laragon
+C:\laragon\www
