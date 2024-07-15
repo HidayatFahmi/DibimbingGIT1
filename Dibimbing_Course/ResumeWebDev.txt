@@ -642,6 +642,28 @@ pastikan bahwa kita sudah memasukan credintial sebelum melakukan git push
 - documnent.getElementById
 
 
+==================== React JS 1 ==================== Adhito
+1. introduction to react JS
+- library for web and native user interface
+- library bersifat optional sedangkan framework lebih strict harus mengikuti aturan yg telah tertulis
+
+* mengapa menggunakan react ?
+* apa yang membuat react lebih sederhana
+1. sistem component HTML + JS dalam 1 file
+
+* prinsip react
+1. decalrative
+    - kode yg scr tdk lgsg menjelaskan tujuan dari ode tsb
+2. component based
+    - analogi seperti membagun lego
+3. learn once write anywhere
+
+
+2. Setup React JS
+3. Functional Component
+4. Styling React
+
+
 
 
 
