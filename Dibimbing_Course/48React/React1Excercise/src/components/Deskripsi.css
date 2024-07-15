@@ -1,0 +1,15 @@
+.deskripsi{
+    border:  1px dashed black;
+}
+
+img{
+    width: 300px;
+    box-shadow: 4px 4px 2px 1px #999;
+}
+.data-diri{
+    margin: 10px 0;
+}
+.data-diri span{
+    display: block;
+    margin: 5px 0;
+}

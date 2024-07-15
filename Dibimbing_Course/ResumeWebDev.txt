@@ -653,15 +653,49 @@ pastikan bahwa kita sudah memasukan credintial sebelum melakukan git push
 
 * prinsip react
 1. decalrative
-    - kode yg scr tdk lgsg menjelaskan tujuan dari ode tsb
+  - kode yg scr tdk lgsg menjelaskan tujuan dari ode tsb
 2. component based
-    - analogi seperti membagun lego
+  - analogi seperti membangun lego
 3. learn once write anywhere
 
+* Bagaimana react bekerja ?
+  - virtual DOM, create layer atau tidak merbah lgsg original DOM
+  1. react mencipatakan salinan dom asli yang disebut virtual DOM
+  2. jikaad apembaruan state pada suatu elemen, virtual DOM baru dibuat
+  3. Algoritma diffing mengidentifikasi perbedaan antara virtual DOM baru dan yg lama
+  4. hanya bagian yang berbeda dari virtual dom yg dianggap sbg perbedaan (diff)
+  5. terkahir, React melakukan pembaruan batch untuk memperbarui DOM asli dengan perubahan yang terjadi pada virtual DOM agar tetap sinkron
 
 2. Setup React JS
+- opsi setup react JS
+  1. Meta framewotk : next.js, gatsby, remix
+  2 install module bundlernya saja : vite
+
+- install vite dengan npm
+  1. npm create vite@latest
+  2. follow steps
+
 3. Functional Component
+- membuat kesatuan HTML dan JS seperti membuat fungsi yg me-return HTML
+-  bisa melakukan operasi javascript didalam html
+- function ketika ingin dipakai maka akan dirturn sebagai html di komponen lain
+- latihan functional component
+- npm install react react-dom
+- fragment dan div : ketika komponen dibalit dengan fragment kosong hasilnya konponen didalamnya tidak di render atau berdiri sendiri
+
 4. Styling React
+  1. module css : import file css ke komponen
+  - konsep modularity, adalah file yang diapakai bersama oleh beberapa komponen
+  - Deskripsi.module.css : aksesnya className = {style."anyName"}
+  2. inline-styling : 
+  - style={{
+    backgroundColor : 'salmon',
+    }}>
+  3. React Bootstrap
+  - install react bootstrap : npm install react-bootstrap bootstrap
+  - import 'bootstrap/dist/css/bootstrap.min.css';
+
+
 
 
 
@@ -679,7 +713,7 @@ pastikan bahwa kita sudah memasukan credintial sebelum melakukan git push
 
 
 * next materi lms
-https://bootcamp.dibimbing.id/content-detail/4305?batchId=0
+https://bootcamp.dibimbing.id/content-detail/4305?batchId=0 : 2:39:21
 
 * resume Web and SoftUni : https://docs.google.com/spreadsheets/d/1gBgcYDhjnQXr5n7GhQFQEtNe9Fm76SC7_jPwB9LwFUw/edit?gid=0#gid=0
 

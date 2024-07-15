@@ -1,7 +1,8 @@
 {
   "dependencies": {
     "lodash": "^4.17.21",
-    "readline-sync": "^1.4.10"
+    "readline-sync": "^1.4.10",
+    "vite": "^5.3.3"
   },
   "name": "mentoring",
   "version": "1.0.0",
