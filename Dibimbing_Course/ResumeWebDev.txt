@@ -678,10 +678,10 @@ pastikan bahwa kita sudah memasukan credintial sebelum melakukan git push
 3. Functional Component
 - membuat kesatuan HTML dan JS seperti membuat fungsi yg me-return HTML
 -  bisa melakukan operasi javascript didalam html
-- function ketika ingin dipakai maka akan dirturn sebagai html di komponen lain
+- function ketika ingin dipakai maka akan direturn sebagai html di komponen lain
 - latihan functional component
 - npm install react react-dom
-- fragment dan div : ketika komponen dibalit dengan fragment kosong hasilnya konponen didalamnya tidak di render atau berdiri sendiri
+- fragment dan div : ketika komponen dibalik dengan fragment kosong hasilnya konponen didalamnya tidak di render atau berdiri sendiri
 
 4. Styling React
   1. module css : import file css ke komponen
@@ -715,6 +715,9 @@ pastikan bahwa kita sudah memasukan credintial sebelum melakukan git push
  - Hide and Show value menggunakan boolean
 
 3. parent and child communication
+- mengirim data (passing value) ke child dengan menggunakan props
+- merubah data parent dari child dengan cara mengirim setter-nya
+
 4. useEffect
 
 

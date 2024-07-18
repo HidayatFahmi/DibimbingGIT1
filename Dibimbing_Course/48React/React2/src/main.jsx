@@ -1,9 +1,13 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import Calculator from './App.jsx'
+// import App from './App.jsx'
+// import Counter from './LatihanReact2.jsx'
+import Parent from './Parent'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Calculator/>
+    {/* <App/> */}
+    {/* <Counter/> */}
+    <Parent/>
   </React.StrictMode>,
 )

@@ -1,12 +1,13 @@
 import {useState} from 'react'
 
 
-function Calculator(){
+function App(){
   const [counter, setCounter] = useState(0);
   const [randomString, setRandomString] = useState("");
   const [reactiveBoolean, setReactiveBoolean] = useState(false);
   const [input, setInput] = useState("");
   const [arrayInput, setArrayInput] = useState([]);
+  const [show, setShow] = useState(false)
 
   const adding = () => {
     setCounter(prevCounter => prevCounter + 1);
@@ -42,6 +43,11 @@ function Calculator(){
     setArrayInput(arrayBaru);
   }
 
+  const showingString = () => {
+    const showingIt = !show;
+    setShow(showingIt);
+  }
+
   return(
     <>
       <div style={{display : 'grid', alignItems:'center', justifyContent : 'center'}}>
@@ -72,8 +78,17 @@ function Calculator(){
         ))}    
         </ol>
       </div>
+
+      {/* show hide value */}
+      <div style={{display : 'grid', alignItems : 'center', justifyContent : 'center'}}>
+        <button onClick={showingString}>{show ? "Hide":"Show"}</button>
+        {show && 
+        <div> Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores qui ea labore dignissimos voluptatibus blanditiis ratione sequi rerum fuga quod atque quas ad tempora praesentium mollitia est, odit eius at! </div>
+        }
+      </div>
+
     </>
   )
 }
 
-export default Calculator;
+export default App;
