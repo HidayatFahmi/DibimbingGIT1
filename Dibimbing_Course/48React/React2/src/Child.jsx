@@ -12,6 +12,11 @@ function CounterChild({ counterChild, setCounterParent, championChild, setterCha
         const arrayTemp = [...championChild, input];
         setterChampion(arrayTemp);
     }
+
+    const deleteClub = () => {
+        const  arrayPop = championChild.slice(0,-1);
+        setterChampion(arrayPop);
+    }
     
     return (
         <div>
@@ -24,6 +29,7 @@ function CounterChild({ counterChild, setCounterParent, championChild, setterCha
                 <h2>List of Champions</h2>
                 <input type="text" onChange={textClub} placeholder="input clubs name"/>
                 <button onClick={addClub}>Add Club</button>
+                <button onClick={deleteClub}>Delete</button>
                 <ol type='1'>
                     {championChild.map((club, index) => (
                         <li key={index}> {club} </li>

@@ -718,8 +718,6 @@ pastikan bahwa kita sudah memasukan credintial sebelum melakukan git push
 - mengirim data (passing value) ke child dengan menggunakan props
 - merubah data parent dari child dengan cara mengirim setter-nya
 
-4. useEffect
-
 
 
 
@@ -738,7 +736,7 @@ pastikan bahwa kita sudah memasukan credintial sebelum melakukan git push
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> LINK <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
 * next materi lms
-https://bootcamp.dibimbing.id/content-detail/4306?batchId=0 : 1:14:34
+-  React 3 : https://bootcamp.dibimbing.id/content-detail/4307?batchId=0 
 
 * resume Web : https://docs.google.com/spreadsheets/d/1gBgcYDhjnQXr5n7GhQFQEtNe9Fm76SC7_jPwB9LwFUw/edit?gid=0#gid=0
 
