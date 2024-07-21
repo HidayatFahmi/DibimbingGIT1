@@ -668,7 +668,7 @@ pastikan bahwa kita sudah memasukan credintial sebelum melakukan git push
 
 2. Setup React JS
 - opsi setup react JS
-  1. Meta framewotk : next.js, gatsby, remix
+  1. Meta framework : next.js, gatsby, remix
   2 install module bundlernya saja : vite
 
 - install vite dengan npm
@@ -717,8 +717,33 @@ pastikan bahwa kita sudah memasukan credintial sebelum melakukan git push
 3. parent and child communication
 - mengirim data (passing value) ke child dengan menggunakan props
 - merubah data parent dari child dengan cara mengirim setter-nya
+- /* eslint-disable react/prop-types */
 
+==================== React JS 3 ==================== Adhito
+1. Review functional component
+- sebuah function yg bisa me-return html
 
+2. Mengenal App.jsx
+- sebagai entry point atau tempat untuk melakukan routing
+- generic folder structure : component, page, style, main, app
+- main.jsx adalah halaman untuk mendefine/render file jsx
+
+3. Rendering variables and function
+- melakukan conditional render, merender berdasarkan suatu kondisi
+- enggunakan ternary ternary operator (? "" : "") atau short0circuit evaluation (&&)
+-  merender Array dengan maping
+- render object, merendernobject secara iteratif 
+  * {Object.keys(productDetail).map((kunci, index) => (
+        <div key={index}>{kunci} : {productDetail[kunci]} </div>
+    ))}
+
+  - calling function
+
+4. Event handling pada react
+- aksi yang diajalankan berdasarkan event yang diterapkan : onClick, onChange, ..etc
+- oninput pada html
+
+==================== React JS 4 ==================== Adhito
 
 
 
