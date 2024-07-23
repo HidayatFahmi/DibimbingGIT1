@@ -21,7 +21,7 @@ export default function TimerComponent() {
     // Cleanup function to clear the interval
     return () => {
         clearInterval(interval)
-        // alert('cleanup dijalankan')
+        alert('cleanup dijalankan')
     };
   }, [trigger]);
 

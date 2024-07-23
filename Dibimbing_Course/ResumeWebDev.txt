@@ -789,8 +789,20 @@ pastikan bahwa kita sudah memasukan credintial sebelum melakukan git push
 - dengan API (application programming interface)
 - bertukar data dari aplikasi atau server, front end consume data yg diolah BE
 - gunakan fungsi fetch : untuk mengambil data daru url
-- asyncronus function
+- asyncronus function : fungsi yg dijalankan bersamaan dengan fungsi lain dijalankan, contohnya ketika proses pemanggilan api/fetching data
+- async mengembalikan promise yaitu resolve and reject 
+- konsep try and catch
+- add loading state while fetching API process
 
+3. proses fetching data
+- fetch url, ubah kedalam json dan masukkan data kedalam state
+- useEffect tidak bisa asyncronous maka buat function baru didalamnya
+
+==================== React JS 6 ==================== Adhito
+- https://bootcamp.dibimbing.id/content-detail/4525?batchId=0
+- agar styling react tidak berpengaruh pada file lain atau hanya berefek pada file yg ditentukan gunakan css.module
+
+1. CRUD => (Create, Read, Update, Delete);
 
 
 
