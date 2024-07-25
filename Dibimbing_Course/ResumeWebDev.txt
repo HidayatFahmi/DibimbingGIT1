@@ -312,7 +312,7 @@
 - <tr> : baris
 - <td> : kolom
 - <th> : table head, memuat judul pada header
-- attribute : border, cellpadding, rowspan, colspan
+- attribute : border, cellpadding, cellspacing, rowspan, colspan
 
 3. form
 - attribute : name, method (get/post), action
@@ -791,6 +791,7 @@ pastikan bahwa kita sudah memasukan credintial sebelum melakukan git push
 - gunakan fungsi fetch : untuk mengambil data daru url
 - asyncronus function : fungsi yg dijalankan bersamaan dengan fungsi lain dijalankan, contohnya ketika proses pemanggilan api/fetching data
 - async mengembalikan promise yaitu resolve and reject 
+- awai : adalah perintah untuk menunggu proses async
 - konsep try and catch
 - add loading state while fetching API process
 
@@ -803,18 +804,22 @@ pastikan bahwa kita sudah memasukan credintial sebelum melakukan git push
 - agar styling react tidak berpengaruh pada file lain atau hanya berefek pada file yg ditentukan gunakan css.module
 
 1. CRUD => (Create, Read, Update, Delete);
+- Read : 
+  * header adalah penanda untuk mengakses API
+  * secara default ketika fetch API maka methodnya adalah GET
+  * https://api-bootcamp.do.dibimbing.id/api/v1/foods, apiKey : 'w05KkI9AWhKxzvPFtXotUva-'
+  * makanan?.data.map()
 
-
-
-
-
+- create : pasti pakai headers
+  * memberikan body , yaotu parameter yang ingin diberikan kepada backend
+  * payload hanya bisa dikirim dalam bemtuk string sehingga unah ke JSON.stringify();
 
 
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> LINK <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
 * next materi lms
--  React 5 :https://bootcamp.dibimbing.id/content-detail/4309?batchId=0 : 1:49:00
+-  React 6 :https://bootcamp.dibimbing.id/content-detail/4525?batchId=0 : 1:44:00
 
 * resume Web : https://docs.google.com/spreadsheets/d/1gBgcYDhjnQXr5n7GhQFQEtNe9Fm76SC7_jPwB9LwFUw/edit?gid=0#gid=0
 
@@ -823,7 +828,7 @@ https://docs.google.com/spreadsheets/d/1N8Z-EISXJZE3QH8uswj-jAA_SUXWM7CW9LaVDbD4
 
 
 * tantangan coding
-https://www.youtube.com/watch?v=FPwm_F9ljvg&list=PLFIM0718LjIVrOglQcS_ZHkT5T_27Cmea 
+https://www.youtube.com/watch?v=Egu-_yAPljY&list=PLFIM0718LjIVrOglQcS_ZHkT5T_27Cmea&index=6
 
 * website kedai copy
 https://www.youtube.com/watch?v=MCVkMmYL-aY&list=PLFIM0718LjIWaNi4oDdN49FTlznrWU9w2
