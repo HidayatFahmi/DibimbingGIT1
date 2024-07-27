@@ -801,6 +801,7 @@ pastikan bahwa kita sudah memasukan credintial sebelum melakukan git push
 
 ==================== React JS 6 ==================== Adhito
 - https://bootcamp.dibimbing.id/content-detail/4525?batchId=0
+- CRUD PPT : https://docs.google.com/presentation/d/1Od69yISUmLIQxWCLYXqHn7K1dmSTQ4Mp/edit#slide=id.g229965ecfb9_0_41
 - agar styling react tidak berpengaruh pada file lain atau hanya berefek pada file yg ditentukan gunakan css.module
 
 1. CRUD => (Create, Read, Update, Delete);
@@ -814,12 +815,27 @@ pastikan bahwa kita sudah memasukan credintial sebelum melakukan git push
   * memberikan body , yaotu parameter yang ingin diberikan kepada backend
   * payload hanya bisa dikirim dalam bemtuk string sehingga unah ke JSON.stringify();
 
+- Update : pasti pakai headers dan id
+
+- delete : pasti pakai headers dan id
+
+
+==================== React JS 7 ==================== Adhito
+1. React context
+
+2. React routing
+3. Custom hook react
+
+
+
+
+
 
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> LINK <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
 * next materi lms
--  React 6 :https://bootcamp.dibimbing.id/content-detail/4525?batchId=0 : 1:44:00
+-  React 7 :https://bootcamp.dibimbing.id/content-detail/4533?batchId=0 : 1:44:00
 
 * resume Web : https://docs.google.com/spreadsheets/d/1gBgcYDhjnQXr5n7GhQFQEtNe9Fm76SC7_jPwB9LwFUw/edit?gid=0#gid=0
 

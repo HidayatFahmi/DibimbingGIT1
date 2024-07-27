@@ -36,9 +36,9 @@ export default function CreateCRUD(){
                     Authorization : 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1pZnRhaGZhcmhhbkBnbWFpbC5jb20iLCJ1c2VySWQiOiJjYTIzZDdjYy02Njk1LTQzNGItODE2Yy03ZTlhNWMwNGMxNjQiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE2NjE4NzUzMjF9.wV2OECzC25qNujtyb9YHyzYIbYEV-wud3TQsYv7oB4Q'
                 }),
                 body : JSON.stringify({
-                    name : 'Ikan Gangan Belitung, post by fahmi ',
+                    name : 'Ikan pais, post by fahmi ',
                     description: 'Ikan dengan rempah kunyit',
-                    imageUrl: 'https://www.google.com/search?q=ikan+gangan&oq=ikan+gangan&gs_lcrp=EgZjaHJvbWUyCQgAEEUYORiABDIICAEQABgWGB4yCAgCEAAYFhgeMggIAxAAGBYYHjIMCAQQABgKGA8YFhgeMggIBRAAGBYYHjIICAYQABgWGB4yCggHEAAYDxgWGB4yCggIEAAYDxgWGB4yCggJEAAYgAQYogTSAQg5MzYxajBqN6gCALACAA&sourceid=chrome&ie=UTF-8#vhid=bLuatMlUzpzwxM&vssid=l',
+                    imageUrl: 'https://www.pexels.com/id-id/foto/hidangan-salmon-dengan-sayuran-1516415/',
                     ingredients:[],
                 })
             })
@@ -63,7 +63,7 @@ export default function CreateCRUD(){
                         {/* <h2>{item.id}</h2> */}
                         <h1>{item.name}</h1>
                         <h2>{item.description}</h2>
-                        <img src={item.imageUrl} className={gaya.ReadStyle}></img>
+                        <img src={item.imageUrl} className={gaya.ReadStyle} alt="gangan dak muncul"></img>
                     </div>
                 ))}
             </div>
