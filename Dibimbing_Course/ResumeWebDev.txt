@@ -774,7 +774,7 @@ pastikan bahwa kita sudah memasukan credintial sebelum melakukan git push
 - didalam useEffect ada sebuah dependency, dependency bisa memiliki parameter ataupun tidak
 
 2. cleanup function : 
-- misalkan kita membuat tombol pada file parent dari child, ketika fungsi dari child ditpanggi maka useEffect dan cleanup setelah itu useEffect kembali dijalankan, sedangkan ketika fungsi dihilangkan maka return/clean up saja yg akan dijalankan
+- misalkan kita membuat tombol pada file parent dari child, ketika fungsi dari child dipanggi maka useEffect dan cleanup setelah itu useEffect kembali dijalankan, sedangkan ketika fungsi dihilangkan maka return/clean up saja yg akan dijalankan
 
 * useEfffect(()=>{
     alert('fungsi pertama dijalankan');
@@ -791,7 +791,7 @@ pastikan bahwa kita sudah memasukan credintial sebelum melakukan git push
 - gunakan fungsi fetch : untuk mengambil data daru url
 - asyncronus function : fungsi yg dijalankan bersamaan dengan fungsi lain dijalankan, contohnya ketika proses pemanggilan api/fetching data
 - async mengembalikan promise yaitu resolve and reject 
-- awai : adalah perintah untuk menunggu proses async
+- await : adalah perintah untuk menunggu proses async
 - konsep try and catch
 - add loading state while fetching API process
 
@@ -822,11 +822,48 @@ pastikan bahwa kita sudah memasukan credintial sebelum melakukan git push
 
 ==================== React JS 7 ==================== Adhito
 1. React context
+- memungkinkan untuk berbagi nilai (state) di seluruh komponen tanpa harus secara eksplisit mengoper props di setiap level komponen. 
+- global state management concept
+
+- langkah membuat file react context
+  1. import createContext
+  2. buat context : 
+     * const TheContext = createContext({name :null, setName : () => {} })
+  3. buat fungsi provider : <TheContext.Provider value={{name, setName}};
+  4. balut file child kedalam provider : 
+     * <TheProvider> 
+         <Home/>
+       </TheProvider>
+  5. akses variable bersama : const {user, setUser, setSuccessLogin} = useContext(UserContext);
+
 
 2. React routing
+- mengatur navigasi suatu halaman
+- gunakan library react router
+- install react router : npm install react-router react-router-dom
+- import {BrowserRouter} from 'react-router-dom'
+- import {Routes, Router} from 'react-router-dom'
+
+- dynamic routing
+  * useParams()
+
+- nested routing (skip)
+- react router navigation with link
+- navigation with navigate
+  * import useNavigate from 'react-router-dom'
+  * const arahkan = useNavigate();
+  * arahkan('/about')
+  * arahkan(-2) // redo 2x
+
+- contoh project movie : https://www.themoviedb.org/
+- dokumentasi API : https://www.themoviedb.org/documentation/api
+
+- markdown adalah file yg menjelaskan isi dari project dengan format .md
+
 3. Custom hook react
 
 
+==================== Mini Project React ==================== Adhito
 
 
 
@@ -835,13 +872,12 @@ pastikan bahwa kita sudah memasukan credintial sebelum melakukan git push
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> LINK <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
 * next materi lms
--  React 7 :https://bootcamp.dibimbing.id/content-detail/4533?batchId=0 : 1:44:00
+-  React 7 :https://bootcamp.dibimbing.id/content-detail/4533?batchId=0 : 41:25
 
 * resume Web : https://docs.google.com/spreadsheets/d/1gBgcYDhjnQXr5n7GhQFQEtNe9Fm76SC7_jPwB9LwFUw/edit?gid=0#gid=0
 
 * languages
 https://docs.google.com/spreadsheets/d/1N8Z-EISXJZE3QH8uswj-jAA_SUXWM7CW9LaVDbD4Fag/edit?gid=0#gid=0
-
 
 * tantangan coding
 https://www.youtube.com/watch?v=Egu-_yAPljY&list=PLFIM0718LjIVrOglQcS_ZHkT5T_27Cmea&index=6
