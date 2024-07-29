@@ -874,6 +874,9 @@ pastikan bahwa kita sudah memasukan credintial sebelum melakukan git push
 * next materi lms
 -  React 7 :https://bootcamp.dibimbing.id/content-detail/4533?batchId=0 : 41:25
 
+* Next Materi WPU : Flex-box 
+https://www.youtube.com/watch?v=-J372iDFU8Y&list=PLFIM0718LjIU1lWlM34j6E9fMlrrSGZ1k : 15.00
+
 * resume Web : https://docs.google.com/spreadsheets/d/1gBgcYDhjnQXr5n7GhQFQEtNe9Fm76SC7_jPwB9LwFUw/edit?gid=0#gid=0
 
 * languages

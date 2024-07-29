@@ -1,0 +1,20 @@
+====================== Pendahuluan
+
+- adalah teknik unutk megatur element didalam komponen secara efesien
+- mengatur posisi sebuah komponen walaupun ukurannya dinamis atau bahkan kita tidak tahu
+- istilah yang harus dipahami :
+  1. container : element pembungkus
+  2. items : element child didalam container
+  3. main axis : arah horizontal
+  4. main size : ukuran dari container secara hirizontal
+  5. cross axis : adalah koordinat/sumbu arah vertikal
+  6. cross size : ukuran arah vertikal
+  7. main start : titik awal arah horizontal
+  8. main end : adalah titik akhir sumbu horizontal
+  9. cross start
+  10. cross end
+
+- properti dari container
+  1. display : flex
+  
+
