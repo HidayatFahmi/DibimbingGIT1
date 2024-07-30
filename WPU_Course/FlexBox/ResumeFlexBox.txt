@@ -15,6 +15,28 @@
   10. cross end
 
 - properti dari container
-  1. display : flex
-  
+  1. display : flex, akan memberikan satyle seperti memberikan float dan clear
+  2. flex-direction : biss secara horizontal maupun vertikal
+     * row, row-reverse, column, column-reverse
+  3. flex-wrap : unutk mengatur ketika elemt didalam container tidak lagi memuat
+     * no-wrap, wrap, wrap-reverse
+  4. justify-content : untuk megatur rata element sumbu horizontal
+     * flex-start, flex-end, center, space-between, space-around, space-evenly
+  5. align-items : mengatu element sumbu vertikal
+     * flex-start, flex-end, center, stretch, baseline (berdasarkan base line font)
+  6. align-content : sama dengan align-items tapi hanya berlaku ketika content lebih dari 1 baris
+     * flex-start, flex-end, center, space-between, space-around, stretch
 
+- properti pada items
+  1. order : mengatur urutan
+  2. flex-grow : mengatur ukuran 
+  3. align-self : khsus untuk 1 element
+
+
+====================== Latihan 
+https://www.youtube.com/watch?v=u7w0B2f91rk&list=PLFIM0718LjIU1lWlM34j6E9fMlrrSGZ1k&index=2
+
+- ketika display diubah ke flex maka element didalamnya ketika diberikan margin auto maka posisinya akan center sumbu horizontal dan vertikal
+
+====================== Project
+https://www.youtube.com/watch?v=a6-v_0kjYyY&list=PLFIM0718LjIU1lWlM34j6E9fMlrrSGZ1k&index=3 : 34:00

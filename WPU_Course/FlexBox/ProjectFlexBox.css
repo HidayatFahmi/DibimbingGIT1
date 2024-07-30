@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: sans-serif;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* Navbar */
+.nav{
+    display: flex;
+    background-color: blueviolet;
+    justify-content: space-around;
+    /* padding: 20px 0; */
+    height: 50px;
+    align-items: center;
+    color: rgb(192, 245, 245);
+}
+
+.nav .logo{
+    font-family: "Pacifico", cursive;
+    letter-spacing: 3px;
+}
+
+.nav ul{
+    display: flex;
+    list-style: none;
+    width: 40%;
+    /* background-color: black; */
+    justify-content: space-between;
+}
+
+.nav ul li a{
+    color: rgb(192, 245, 245);
+    text-decoration: none;
+    font-size: 0.8em;
+}
+
+.nav ul li a:hover{
+    color: #fff;
+}
+
+/* Hamburger menu */
+.menu-toggle{
+    display: none;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    position: relative;
+}
+
+.menu-toggle input{
+    position: absolute;
+    width: 40px;
+    height: 28px;
+    left: -6px;
+    top: -3px;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.menu-toggle span{
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: #efe;
+    transition: all 0.5s;
+}
+
+/* Hamburger Menu animation */
+.menu-toggle span:nth-child(2){
+     transform-origin: 0 0;
+}
+
+.menu-toggle span:nth-child(4){
+     transform-origin: 0 100%;
+}
+
+.menu-toggle input:checked ~ span:nth-child(2){
+    transform: rotate(45deg) translate(-1px,-1px);
+    background-color: white;
+}
+
+.menu-toggle input:checked ~ span:nth-child(4){
+    transform: rotate(-45deg) translate(-1px, 0);
+    background-color: white;
+}
+
+.menu-toggle input:checked ~ span:nth-child(3){
+    transform: scale(0);
+    opacity: 0;
+}
+
+/* Responsive breakpoint */
+
+/* ukuran tablet */
+@media screen and (max-width: 768px){
+    .nav ul{
+        width: 50%;
+    }
+}
+
+/* Ukuran mobile */
+@media screen and (max-width: 576px){
+    .nav ul{
+        display: none;
+    }
+
+    .menu-toggle{
+        display: flex;
+    }
+}
