@@ -1,0 +1,45 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    max-width: 500px;
+    border: 2px solid black;
+    margin: 50px auto;
+    padding: 5px;
+    text-align: center;
+}
+
+.header{
+    background-color: blueviolet;
+    padding: 40px 0;
+}
+
+.content{
+    display: flex;
+}
+
+.sidebar{
+    flex: 1;
+}
+
+.aside{
+    background-color: blue;
+    padding: 60px 0;
+}
+.nav{
+    background-color: red;
+    padding: 100px 0;
+}
+.main{
+    background-color: burlywood;
+    flex: 1.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer{
+    background-color: brown;
+    padding: 20px 0;
+}

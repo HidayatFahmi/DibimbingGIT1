@@ -1,0 +1,19 @@
+.container{
+    /* border: 2px solid black; */
+    width: 60%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: 100px 25% 200px;
+    grid-template-rows: 100px ;
+}
+
+.item{
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item:nth-child(even){
+    background-color: pink;
+}

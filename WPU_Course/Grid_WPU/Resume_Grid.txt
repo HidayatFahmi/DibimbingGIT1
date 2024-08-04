@@ -1,0 +1,97 @@
+=================== Pendahuluan 
+- sebuah module css baru untuk medefinisikan sistem layout dalam 2 dimensi (baris dan kolom)
+- display : grid ;
+- kenapa pakai css grid, untuk membuat layout yg lebih kompleks
+- grid-template-areas : mengatur orientasi dari area
+- grid-template-columns, grid-template-rows : menentukan ukuran dari area yang sudah ditentukan 
+- grid-area : untuk menidentifikasi nama area dan ukuran yang akan diterapkan
+- satuan fr : fraction
+
+=================== Terminologi/istilah
+1. grid container : element pembungkus grid didefenisikan dengan display : grid ;
+2. grid item : element yang berada 1 level dibawah grid container
+3. grid line : garis horizontal atau vertikal yang memisahkan grid menjadi beberpa bagian yg ditandai dengan angka, jumlah line pasti  lebih 1 dari jumlah kolom
+4. grid cell : perpotongan antara baris dan kolom didalam grid
+5. grid area : kumpulan lebih dari 1 garis cell yang membentuk kotak
+6. grid track : ukuran / jarak antara 2 grid line atau cell baik secara horizontal maupun vertikal. pada table dikenal dengan cell-padding
+7. grid gap : jarak antara cell. jika pada table sama dengan cell-spacing
+
+install dan gunakan firefox, karena pada saat ini firefox memiliki ftur grid inspector
+
+=================== Grid template columns and rows
+- mendefenisikan baris/kolom dengan cara menuliskan nilai dipisahkan oleh spasi. Nilai merepresentasikan ukuran gris track dan spasi merepresentasikan grid line
+- cara menuliskan grid columns dan rows
+  * gris-template-columns : <track-size>... | <line-name> <track-size>
+    - track size : bisa berupa px, %, auto atau fr
+    - line-name : nama yg diberikan pada track
+
+- explicit dan implicit grid : 
+  * explisit : ukuran yang dituliskan
+  * implicit : menentukan ukuran secara otomatis
+- garis solid = explicit grid
+
+- grid-auto-columns : <track-size> , mengatur ukuran grid track yang tidak dituliskan pada grid-template (implicit track)
+- grid-auto-rows : <track-size>,
+
+- bagaiman cara kita menuliskan column yg impicit ? karena ketika kita tidak menentukan secara explcit item akan turun menjadi baris. maka dengan auto flow
+* grid-auto-flow : untuk mengatur penempatan item/cell pada grid track, termasuk yang ditulis secara implicit
+
+- grid value : px, %, auto, fr
+
+=================== Special keyword and function
+1. repeat()
+- untuk menentukan ukuran dari gris track secara berulang
+  *  grid-template-columns: repeat(7, 1fr) repeat(2, 1.5fr);
+
+2. min-content and max-content
+- untuk menentukan besar ukuran grid track berdasarkan content pada sebuah item
+- perbedaan min-conttent dan max-content, jika menggunakan min-content maka dimesi akan ditentukan berdasarkan kata terpanjang sedangakan max-content yaitu berdasarkan panjang content tidak pedulu seberapa panjang
+
+3. minmax()
+- menentukan ukruan minimal dan maksimal dari grid track
+
+4. auto-fill & auto-fit
+- menentukan jumlah item untuk berada pada grid track
+- perbedaan fit dan fill, fit akan mengakhiri grid-line pada item terakhir sedangkan fill akan mengakhiri pada area didalam container yg masih memungkinkan untuk menampung grid dengan ukuran yg sama
+
+- responsive image gallery
+
+=================== Grid Area and Gap
+
+1. grid-template-area
+- mendefinisikan gri template menggunakan nama dari area yg ditulis pada grid-area pada item
+
+2. grid-template
+- shorhand : grid-template-rows | grid-template-column
+  *  grid-template: [baris1-mulai]"header header header" 50px [baris1-akhir baris2-mulai]
+    "footer footer footer" 100px [baris2-akhir]/ 1fr 2fr 3fr;
+
+3. grid-column-gap
+   - cara baru : column-gap
+4. grid-row-gap
+    - cara baru : row-gap
+5. grid-gap
+   - grid-gap atau gap
+6. grid
+- shorthand : 
+* grid : grid-template-row, grid-template-columns, grid-template-areas, grid-auto-rows, grid-auto-column dan grid-auto-flow
+
+=================== Grid Alignment
+- properti untuk mengatur layout item didalam container
+1. justify-items : mensejajarkan item pada sumbu horizontal
+    * start, end, center, stretch (default)
+2. align-items : mensejajarkan item pada sumbu vertikal
+    * start, end, center, stretch (default)
+
+3. place-items
+   shorthanduntuk menuliskan align-items dan justify-items secara bersamaan
+
+4. justify-content
+- mengatur seluruh grid container pada sumbu horizontal, dengan catatan jika ukuran gris lebih kecil dari containernya, biasanya ketika gris-items, menggunakan ukuran yang fix
+* start, end, center, stretch, space-between, space-evenly, space-around
+
+5. align-content
+- sama dengan konsep justify-content tapi utk sumbu vertikal
+
+6. place-content
+- shorthand align-items and justify-content
