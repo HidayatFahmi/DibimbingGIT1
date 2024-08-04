@@ -1,0 +1,49 @@
+.container{
+    border: 2px solid black;
+    width: 80%;
+    margin: 50px auto;
+    display: grid;
+    /* grid-template-columns: minmax(200px, 300px) 1fr 1fr;
+    grid-template-rows: repeat(3, 100px); */
+
+    grid-template-columns: [satu] minmax(200px, 300px) [dua] 1fr [tiga] 1fr [empat];
+    grid-template-rows: [baris1] 100px [baris2] 100px [baris3] 100px [baris4];
+}
+
+.item{
+    background-color: aqua;
+}
+
+.item:nth-child(even){
+    background-color: pink;
+}
+
+.my-item{
+    /* grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    background-color: blue; */
+
+    /* grid-column-start: 1;
+    grid-column-end: span 2;
+    grid-row-start: 1;
+    grid-row-end: span 2;
+    background-color: blue; */
+
+    grid-column-start: dua;
+    grid-column-end: empat;
+    grid-row-start: baris1;
+    grid-row-end: baris3;
+    background-color: blue;
+
+    grid-column: 2/4;
+    grid-row : 2/4;
+
+    grid-area: 1 / 2 / 4 / 2 ;
+
+    justify-self: center;
+    align-self: center;
+
+    place-self: start start;
+}

@@ -1,0 +1,254 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    width: 100%;
+}
+
+body{
+    background-color: #ddd;
+    font-size: 18px;
+    font-family: 'Oswald', Arial, Helvetica, sans-serif;
+    margin: 50px ;
+}
+
+.container{
+    display: grid;
+    gap: 10px;
+}
+
+/* Header */
+.header{
+    display: grid;
+    grid-template-areas: 
+    'hero hero feature-1'
+    'hero hero feature-2';
+}
+
+.hero{
+    grid-area: hero;
+    min-height: 300px;
+    background-image: url(./img/Hero.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
+    /* box-sizing: border-box; */
+}
+
+.hero > * {
+    display: none;
+}
+
+.features{
+    background-color: black;
+    color: white;
+    display: grid;
+    /* justify-content: center;
+    align-content: center; */
+    place-content: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+.feature-1{
+    grid-area: feature-1;
+    background-image: url(./img/img1.jpg);
+    background-size: cover;
+}
+
+.feature-2{
+    grid-area: feature-2;
+    background-image: url(./img/img2.jpg);
+    background-size: cover;
+}
+
+.features .price{
+    font-size: 2em;
+    font-weight: 200;
+}
+
+/* Navigation */
+
+.menu{
+    order: -1;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+}
+
+.menu .brand{
+    font-size: 1.3em;
+    color: #333;
+}
+
+.menu ul{
+    display: grid;
+    list-style: none;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 5px;
+}
+
+.menu a{
+    display: block;
+    text-decoration: none;
+    background-color: #001;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    text-transform: uppercase;
+}
+
+/* Hamburger menu */
+.menu-toggle{
+    display: none;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    position: relative;
+    z-index: 9999;
+}
+
+.menu-toggle input{
+    position: absolute;
+    width: 40px;
+    height: 28px;
+    left: -6px;
+    top: -3px;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.menu-toggle span{
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: #000;
+    transition: all 0.5s;
+}
+
+/* Hamburger Menu animation */
+.menu-toggle span:nth-child(2){
+     transform-origin: 0 0;
+}
+
+.menu-toggle span:nth-child(4){
+     transform-origin: 0 100%;
+}
+
+.menu-toggle input:checked ~ span:nth-child(2){
+    transform: rotate(45deg) translate(-1px,-1px);
+    background-color: white;
+}
+
+.menu-toggle input:checked ~ span:nth-child(4){
+    transform: rotate(-45deg) translate(-1px, 0);
+    background-color: white;
+}
+
+.menu-toggle input:checked ~ span:nth-child(3){
+    transform: scale(0);
+    opacity: 0;
+}
+
+/* Services */
+.services{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.service{
+    background-color: white;
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #aaa;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.service .icon{
+    font-size: 3em;
+}
+
+.service h3{
+    font-size: 1.5em;
+}
+
+.service p{
+    font-weight: 200;
+    letter-spacing: 1px;
+    font-size: 0.8em;
+}
+
+/* Responsive breakpoints */
+@media screen and (max-width:1024px){
+    .menu{
+        order: inherit;
+        grid-template-columns: 1fr;
+    }
+
+    .menu .brand{
+        display: none;
+    }
+
+    .hero > *{
+        display: block;
+        color: black;
+        background-color: white;
+        padding: 5px;
+        margin-bottom: 5px;
+    }
+
+    .hero{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+    }
+}
+
+@media screen and (max-width:768px){
+    .menu{
+        order: -1;
+        justify-items: end;
+    }
+     .menu ul{
+        display: flex;
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100vh;
+        flex-direction: column;
+        background-color: black;
+        align-items: center;
+        justify-content: space-evenly;
+        z-index: 999;
+        background-color: #000;
+        width: 100%;
+        transform: translateY(-100%);
+        transition: all 1s;
+        opacity: 0;
+    }
+
+    .menu ul.slide{
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    .menu-toggle{
+        display: flex;
+    }
+}
+
+@media screen and (max-width:600px){
+    .header{
+        grid-template-areas: 
+        'hero'
+        'feature-1'
+        'feature-2';
+    }
+}

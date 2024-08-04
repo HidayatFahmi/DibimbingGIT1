@@ -6,6 +6,7 @@
 body{
     font-family: sans-serif;
     font-family: "Montserrat", sans-serif;
+    overflow-x: hidden;
 }
 
 /* Navbar */
@@ -105,8 +106,26 @@ body{
 
 /* Ukuran mobile */
 @media screen and (max-width: 576px){
-    .nav ul{
-        display: none;
+    nav ul{
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100vh;
+        flex-direction: column;
+        background-color: black;
+        align-items: center;
+        justify-content: space-evenly;
+        z-index: -999;
+        background-color: blueviolet;
+        width: 80%;
+        transform: translateX(100%);
+        transition: all 1s;
+        opacity: 0;
+    }
+
+    nav ul.slide{
+        transform: translateX(0);
+        opacity: 1;
     }
 
     .menu-toggle{

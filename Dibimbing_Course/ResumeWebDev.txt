@@ -878,6 +878,8 @@ pastikan bahwa kita sudah memasukan credintial sebelum melakukan git push
 https://www.youtube.com/watch?v=-J372iDFU8Y&list=PLFIM0718LjIU1lWlM34j6E9fMlrrSGZ1k : 15.00
 
 * resume Web : https://docs.google.com/spreadsheets/d/1gBgcYDhjnQXr5n7GhQFQEtNe9Fm76SC7_jPwB9LwFUw/edit?gid=0#gid=0
+    
+  google doc : https://docs.google.com/document/d/1ZLYaqpY1ZEk2Hvqypk31s4mwfT0efSlhaSrEpMwOAHk/edit?hl=id
 
 * languages
 https://docs.google.com/spreadsheets/d/1N8Z-EISXJZE3QH8uswj-jAA_SUXWM7CW9LaVDbD4Fag/edit?gid=0#gid=0
@@ -887,3 +889,4 @@ https://www.youtube.com/watch?v=Egu-_yAPljY&list=PLFIM0718LjIVrOglQcS_ZHkT5T_27C
 
 * website kedai copy
 https://www.youtube.com/watch?v=MCVkMmYL-aY&list=PLFIM0718LjIWaNi4oDdN49FTlznrWU9w2
+

@@ -19,7 +19,7 @@
 install dan gunakan firefox, karena pada saat ini firefox memiliki ftur grid inspector
 
 =================== Grid template columns and rows
-- mendefenisikan baris/kolom dengan cara menuliskan nilai dipisahkan oleh spasi. Nilai merepresentasikan ukuran gris track dan spasi merepresentasikan grid line
+- mendefenisikan baris/kolom dengan cara menuliskan nilai dipisahkan oleh spasi. Nilai merepresentasikan ukuran garis track dan spasi merepresentasikan grid line
 - cara menuliskan grid columns dan rows
   * gris-template-columns : <track-size>... | <line-name> <track-size>
     - track size : bisa berupa px, %, auto atau fr
@@ -59,7 +59,7 @@ install dan gunakan firefox, karena pada saat ini firefox memiliki ftur grid ins
 =================== Grid Area and Gap
 
 1. grid-template-area
-- mendefinisikan gri template menggunakan nama dari area yg ditulis pada grid-area pada item
+- mendefinisikan grid template menggunakan nama dari area yg ditulis pada grid-area pada item
 
 2. grid-template
 - shorhand : grid-template-rows | grid-template-column
@@ -84,7 +84,7 @@ install dan gunakan firefox, karena pada saat ini firefox memiliki ftur grid ins
     * start, end, center, stretch (default)
 
 3. place-items
-   shorthanduntuk menuliskan align-items dan justify-items secara bersamaan
+   shorthand untuk menuliskan align-items dan justify-items secara bersamaan
 
 4. justify-content
 - mengatur seluruh grid container pada sumbu horizontal, dengan catatan jika ukuran gris lebih kecil dari containernya, biasanya ketika gris-items, menggunakan ukuran yang fix
@@ -95,3 +95,38 @@ install dan gunakan firefox, karena pada saat ini firefox memiliki ftur grid ins
 
 6. place-content
 - shorthand align-items and justify-content
+
+=================== Grid Item Properties
+menentukan tampat dari grid item dengan mengacu pada nomor atau nama grid line yang spesifik
+
+1. grid-column-start 
+   * grid-column-start : <nomor> | <nama> | span <nomor> | span <nama> | auto;
+   - <nomor> atau <nama> : mengacu pada nomor atau yang kita beri pada grid line
+   - <span> <nomor> : item akan memenajang sampai sejumlah nomor
+   - <span> <nama> : item akan memenajang sampai ke nama grid line tertentu
+
+2. grid-column-end
+3. grid-row-start
+4. grid-row-end
+5. grid-column
+   * shorthand untuk grid-column-start dan grid column-end
+6. grid-row
+   * shorthand untuk grid-row-start dan grid row-end
+   * grid-column: 2/4;
+    grid-row : 2/4;
+
+7. grid-area
+  - menentuka nama area yang sudah kita buat pada item sesuai dengan  tempalate yang sudah dibuat sebelumnya melalui grid-template-area
+  - juga bisa digunakan untuk shorthand untuk grid-row-start, grid-column-start, grid-row-end, grid-column-end
+  * grid-area: 1 / 2 / 4 / 2 ;
+
+8. justify-self
+  - mengatur sebuah cell terhadap sumbu horizontal
+
+9. align-self
+  - mengatur sebuah cell terhadap sumbu vertikal
+
+10. place-self
+  - shorthand untuk justify-self dan align-self
+
+ https://source.unsplash.com/random/200x200
