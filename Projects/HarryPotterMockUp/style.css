@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    background-color: rgb(61, 74, 72);
+    height: 100vh;
+    padding: 10px;
+}
+
+.nav{
+    display: flex;
+    border: 2px solid gold;
+    height: 40px;
+    align-items: center;
+    color: gold;
+}
+
+.nav .main-section{
+    display: flex;
+    align-items: center;
+}
+.nav div{
+    margin: 0px 10px;
+}
+
+.film{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.film button{
+    display: flex;
+    align-items: center;
+    background-color: inherit;
+    color: gold;
+    font-family: inherit;
+    border: none;
+
+}
+
+.film .drop-down ul{
+    list-style-type: none;
+    position: absolute;
+    white-space: nowrap;
+    display: none;
+    left: 0px;
+    top: 30px;
+    
+}
+
+.film .drop-down ul.show{
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+    height: 160px;
+    width: 80px;
+    text-align: center;
+    justify-content: space-between;
+}
+
+ul.show li a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.search-film{
+    display: flex;
+    background-color: black;
+    width: 500px;
+}
+
+.hamburger-menu{
+    display: none;
+}
