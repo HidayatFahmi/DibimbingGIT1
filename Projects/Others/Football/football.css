@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.field{
+    background-color: aqua;
+    max-width: 600px;
+    text-align: center;
+    margin: 50px auto;
+    position: relative;
+}
+
+.field img{
+    width: 100%;
+    height: auto;
+    /* z-index: -1; */
+}
+
+.player{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+    z-index: 999;
+}
+
+/* formation 4-4-2 */
+
+/* .player.p1{
+    top: 48%;
+    left: 5%;
+
+}
+
+.player.p2{
+    top: 10%;
+    left: 25%;
+}
+.player.p3{
+    top: 33%;
+    left: 25%;
+}
+.player.p4{
+    top: 62%;
+    left: 25%;
+}
+
+.player.p5{
+    bottom: 10%;
+    left: 25%;
+}
+
+.player.p6{
+    top: 10%;
+    left: 50%;
+}
+
+.player.p7{
+    top: 33%;
+    left: 50%;
+}
+
+.player.p8{
+    top: 62%;
+    left: 50%;
+}
+
+.player.p9{
+    top: 83%;
+    left: 50%;
+}
+.player.p10{
+    top: 33%;
+    left: 75%;
+}
+.player.p11{
+    top: 62%;
+    left: 75%;
+} */
+
+/* formation 3-4-3 */
+
+.player.p1{
+    top: 48%;
+    left: 5%;
+
+}
+
+.player.p2{
+    top: 10%;
+    left: 25%;
+
+}
+.player.p3{
+    top: 48%;
+    left: 25%;
+
+}
+.player.p4{
+    top: 83%;
+    left: 25%;
+
+}
+
+.player.p5{
+    top: 10%;
+    left: 50%;
+
+}
+
+.player.p6{
+    top: 33%;
+    left: 50%;
+
+}
+.player.p7{
+    top: 62%;
+    left: 50%;
+
+}
+.player.p8{
+    top: 83%;
+    left: 50%;
+
+}
+
+.player.p9{
+    top: 10%;
+    left: 75%;
+
+}
+.player.p10{
+    top: 48%;
+    left: 75%;
+
+}
+.player.p11{
+    top: 83%;
+    left: 75%;
+
+}
+
+/* end of formation 3-4-3 */
+
+.formations{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    /* background-color: orange; */
+    gap: 10px;
+}
+
+.formation{
+    cursor: pointer;
+    background-color: aqua;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+}
+

@@ -1,0 +1,72 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body, html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+.container{
+    margin: auto;
+    background-image: url(./img/main_field.jpg);
+    background-size:cover;
+    background-position: center;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.navbar{
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 7.8%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.navbar .information{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* background-color: orange; */
+}
+
+.information .logo{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+.logo img{
+    width: 50px;
+}
+.information .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font: normal normal bold 24px arial;
+    color: rgb(249, 217, 217);
+    letter-spacing: 2px;
+}
+
+.navbar .menus{
+    padding: 3px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(80px,1fr));
+    gap: 5px;
+}
+
+.menu{
+    text-align: center;
+    border: 2px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font: normal normal bold 15px arial;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+}
