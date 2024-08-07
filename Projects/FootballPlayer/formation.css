@@ -90,6 +90,7 @@ img{
     margin-bottom: 20px;
 }
 .formation {
+    cursor: pointer;
     display: flex;
     background-color: rgba(219, 226, 232, 0.65);
     width: 80%;
