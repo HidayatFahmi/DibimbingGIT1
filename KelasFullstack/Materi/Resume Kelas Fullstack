@@ -1,0 +1,203 @@
+=========================== 1 Algoritma
+
+- algoritma adalah susunan langkah2 dalam menyelesaikan suatu permasalahan
+- algoritma bisa disajikan dengan berbagai cara beberapa diantaranya dengan flowchart (diagram alir), pseudocode dan lain2
+- karakeristik algoritma yaitu :
+1. terbatas (finitnes) : jumlah dari suatu algoritma memiliki batas
+2. unambogous/terdefenisi : suatu pemrograman haruslah mudah dipahami dan terhindar dari ambiguitas
+3. memiliki input dan output : suatu algoritma harus memnghasilkan output
+4. efektif
+
+********** bahasa pemrograman : adalah intruksi standar agae komputer bisa menjalankan suatu fungsi
+- generasi pemrograman, saat ini generasi pemrograman sudah mencapai generasi ke-5
+- proses pembuatan program : yaitu dengan interpreter, compiler, compiler dan interpreter
+- struktur dasar algoritma : 
+1. urutan (sequential) : rogram yang dieksekusi secara berurutan, pada dasarnya suatu pemrogrman di ekseskusi dengan cara sequential
+2. pemilihan (seleksi) : biasanya disebut percabangan
+3. perulangan (loop)
+
+********** Variabel dan tipe data :
+- variabel adalah pengenal/ identifier untuk mewakili suatu nilai tertentu
+- aturan penamaan variabel : 
+1. nama variabel boleh gabungan huruf dan angka, tetapi tidak boleh diawali angka
+2. tidak boleh ada spasi
+3. tidak boleh ada symbol khusus kecuali underscore
+4. jumlah karakter bebas tapi hanya 32 karakter pertama yang terpakai
+
+- tipa data : adalah nilai yang dapat ditampung oleh suatu variabel
+- tipe data dibagi menjadi 2 : tipe data standar dan tipe data terstruktur
+1. tipe data standar : tipe data dasar yang sering digunakan atau sering disebut tipe data primitif, contohnya : integer, bilangan real, char, string, boolean
+2. tipe data tersturktur : adalah tipe data yang bisa menampung banyak tipe data, contohnya : array, record, file, set, pointer
+
+********** Operator
+- simbol dalam program yang digunakn untuk memanipulasi nilai
+- dibagu menjadi 3 : 
+1. Operator aritmatika
+   diantaranya, +, -, *, /, %. //
+2. operator logika
+   untuk menghubungkan 2 atau lebih untuk menghasilkan nilai true or false, contonya
+   and, or, not
+3. operator relasional
+  - adalah operator yang digunakan untuk menghubunkan 2 variabel, contohnya =, <>, <, >, <=, >=
+
+********** Nilai Variabel
+- nilai dapat dimanipulasi dengan cara
+1. mengisi nilai kedalam variabel
+2. menuliskan ke piranti keluaran
+3. diacu dari sutu proses perhitungan/operasi
+
+- nilai dapat berupa
+1. konstanta yg diisi langsung
+2. isi yang disimpan oleh variabel/konstanta
+3. hasil perhitungan suatu pehitungan/operasi
+
+********** Mengenal pseudocode
+- adalah salah satu cara penulisan algoritma yg hampir menyerupai bahasa pemrograman namun ditulis lebih sederhana dan menggunakan bahasa baku yg mudah dipahami
+- struktur penulisan pseudocode
+1. Bagian judul, diawali dengan kata "PROGRAM" kemudian diikuti dengan nama algoritma.
+2.Bagian deklarasi, digunakan untuk mendeklarasiakn variabel2 yg akan digunakan dalam algoritma dan jenisnya
+3. Bagian isi, bagian ini merupakan bagian utama dari jalnnya algoritma
+
+- contoh pseudocode menghitung luas persegi panjang
+* PROGRAM CariLuasPersegiPanjang
+  DEKLARASI
+  int p,l
+  float hasil
+
+  ALGORITMA
+  real(p,l)
+  hasil = p*l
+  write("Hasil = ",hasil)
+
+********** Kondisi Percabangan/pemilihan
+* ROGRAM AlgoritmaBeliSepatu
+  DEKLARASI 
+  budget: int <- 1000000
+  hargaSepatu1 : int <- 1200000
+  hargaSepatu2 : <= 900000
+
+  ALGORITMA
+  pergiKeAdadosStore()
+  if hargaSepatu1 < budget then
+     beliSepatu1()
+  else beliSepatu2()
+
+********** Struktur Percabangan/pemilihan
+- struktur pemrograman yang melakukan proses pengujian untuk mengambil suatu keputusan dala mengeksekusi atau tidak mengeksekusi sebuah kode pemrograman
+- struktur percabangan ditulis dengan IF, ELSE,IF dan (ELSE IF)
+-  macam2 struktur if : if satu kondisi, if 2 kondisi dan if banyak kondisi (nested)
+
+********** Mengenali Pola perulangan
+********** Struktur Perulangan
+- intruksi khusus dalam sebuah pemrogrman yang jumlahnya ditentukan, tujuannya untuk memprsingkat pemrogrman
+- bentuk instruksi perulangan 
+1. perulangan menggunakan for,
+   terdiri dari 2, perulagan for..to..do atau perulangan positif dan perulangan for...downto..do atau perulgan negatif yaitu nilai dari varibel yang berkurang
+   contoh pada javascript : 
+   * (for let i=0;i<=10;i++)
+2. perulangan menggunakan while do,
+   * perulangan yang dilakukan pada suatu state selama bernilai/ kondisi benar, harus 
+     ada kondisi agar tidak terjadi infinite loop
+3. perulangan menggunakan repeat until
+   - kebalikan dari while, perulangan repeat adalah perulangan selama kondisi berniali false
+
+- penggunaan perulangan tergantung dengan kondisi/permasalah yang dihadapi
+
+********** Prosedur 
+1. Prosedur adalah program kecil yang berada didalam program utama yg digunakan untuk menyelesaikan masalah khusus. 
+2. parameter : adalah data masukkan untuk subprogram yang nantinya akan di proses
+3. paramter aktual : parameter yg dipakai ketika prosedur dipanggil biasanya disebut argumen
+
+********** Fungsi
+- program kecil atau subprogram yg berada didalam progrma utama untuk menyelesaikan permasalahan khusus yang mengembalikan nilai, baik  dengan atau tanpa parameter
+- berdasarkan ruang lingkupnya variabel dibagi menjadi 2:
+1. variabel local
+   * variabel yg hanya bisa diakses didala fungsi induk
+2. variabel global
+   * variabel yang dapat diakses oleh semua prosedur atau diseluruh state
+
+- keutungan memakai fungsi atau prosedur, diantaranya adalah : 
+1. mengurangi tugas pemrograman menjadi langkah2 yg lebih sederhana dan kecil
+2. mengurangi duplikasi kode (kode sama yg ditulis berulang)
+3. dapat menggunakan kode program yg ditulis dalam berbagai program berbeda
+4. memecah program besar menjadi kecil sehingga dapat dikerjakan oleh beberapa programmer
+5. menyembunyikan informasi user sehingga menghindari perubahan logika dan perhitungan dalam suatu program
+6. mengingkatkan pelacakan error pada saat menjalankan program
+
+=========================== 2 Struktur Data
+
+********** Struktur data array
+- sebuah tipe data terstruktur yangbisa menyimpan banyak data dengan tipe yang sama ataupun berbeda
+- contoh penulisan array pada js : let mahasiswa = ["fahmi","hidayat","leo","ronaldo"];
+- cara mengaksea arraya : mahasiswa[0];
+
+********** Struktur data Linked List
+- adalah bentuk struktur data yang tersusun secara sekuensial, terhubung, dinamis dan terbatas, suatu simpul node yang dikaitlan dengan simpul lain dalam urutan tertentu
+- masing2 elemen disimpan dalam node yang memuat nillai dan pointer link yg memuat ke alamat selanjutnya, setiap node menunjuk ke node selanjutnya.
+- node pertama yg digunakan referensi untuk proses transfering disebut head dan node terakhir disebut null
+
+********** Struktur data Stack dan queue
+- stack adalah tumpukan atau struktur data dinamis yang mengikuti prinsip last in first out (LIFO) artinya item terakhir yang disertakan dalam stack aka menjadi item pertama yg dihilangkan dari stack.
+- sifat2 stack
+1. struktur dinamis
+2. tidak memiliki ukuran tetap
+3. tidak menggunakan kapasitas tetap memori
+4. ukuran stack berubah dengan tiap operasi push() dan pop()
+
+- queue : adlah strurktur data yg mengikuti prinsip first in first out (FIFO)
+fungsi2 yg didukung queue
+1. Enqueue : menambhakan elemen dari sisi belakang hanya jika elemen tidak penuh
+2. Dequeue : menghapus elemen dari sisi depan queue hanya jika queue tidak kosong
+
+********** Struktur Data Binary Tree dan Graph
+- Binary tree : struktur data yang memiliki pola percabangan tidak seperti array, limked list, stack da queue yang memiliki pola struktur data linear
+- bentuk percabangan yang maksimal memiliki dua chilren dari setiap parent-nya
+- element paling atas disebut root, dan elemnt paling bawah yang tidak memiliki anak disebut leaves
+- elemen parent adalah lement dengan tingkatan 1 level lebih tinggi dari eleng children
+- element children 1 level dibawah parent
+
+- alasan menggunakan struktur data tree
+1. menyimpan struktur data bentuk tree/pohon, contohnya file sistem komputer
+2. struktur data tree berada pada level menenengah untuk pemrosesan akses atau search (lebih cepat dari linked list dan lebih lambat dari array)
+3. level menengah untuk proses insert dan hapus lemen (lebih cepat dari array dan lebih linked list tidak berurut)
+4. sama seerpti linked list dan tidak seperti array, struktur data tidak perlu mengalokasikan ukuran maksimal elemen karena setiap node dihubungkan dengan menggunakan pointer
+
+- stuktur data graph , representasi gambar dari set objek yangsaling terhubung
+- graph dibagi menjadi 3 :
+1. grap berarah : graph yg tepinya memiliki arah
+2. grap tidak berarah : graph yg tepinya memiliki arah
+3. graph berbobot : graph yg tepinya memiliki bobot atau memeiliki nilai setiap tepinya
+
+=========================== 3 Penerapan algoritma
+********** Algoritma pada pengurutan data
+- pengurutan data sesuai kategori tertentu
+- contoh pengaplikasan pada bubble sort
+
+********** Pengurutan data dengan teknis selection sort
+- terdapat beberapa metode pengurutan data, diantaranya bubble sort, selection sort, insertion sort, shell sort, merge sort, quick sort, dll
+- selection sort, misalnya memilih element dengan nilai paling rendah dan menukar element yang terpilih dengan element ke-n
+
+********** Pengurutan data dengan teknis insertion sort
+- dengan metode ini akan memilih data menjadi 2 bagian, bagian data yang sudah rurut dan data yang sudah berurut, kita ambil data yang belum berurut kemudian kita sisipkan kedalam data yang sudah berurut, dilakukan berulang sampai data pada bagian tidakberurut habis
+
+********** Algoritma pada pencarian data
+- suatu metode untuk mencari data tertentu pada kumpulan data, misalnya pencarian pad google
+- berdasarkan tipe operasi pencarian
+1. pencarian sekuemsial : melakukan pengecekan 1 per 1 dar kiri ke kanan, contohnya pencarian linear
+2. pencarian interval : metode ini khusu untuk data yang sudah terurut, 
+3. pencarian lompat : 
+
+********** Algoritma rekursif
+- adalah sutu proses yang memanggil dirinya sendiri
+
+=========================== 3 Mahir menggunakan text editor
+********** Apa itu IDE dan Text editor
+- text editor adalah program yg mengubah teks secara plain tanpa memiliki format apapun
+- Intergrated development environment (IDE) software / aplikasi yang memiliki fasilitas untuk pengembangan software, secara umum IDE memiliki setidaknya source code editor, build automation dan debugger.
+
+********** Instalasi VSCode
+1. cari vscode di browser, download sesuai dengan OS pada perangkat 
+2. download dan install
+- kelebihan visual studio code sala satunya, ada feature terminal untuk menulisakan perintah berupa teks,
+
+********** Fitur VSCode

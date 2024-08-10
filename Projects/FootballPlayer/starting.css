@@ -112,7 +112,7 @@ img{
 }
 
 .select-player .players-card{
-    background-color: yellow;
+    /* background-color: yellow; */
     grid-area: cardX;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(130px,1fr));
@@ -123,12 +123,13 @@ img{
 }
 
 .players-card .card{
-    background-color: blue;
+    background-color: rgb(39, 126, 225);
 }
 
 .card .header{
-    background-color: red;
+    /* background-color: red; */
     padding: 5px;
+    border-bottom: 2px solid black;
 }
 
 .card img{
@@ -137,15 +138,59 @@ img{
 }
 
 .players-card .card .data{
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
     display: grid;
-    /* grid-template-columns: 1fr 1fr; */
+    grid-template-columns: 1fr 1fr;
+    padding: 3px;
+    gap: 4px;
+}
+
+.card .data div{
+    background-color: orange;
+    width: 80%;
+    margin: auto;
+}
+
+.players-table{
+    /* background-color: blue; */
+    margin: 3% 10%;
+}
+
+.ready-players{
+    border-collapse: separate;
+    border-spacing: 0;
+    border: 2px solid black;
+    width: 100%;
+    color: white;
+    font-weight: bold;
+}
+
+.ready-players th,
+.ready-players td{
+    border: 2px solid white;
+    padding: 5px;
+}
+
+.ready-players th{
+    background-color: rgba(12, 26, 211, 0.75);
+    font-size: 120%;
+}
+
+.ready-players td{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.ready-players .position{
+    table-layout: auto;
+    width: 20%;
+    text-align: center;
+}
+
+.ready-players .remove{
+    text-align: center;
 }
 
 
-.player-table{
-    background-color: blue;
-}
 
 /* Responsive Breakpoints */
 @media  screen and (max-width : 750px) {
