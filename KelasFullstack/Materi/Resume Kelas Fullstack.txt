@@ -299,6 +299,7 @@ secara default bash tidak akan menampilkan file yang diawalai "titik" jika ingin
 * git log
 
 - Sync
+* git remote add origin <url></url>
 * git push
 * git pull
 * git fetch
@@ -309,12 +310,49 @@ secara default bash tidak akan menampilkan file yang diawalai "titik" jika ingin
 * git merge
 * git tag
 
-********** Inisilisasi and clone
-1. git init : 
+********** Inisilisasi (init) and clone
+1. git init : mwnginisialisasi git 
+2. git clone <url> : mengambil file pada remote yang dipublish ke repositori local
+
+********** git add 
+1. git add <file> : enambahkan file tertentu
+2. git add . : menambahkan semua file
+
+********** git reset
+- menghapus perubahan yang sudah dilakukan/ setelah di add, dengan kata lain ifle dikeluarkan lagi dari staging area
+- git reset <file>
+
+********** git commit, diff and log
+- git commit -m "<message>" : adlaah proses menambahkan penanda pada file yang sudah dimasukkan kedalam staging area sebelum dilakukan push
+
+- git log : perintah untuk meliha riwayat commit yang telah dilakukan pada sebuah repository, serta berisi informasi hash commit, penulis, tanggal dan pesan commit
+
+- git diff : untuk melihat detail perubahna pada suatu file
+
+********** git push
+- mengungah file dari repo local ke remote
+1. git remote add origin url
+2. gi remote -v ; untuk memastikn bahwa repository local sudah terintegrasi dengan remote
+
+********** git pull
+- mengunduh file remote ke local repository
+- git pull origin main atau master
+
+********** git fetch and branch
+- fetch : mengambil data/resourxe yang ada pada server tanpa mengubah file pada local
+- git fetch
+- git checkout <nama_branch>
+- git branch : untuk cek dibrach mana kita sedang aktif
+- git branch -d <nama_branch> : untuk delete branch, kembali ke master sebelum melakukan delete
+
+- branch : adalah percabangan, biasanya ketika endak melakukan penambahan fitur tanpa menggangu file utama
+
+********** git merge
+- menggabungkan 2 atau lebih branch
+
+********** GIT Conflict Solve
+- accept current change, accept incoming change, accept bothchange, compare change
 
 
 
-
-
-
-https://dashboard.codepolitan.com/learn/courses/detail/belajar-git-pemula
+https://dashboard.codepolitan.com/learn/courses/belajar-git-pemula/lessons/10688
