@@ -1,4 +1,5 @@
 =========================== 1 Algoritma
+==============================================================
 
 - algoritma adalah susunan langkah2 dalam menyelesaikan suatu permasalahan
 - algoritma bisa disajikan dengan berbagai cara beberapa diantaranya dengan flowchart (diagram alir), pseudocode dan lain2
@@ -42,7 +43,7 @@
 
 ********** Nilai Variabel
 - nilai dapat dimanipulasi dengan cara
-1. mengisi nilai kedalam variabel
+1. mengisi nilai kedalam variabel / explisit
 2. menuliskan ke piranti keluaran
 3. diacu dari sutu proses perhitungan/operasi
 
@@ -125,6 +126,7 @@
 6. mengingkatkan pelacakan error pada saat menjalankan program
 
 =========================== 2 Struktur Data
+==============================================================
 
 ********** Struktur data array
 - sebuah tipe data terstruktur yangbisa menyimpan banyak data dengan tipe yang sama ataupun berbeda
@@ -132,7 +134,7 @@
 - cara mengaksea arraya : mahasiswa[0];
 
 ********** Struktur data Linked List
-- adalah bentuk struktur data yang tersusun secara sekuensial, terhubung, dinamis dan terbatas, suatu simpul node yang dikaitlan dengan simpul lain dalam urutan tertentu
+- adalah bentuk struktur data yang tersusun secara sekuensial, terhubung, dinamis dan terbatas, suatu simpul node yang dikaitkan dengan simpul lain dalam urutan tertentu
 - masing2 elemen disimpan dalam node yang memuat nillai dan pointer link yg memuat ke alamat selanjutnya, setiap node menunjuk ke node selanjutnya.
 - node pertama yg digunakan referensi untuk proses transfering disebut head dan node terakhir disebut null
 
@@ -144,13 +146,12 @@
 3. tidak menggunakan kapasitas tetap memori
 4. ukuran stack berubah dengan tiap operasi push() dan pop()
 
-- queue : adlah strurktur data yg mengikuti prinsip first in first out (FIFO)
-fungsi2 yg didukung queue
+- queue : adalah strurktur data yg mengikuti prinsip first in first out (FIFO) fungsi2 yg didukung queue
 1. Enqueue : menambhakan elemen dari sisi belakang hanya jika elemen tidak penuh
 2. Dequeue : menghapus elemen dari sisi depan queue hanya jika queue tidak kosong
 
 ********** Struktur Data Binary Tree dan Graph
-- Binary tree : struktur data yang memiliki pola percabangan tidak seperti array, limked list, stack da queue yang memiliki pola struktur data linear
+- Binary tree : struktur data yang memiliki pola percabangan tidak seperti array, linked list, stack dan queue yang memiliki pola struktur data linear
 - bentuk percabangan yang maksimal memiliki dua chilren dari setiap parent-nya
 - element paling atas disebut root, dan elemnt paling bawah yang tidak memiliki anak disebut leaves
 - elemen parent adalah lement dengan tingkatan 1 level lebih tinggi dari eleng children
@@ -169,6 +170,8 @@ fungsi2 yg didukung queue
 3. graph berbobot : graph yg tepinya memiliki bobot atau memeiliki nilai setiap tepinya
 
 =========================== 3 Penerapan algoritma
+==============================================================
+
 ********** Algoritma pada pengurutan data
 - pengurutan data sesuai kategori tertentu
 - contoh pengaplikasan pada bubble sort
@@ -190,7 +193,9 @@ fungsi2 yg didukung queue
 ********** Algoritma rekursif
 - adalah sutu proses yang memanggil dirinya sendiri
 
-=========================== 3 Mahir menggunakan text editor
+=========================== 4 Mahir menggunakan text editor
+==============================================================
+
 ********** Apa itu IDE dan Text editor
 - text editor adalah program yg mengubah teks secara plain tanpa memiliki format apapun
 - Intergrated development environment (IDE) software / aplikasi yang memiliki fasilitas untuk pengembangan software, secara umum IDE memiliki setidaknya source code editor, build automation dan debugger.
@@ -201,3 +206,115 @@ fungsi2 yg didukung queue
 - kelebihan visual studio code sala satunya, ada feature terminal untuk menulisakan perintah berupa teks,
 
 ********** Fitur VSCode
+- cara membuka file ke vsccode
+- mimiliki autocomplete
+- autosave
+- open edtor : mengelompokkan file yang sedang aktif/open 
+  * explorer -> open editor
+
+********** Extension Untuk mempermudah proses development
+1. Material Icon : utuk mengubah icon
+2. live server
+3. snippet
+4. vscde extension for web developer
+
+=========================== 5 Mahir Menggunakan CMD untuk Dev
+==============================================================
+
+********** Pendahuluan
+- text based interface/ perintah2 komputer yg kita jalankan melalui command line berupa text
+- alasa menggunakan terminal yaitu bisa mempercepat proses yang biasanya kita lakukan secara manual atau GUI, misalnya membuat file
+
+********** Kenapa perlu menggunakan terminal
+1. kecepatan/efisiensi waktu
+2. akses, memiliki akses langung ke area sistem yang mungkin jarang kita gunakan di GUI.
+3. banyak programming tools harus menggunakan cmd, selain lebih ringan karena tidak perlu menggunak CMD
+- bash, shell yg palin sering digunakan
+- ketik bash pada terminal 
+
+********** Menginstall bash di windows
+1. link https://git-scm.com/downloads
+2. pilih arsitektur dari OS, dan download
+3. bash adalah program yang dijalankan diterminal yg digunakan diberbagai OS, memungkinkan pengguna untuk menjalankan perintah Git di sistem operasi Windows.
+
+********** Mengenal Perintah LS dan PWD
+1. ls : list,menmilkan file dan folder dengan reference file yang dibuka
+secara default bash tidak akan menampilkan file yang diawalai "titik" jika ingin menmpilkan gunakan perintah "ls -a"
+2. clear : membersihkan CMD
+3. PWD : Print workig directory, menampilkan path dari file yang digunakan
+- menggunakan slash utk memisahkan hierarki file
+
+********** Mengenal Perintah CD (change directory)
+- adalah perintah untuk berpindah folder
+- autocomplete dengan tombol tab setelah menuliskan beberpa kata depan dari file/folder
+1. cd ../ untuk berpidah ke directory 1 level diluar
+
+********** Absolute path dan relative path
+- cd ~ : untuk kembali ke directory awal
+- path absolute : adalah path lengkap untuk mengakses file tertentu contohnya cd file1/file2/file3.js
+- relative path: digunakan etika directory tudak diketahui path-nya, maka menggunakn "cd ../"
+
+********** Perintah Mkdir/ make directory
+- adalah perintah untuk membuat folder
+- jika ada spasi atau selain perintah alphanumeric maka gunakan backslash "\"
+1. mkdir "nama folder", jika ingin 2 folder atau lebih "mkdir nama_folder1 nama_folder2"
+2. rm -rf : menghapus folder beserta isinya termasuk subfolder tanpa konfirmasi
+
+********** Mengenal Istilah Flags Atau Parameter Pada Cli
+1. ls -la : untuk menampilkan informasi detail dari suatu folder dan file
+2. gunakah ls --help untuk melihat semua comad line dari ls 
+
+********** Membuat file dengan perintah touch
+- touch nama_file
+
+
+=========================== 6 GIT Bagian 1
+============================================================== Ahmad Oriza
+********** Pendahuluan
+- adalah sistemo kontrol versi terdistribusi (VCS) yang digunakan untuk melacak peruahan dalam kode sumber selama pengembangan perangkat lunak
+- linus torvalds, penemu dan pengembang git
+- instalasi git
+- git cheat sheet : https://education.github.com/git-cheat-sheet-education.pdf
+- new word : onpremise
+
+********** Panduan instalasi GIT
+- cari git di browser, pilih OS dan arsitektur yang sesuai
+
+********** Perintah GIT Dasar
+- create :
+* git init : inisialisasi git di directory
+* git clone
+
+- make a change : 
+* git add <file>
+* git add .
+* git commit -m "<message>"
+* git reset <file>
+* git reset --hard
+
+- Observe
+* git status
+* git diff
+* git show
+* git log
+
+- Sync
+* git push
+* git pull
+* git fetch
+
+- Branch
+* git branch
+* git checkout
+* git merge
+* git tag
+
+********** Inisilisasi and clone
+1. git init : 
+
+
+
+
+
+
+https://dashboard.codepolitan.com/learn/courses/detail/belajar-git-pemula
