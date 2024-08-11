@@ -353,6 +353,22 @@ secara default bash tidak akan menampilkan file yang diawalai "titik" jika ingin
 ********** GIT Conflict Solve
 - accept current change, accept incoming change, accept bothchange, compare change
 
+********** GIT tag
+- menandai milestone project degan git tag, seperti versi sebuah file
+-  sehingga file yang sudahditandai dengan tag akan berbentuk zip sehingga bisa di unduh
+1. git tag -a v1.0 -m "<message>"
+2. otomatis akan membuka vim
+3. mengetikan message 
+4. ketikan kembali perintah "git tag" untuk meliha tag yang sudah dibuat
+
+perintah pada vim
+1. i - Masuk ke mode Insert.
+2. Ketik pesan yang diinginkan.
+3. Esc - Keluar dari mode Insert.
+4. :wq - Simpan dan keluar dari Vim.
+
+- ketikkan git push origin --tags : untuk push semua tag kalau hanya ingin push 1 maka "git push origin <nama tag>
+- git tag -d <nama_tag> :untuk menghapus tag
 
 
 https://dashboard.codepolitan.com/learn/courses/belajar-git-pemula/lessons/10688
