@@ -371,4 +371,33 @@ perintah pada vim
 - git tag -d <nama_tag> :untuk menghapus tag
 
 
-https://dashboard.codepolitan.com/learn/courses/belajar-git-pemula/lessons/10688
+=========================== 7 GIT Bagian 2
+============================================================== Nusendra
+********** Pengenalan GIT
+********** Repository dan menambahkan file
+1.pengaturan awal git
+- git config --global user.name "<username>"
+- git config --global user.email "<email>"
+- git add . 
+- git commit -m "<message>"
+
+********** Mengubah file dan GIT diff
+- git diff : untuk melihat perubaha pada file sebelum di add
+
+********** Melihat history dengan git log
+- git log : melihat history setelah proses commit dilengkapi informasi detail seperti author, hash commit, tanggal, dan message commit
+- hash commit adalah code unik sebagai penanda/identifier sebuah commit
+- git log --oneline : history dengan informasi singkat
+
+********** GIT Restore
+- membatalkan perubahan sebelum di add .
+
+
+
+
+
+
+
+https://dashboard.codepolitan.com/learn/courses/belajar-git-dasar/lessons/8276
+
+* resume Web : https://docs.google.com/spreadsheets/d/1gBgcYDhjnQXr5n7GhQFQEtNe9Fm76SC7_jPwB9LwFUw/edit?gid=0#gid=0
