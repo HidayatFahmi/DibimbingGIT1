@@ -392,6 +392,49 @@ perintah pada vim
 ********** GIT Restore
 - membatalkan perubahan sebelum di add .
 
+********** GIT Reset 
+- membatalkan perbuhan yang sudah ada pada stagung area, dengan kata lain mengembalikan lagi dengan working area
+- bisa menggunakan git restore -S "<nama_file>"
+
+********** Macam GIT Reset 
+1. git reset --hard <hash>: kembali ke commit sebelunya dan menghapus semua perubahan 
+
+2. git reset --mixed : kemmbali ke commit sebelumnya dan file kembali ke wroking directory/ keluar dari staging area
+
+3. git reset --soft : commit terakhir akan dihapus tapi file tetap pada staging area/ siap dicommit
+
+********** Branch and merge
+- branch / cabang : menduplikat ifle pada main/master untuk diedit tanpa menggangu file pada main/master
+* git checkout -b nama_branch // tanpa petik
+
+- merge : menggabungkan branch
+* pastikan kembali ke branch master seblum merging process
+* git merge <nama_branch>
+
+********** Merevisi commit
+- ada 3 cara merevesi commit 
+1. dengan checkout, bersifat te,porary dan kurang disarankan
+2. reset
+3. revert, kembali ke comit sebelumnya tanpa menghapus commit sebelumnya tapi biasanya ada conflict dengan commit terbaru sehingga harus di solve
+* git revert --hash
+
+********** Membuat repository di github
+- jika sudah login pada github yang pertma harus dilakukan adalah setup SSH key agar komputer local bisa berkomukasi dengan remote dan menghindari hacking code oleh user lain
+1. ke menu setting, generate new ssh keys
+2. jalankan command berikut (ganti email) : ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+3. ssh-add c:/Users/YOU/.ssh/id_ed25519
+
+********** git clone dan git push
+- git clone , membuat salinan lengkap beserta branch, commit dan history
+
+********** git pull request
+- permintaan untuk merge code antar author
+
+********** aturan penulisan git commit
+1. merge harus spesifik dan dengan message yang jelas
+2. berdasarkan conventional commit https://www.conventionalcommits.org/en/v1.0.0/ disarankan ada prefix misalnya fix atau fit
+* git commit -m "fix: solve some error at row 1"
+* git commit -m "feat : add new function"
 
 
 
