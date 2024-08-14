@@ -339,7 +339,7 @@ secara default bash tidak akan menampilkan file yang diawalai "titik" jika ingin
 - git pull origin main atau master
 
 ********** git fetch and branch
-- fetch : mengambil data/resourxe yang ada pada server tanpa mengubah file pada local
+- fetch : mengambil data/resource yang ada pada server tanpa mengubah file pada local
 - git fetch
 - git checkout <nama_branch>
 - git branch : untuk cek dibrach mana kita sedang aktif
@@ -393,7 +393,7 @@ perintah pada vim
 - membatalkan perubahan sebelum di add .
 
 ********** GIT Reset 
-- membatalkan perbuhan yang sudah ada pada stagung area, dengan kata lain mengembalikan lagi dengan working area
+- membatalkan perubahan yang sudah ada pada staging area, dengan kata lain mengembalikan lagi dengan working area
 - bisa menggunakan git restore -S "<nama_file>"
 
 ********** Macam GIT Reset 
@@ -413,7 +413,7 @@ perintah pada vim
 
 ********** Merevisi commit
 - ada 3 cara merevesi commit 
-1. dengan checkout, bersifat te,porary dan kurang disarankan
+1. dengan checkout, bersifat temporary dan kurang disarankan
 2. reset
 3. revert, kembali ke comit sebelumnya tanpa menghapus commit sebelumnya tapi biasanya ada conflict dengan commit terbaru sehingga harus di solve
 * git revert --hash
@@ -437,9 +437,53 @@ perintah pada vim
 * git commit -m "feat : add new function"
 
 
+=========================== 8 HTML Beginner
+============================================================== 
+********** Apa itu internet
+- sistem jaringan komputer yang saling terhubugn secara global dengan menggunakan paket protokol internet (TCP/IP) 
 
+********** Hubungan WEb dan internet
+- http : hypertext transfer protocol adalah protocol web
+- http terdiri dari 2 yaitu dari sisi client/user dan server
+- client request data, server store or retrieves data
+- http request : POST or GET requested connection opened
+- http bekerja diatas tcp/ip
+- web sebgai wadah untuk melampirkan data
 
+********** FE dan BE
+1. FE 
+- markup and web language : html, css, javascript
+- asynchronous request
+- accessibility
+- cross browser
+- search engine optimization
 
+2. BE 
+- Programming and scripting : pythin,  php, java, node.js
+- server architecture
+- database admnnistration
+- scalability
+- security
+- data transformation
+- backup
+
+********** Persiapan software yg dibutuhkan
+********** Pengenalan HTML
+********** Membuat HTML pertama kali
+********** Membuat format paragraf di HTML
+- karakteristik paragraf yang kita tulis di file html tidak akan selalu sama dengan yang tampil pada browser
+
+********** Membuat format Heading
+- <h1> sampai <h6>, h1 adalah headign terbesar
+
+********** Kerangka utuh element html
+- head, title, meta, link, body, footer, script
+
+********** Membuat list didalam HTML
+- ol, ul, li, type,
+
+********** Membuat element LINK/Anchor
+- <a href="https://google.com">
 
 https://dashboard.codepolitan.com/learn/courses/belajar-git-dasar/lessons/8276
 
