@@ -485,6 +485,60 @@ perintah pada vim
 ********** Membuat element LINK/Anchor
 - <a href="https://google.com">
 
-https://dashboard.codepolitan.com/learn/courses/belajar-git-dasar/lessons/8276
+********** Membuat file gambar di html
+********** Element komentar
+- <!-- -->
+- shortcut = ctrl + /
+- hanya tampil pada inspect element
+- biasanya hanya utk proses development, ketika ke tahap production sebaiknya dihilangkan/hapus
+
+********** Display block and inline
+- div, sebagai element pembungkus beberapa tag/element dan display dari div adalah block
+- span, elemnt pembungkus untuk skala yang lebih kecil seperti mengelomponakn teksdan display dari span adalalah inline
+
+********** Element hr, br, sup, sub
+- hr : garis horizontal sepanjang baris
+- br : enter
+- sup : superscript/perpangkatan
+- sub : subscript menampilkan format tulisan kecil dibawah garis dasar teks normal
+
+********** Entity Code
+- teks string yang diawali dengan ampersand dan diakhiri dengan titik koma https://entitycode.com/
+* &copy;, &nbsp;
+
+********** Semantic markup
+- syntax yang bermakna
+
+********** Latihan semantic
+https://developer.mozilla.org/en-US/docs/Glossary/Semantics
+- main : merepresentasikan content utama atau yang lebih dominan didalam body 
+- nav : navigasi
+- section
+- article : merepresentasikan suatu kompoisi konten yang independen dan bisa digunakan ulang
+  * article biasanya digunakan untuk sebuah elemen yang memiliki heading dan paragraf, tidak ada aturan baku apakah harus menggunakan section atau article
+- aside : informasi yang memiliki porsi yg lebih kecil
+- footer 
+
+********** sejarah table di html
+- sekarang table sudah jarang digunakan
+
+********** Membuat table sederhana
+- property border, cellpadding, csllspasing, width, height, align, bgcolor 
+********** thead, tbody, tfoot
+********** Colspan, rowspan
+
+
+
+
+
+
+
+
+
+
+
+
+
+https://dashboard.codepolitan.com/learn/courses/belajar-dasar-html/lessons/7433
 
 * resume Web : https://docs.google.com/spreadsheets/d/1gBgcYDhjnQXr5n7GhQFQEtNe9Fm76SC7_jPwB9LwFUw/edit?gid=0#gid=0
