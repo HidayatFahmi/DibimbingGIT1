@@ -438,7 +438,8 @@ perintah pada vim
 
 
 =========================== 8 HTML Beginner
-============================================================== 
+============================================================== Ahmad Hakim 
+
 ********** Apa itu internet
 - sistem jaringan komputer yang saling terhubugn secara global dengan menggunakan paket protokol internet (TCP/IP) 
 
@@ -525,7 +526,119 @@ https://developer.mozilla.org/en-US/docs/Glossary/Semantics
 ********** Membuat table sederhana
 - property border, cellpadding, csllspasing, width, height, align, bgcolor 
 ********** thead, tbody, tfoot
-********** Colspan, rowspan
+********** Colspan, 
+
+********** Form untuk isian formulir
+- form adalah element untuk membungkus jenis isian dan tidak memberikan efek tampilan apapun
+- isi dari form bisa berupa input, checkbox, search tombol, dll
+- form digambarkan sebagai dokumen yang memiliki informasi yang perlu dikirim
+- action adalah attribute untuk menentukan alamat tujuan
+- method bisa berupa post atau GET
+
+********** membuat inputan
+- attribute input : type, id, required, minlength, maxlength,size dll
+- input type : https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input
+
+********** Fungsi Label pada judul input
+- place holder, keterangan pada suatu input
+- place holder tidak bisa diberikan pada semua tipe input, maka gunakan label
+- memisahkan input satu dan lainnya : 
+  1. dengan tag br
+  2. display block, gris, flex dengan direction column
+  3. dengan fieldset dan legend
+  4. dengan tag p, div
+  5 menggunakan dl, dt, dd
+
+********** Button
+-  berfungsi untuk mengirimkan data pada formulir kedalam action yang diterapkan
+- attribute button : menu, submit, reset, button
+
+********** Attribute Name pada html
+- attribute yang digunakan pada input untuk mengirimkan data ke suatu alamat atau server sehingga bisa diidentifikasi 
+
+********** Radio Buttons, checkbox dan select
+- gunakan name yang sama untuk menghindari multiple select pada kategori yan sama
+- attribute checked untuk pilihan default
+
+- select, option
+- attribute selected untuk pilihan default
+
+********** Text area
+- atrribute : cols, rows
+
+********** Validasi inputan didalam form
+- hanya input yang memenuhi syarat yang bisa dikirim datanya
+
+
+=========================== 9 CSS (Cascade Style sheet)
+============================================================== Ahmad Hakim 
+
+********** Apa itu CSS
+- cascade style sheet : mengatur gaya layout dan tampilan visual dari halaman web
+- aturan penulisan : 
+  * selector {
+      property : value;
+  }
+
+********** CSS itu luas
+- website css :  https://developer.mozilla.org/en-US/docs/Web/CSS/@property
+
+********** Cara menggunakan 
+1. dengan inline style
+- diterapkan didalam tag sebuah element
+- kekurangan inline style : jika kebutuhan akan style banyak maka code tidak clean, dan tidak semua property css bisa digunakan
+
+2. internal styling
+- membuat dihalaman yang sama dengan html dan diletakn didalam head html
+
+3. external styling
+- memberikan link css didalam element head
+- jika bebrapa html memiliki struktur yang sama dan ingin menggunakan style yang sama maka 1 file css bisa diterapkan ke beberapa halaman html
+
+********** Property Color and background
+- ada beberapa tipe color diantara : named color, rgba, rgba, hsl, hsla, heksadesimal (#123456)
+
+********** Sistem warna RGB dan HSL
+- rgb : red, green and blue
+- rgba : a untuk alpha/ transparansi
+  * rgba(0, 0, 0, 0.65)
+- hsl dan hsla : hue saturation light alpha
+- web color html : https://htmlcolorcodes.com/
+
+********** Jangan lupa titik koma
+********** property teks
+- text-align, font-weight, font-size, font-style, font-family, line-height, letter-spacing, text-decoration
+
+********** Font-size
+- satuna size pada website dibagi menjadi 2 yaitu, relative dan absolute
+1. relative : ukuran tidak tetap, mengikuti lebar layar yang digunakan
+   * em, rem, vh, %, etc
+2. absolute : ukuran yang tetap
+  * px, pt, cm, in, mm
+
+- jika ingin membuat web yang responsive disarankan menggunakan size relative
+
+********** Selector
+- selector : adalah identifier suatu element html
+1. universal selector (*) : adalah selector yang mencakup semua element pada body html
+2. tag selector (p, h1, input, button)
+3. selector id(#)
+- id dengan nama yang sama pada satu halaman html hanya boleh 1
+- sebaiknya menggunakan 1 id pada satu elemnt html
+4. class (.)
+- boleh memiliki class dgn nama yang sama pada satu halaman html
+- boleh memiliki lebih dari 1 class pada suatu element html
+
+5. descendant selector : 
+- digunakan untuk menargetkan elemen yang merupakan keturunan (descendant) dari elemen lain tidak b]epduli sberapa dalam elemnt tersebut
+6. direct descendant and adjacent selector : 
+- direct descendant hanya akan memilih selector yang berada 1 level dibawahnya 
+  * .directDescendant > p
+- adjacent : memilih element yang bersebelahan 
+  * a + button
+7. attribute selector
+- macam attribute selector : https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors
+  * input[name="nama"]
 
 
 
@@ -533,12 +646,7 @@ https://developer.mozilla.org/en-US/docs/Glossary/Semantics
 
 
 
-
-
-
-
-
-
-https://dashboard.codepolitan.com/learn/courses/belajar-dasar-html/lessons/7433
+https://dashboard.codepolitan.com/learn/courses/belajar-dasar-css/lessons/7447
 
 * resume Web : https://docs.google.com/spreadsheets/d/1gBgcYDhjnQXr5n7GhQFQEtNe9Fm76SC7_jPwB9LwFUw/edit?gid=0#gid=0
+

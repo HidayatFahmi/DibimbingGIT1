@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir</title>
+</head>
+<body>
+    <h1> Formulir Isian</h1>
+    <form action="" method="post">
+        <input type="input" id="name" size="20">
+        <input type="range" minlength="0" maxlength="255">
+        <input type="password">
+        <input type="color">
+        <input type="email">
+        <input type="month">
+        <input type="number">
+    </form>
+
+    <form action="/daftar" method="get">
+        <fieldset>
+            <legend>Formulir</legend>
+            <p>
+                <label for="name2">Your Name : </label>
+                <input type="text" id="name2" placeholder="Text your name" name="name">
+            </p>
+            <p>
+                <label for="email2">Email</label>
+                <input id="email2" type="email" placeholder="email" name="email">
+            </p>
+            <p>
+                <label for="password2">Password</label>
+                <input type="password" name="" id="password2" name="password">
+            </p>
+            <p>
+                <label for="phone">Phone : </label>
+                <input type="number" id="phone" placeholder="phone" name="phone">
+            </p>
+
+            <button type="submit">kirim</button>
+            <input type="button" value="Input">
+        </fieldset>
+    </form>
+
+    <form action="/order" method="get">
+        <fieldset>
+            <legend>Foods</legend>
+            <h3>Pesanan</h3>
+            <div class="input-group-radio">
+                <label for="foods">Foods</label>
+                <input type="radio" name="foodie" id="ketoprak" value="ketoprak"> <label for="ketoprak">Ketoprak</label>
+
+                <input type="radio" name="foodie" id="sate" value="sate"> <label for="sate">Sate</label>
+
+                <input type="radio" name="foodie" id="gudeg" value="gudeg"> <label for="gudeg">Gudeg</label>
+            </div>
+
+            <div class="input-group-select">
+                <select name="club" id="club">
+                    <option value="barcelona">Barcelona</option>
+                    <option value="realMadrid">Real Madrid</option>
+                    <option value="liverpool" selected>Liverpool</option>
+                </select>
+            </div>
+
+            <div class="inout-group-checkbox">
+                <label for="bola">Sepak Bola</label>
+                <input type="checkbox">
+
+                <label for="robotik">Robotik</label>
+                <input type="checkbox">
+
+                <label for="comment">No hates comment!!</label>
+                <textarea name="comment" id="comment" maxlength="1000" rows="4">Text here</textarea>
+
+                <h2>Validation</h2>
+                <form action="valid">
+                    <input type="text" name="nama" id="name" minlength="5" required>
+
+                    <button type="submit">Send!!!</button>
+                </form>
+            </div>
+            <button type="submit">order!</button>
+        </fieldset>
+    </form>
+
+    <script src="5form.js"></script>
+</body>
+</html>

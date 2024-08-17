@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .internalStyle{
+            width: 80%;
+            margin: auto;
+            background-color: pink;
+            font-size: 20px;
+            font-style: italic;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-align: center;
+        }
+        .internalStyle button{
+           background-color: blue; 
+           color: white;
+           border-radius: 3px;
+        }
+    </style>
+    <link rel="stylesheet" href="1HowImplement.css">
+    <title>CSS Tutorial</title>
+</head>
+<body>
+    <div class="container">
+        <div class="bodyColorGroup">
+            <input type="range" maxlength="255" name="bodyColor" id="bodyColor">
+            <label for="bodyColor">Change Body Color</label>
+        </div>
+
+        <div class="inlineStyle" style="background-color: aquamarine;">
+            <h2 style="color: black;">How it Works</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut commodi vel repellendus ex laborum obcaecati amet dolores alias eos rerum!</p>
+
+            <button type="button">change color</button>
+        </div>
+
+        <div class="internalStyle">
+            <h2>Internal Styling</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit id molestiae totam.</p>
+            <button type="button">Change Font Family</button>
+        </div>
+
+        <div class="externalStyle">
+            <h2>External Styling</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere odio ab rem accusamus eos.</p>
+
+            <button>Change Size</button>
+        </div>
+
+        <div class="textAligning">
+            <h2>Text Align</h2>
+            <p>Lorem ipsum dolor <span class="marking">sit amet</span> consectetur adipisicing elit. Sed eaque sint hic incidunt debitis <span class="marking">eligendi repudiandae</span> ipsum, quia delectus <span class="marking">quae nisi</span> nemo fugit accusamus sit?</p>
+            <div class="textAlignButtons">
+                <button class="lefting">Left</button>
+                <button class="centering">Center</button>
+                <button class="righting">Right</button>
+            </div>
+        </div>
+
+        <div class="fontSize">
+            <h2>Font Size</h2>
+            <p>Lorem ipsum dolor sit amet </p>
+        </div>
+
+        <div class="descendantSelector">
+            <ul class="name">
+                <li><a href="">name 1</a></li>
+                <li><a href="">name 2</a></li>
+                <li><a href="">name 3</a></li>
+                <li><a href="">name 4</a></li>
+                <li><a href="">name 5</a></li>
+                <a href="">test adjacent</a>
+                <button>Buzz</button>
+            </ul>
+                <a href="">name 6</a>
+        </div>
+        <div class="directDescendant">
+            <h2>Direct Descendant</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa, aut?</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <div class="adjacent">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus, eligendi excepturi.</p>
+               <a href="">Link 1</a>
+               <button>Click</button>
+            </div>
+            <input type="text" name="nama">
+        </div>
+    </div>
+
+    <script src="1HowImplement.js"></script>
+</body>
+</html>
