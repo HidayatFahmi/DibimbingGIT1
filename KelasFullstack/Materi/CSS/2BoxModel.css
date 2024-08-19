@@ -1,0 +1,41 @@
+.boxModel{
+    width: 500px;
+    margin: auto;
+    border: 10px solid aqua;
+    padding: 0 10px;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 4px 3px 1px black;
+}
+
+.box1{
+    margin: 20px auto;
+}
+.box2{
+    margin-top: 20px;
+    border-style: dotted double dashed solid;
+    border-width: 10px 5px 20px 5px;
+}
+
+.box3{
+    border: 5px dashed blue;
+    margin: 20px auto;
+    padding: 40px 40px 10px;
+}
+
+.marginBox.mother{
+    width: 300px;
+    margin: auto;
+    border: 5px solid blue;
+    padding: 20px;
+    text-align: center;
+}
+
+.marginBox.child{
+    width: 200px;
+    margin: auto;
+    border: 5px solid red;
+    padding: 20px;
+    color: gold;
+}

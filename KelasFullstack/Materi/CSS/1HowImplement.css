@@ -48,7 +48,7 @@
 .name{
     display: grid;
 }
-.name li:nth-child(2){
+.name li:nth-child(even){
     text-decoration: none;
     list-style: none;
     background-color: #239988;
@@ -67,4 +67,21 @@ a + button{
 
 input[type="text"]{
     color: pink;
+}
+
+.pseudoClass .active:active{
+    font-size: 20px;
+}
+
+.pseudoClass .hover:hover{
+    background-color: green;
+    cursor: pointer;
+}
+
+.pseudoElement li::first-letter{
+    text-transform: capitalize;
+}
+
+.pseudoElement p::first-line{
+    color: red;
 }

@@ -630,7 +630,7 @@ https://developer.mozilla.org/en-US/docs/Glossary/Semantics
 - boleh memiliki lebih dari 1 class pada suatu element html
 
 5. descendant selector : 
-- digunakan untuk menargetkan elemen yang merupakan keturunan (descendant) dari elemen lain tidak b]epduli sberapa dalam elemnt tersebut
+- digunakan untuk menargetkan elemen yang merupakan keturunan (descendant) dari elemen lain tidak peduli sberapa dalam elemnt tersebut
 6. direct descendant and adjacent selector : 
 - direct descendant hanya akan memilih selector yang berada 1 level dibawahnya 
   * .directDescendant > p
@@ -640,13 +640,97 @@ https://developer.mozilla.org/en-US/docs/Glossary/Semantics
 - macam attribute selector : https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors
   * input[name="nama"]
 
+********** Pseudo Classes
+- kata kunci yang ditambahkan pada selector untuk memili elemnt secara spesifik pada kondisi tertentu
+- https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes
+1. :active 
+2. :checked 
+3. :first 
+4. :hover 
+5. :nth-child()
+6. nth-of-type(2)
+
+********** Mengenal Pseudo Element
+- kata kunci yang ditambahkan pada selector untuk memilih bagian element 
+- :after, :before, :first-letter, :first-line :selection
+- https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements
+
+********** Box Model
+- semua elemnt pada html adalah box
+- box model terdiri dari border, margin, padding dan content
+
+********** Border
+- garis tepi pada suatu konten
+- properti border : width, style, color, radius
+- shorthand : border : 2px solid black
+
+********** Padding
+- adalah ruang kosong/space antara konten dan border 
+- padding tidak bisa diberi niali auto
+- shorthand : vertikals horizontal;
+
+********** margin
+- adalah ruang kosong atau spasi konten terhadap element pembungkus
+
+********** Dsiplay
+1. inline : ukuran dari display akan selabar konten, konten baru akan berada diseblahnya
+- inline tidak bisa diatur lebarnya
+- jika ingin mengubah ukuran element denga tipe inline maka ubah display menjadi inline-block
+
+2. block : area horizontal/baris akan dipenuhi oleh konten sehingga apabila ada konten baru maka akan terletak dibawah
+
+********** Apa itu Flexbox
+********** Mengatur urutan element
+- main axis : sumbu horizontal
+- cross axis : sumbu vertikal
+- property : flex-direction
+
+********** Meratakan konten sumbu horizontal
+- justify-content ; center, flex-start/end, space-around/between/evenly
+
+********** Menampilkan elemen dengan ukuran sebenarnya
+- flex-wrap : kontan akan berpindah posisi jika ruang tidak sesuai dengan dimensi dari konten
+
+********** Rata sumbu vertikal
+- align item
+
+********** Mengatur jarak cross align
+- align-content : hanya beraku ketika contnt lebih dari 1 baris mislanya dengan flex-wrap
+- align-self, justify-self
+
+********** Mengubah ukuran element flex
+- flex-sizing propeprties
+1. flex-basis : mendefenisikan nilai awal dari elent yang ada didalam flex sesuai dengan directionnya
+2. flex-grow : mengatur jumlah space element yg tersedia pada pembungkusnya
+3. flex-shrink : jika elemnt lebih besar dari containernya, maka mereka akan mengecil sesuai dengan nilai yang diberikan
+
+********** shorthand
+- flex-grow, flex-shrink, flex-basis
+
+********** responsive Design dan Media Query
+- mentarget spesifik ukuran media pada device tertentu
+
+********** membuat Responsive navigation
+- min-width
+- max-width
+
+********** Membuat tabel Pricing
+1. Part 1
 
 
 
 
 
 
-https://dashboard.codepolitan.com/learn/courses/belajar-dasar-css/lessons/7447
+
+
+
+
+
+
+
+
+https://dashboard.codepolitan.com/learn/courses/belajar-dasar-css/lessons/7455
 
 * resume Web : https://docs.google.com/spreadsheets/d/1gBgcYDhjnQXr5n7GhQFQEtNe9Fm76SC7_jPwB9LwFUw/edit?gid=0#gid=0
 
