@@ -1,0 +1,29 @@
+body {
+    background: #c2ded1;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+#navbar{
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+#navbar .nav-link:hover{
+    color: rgb(41, 118, 184);
+}
+
+#navbar .navbar-brand{
+    color: #354259;
+    font-size: 1.5rem;
+}
+
+/* Responsive Breakpoints */
+@media screen and (max-width:1500px) {
+    .describing1{
+        font-size: 1rem;
+        font-weight: bold;
+    }
+    .describing2{
+        font-size: 2rem;
+    }
+}
