@@ -15,7 +15,7 @@ export default function Formations() {
     },
     "dataFormation3": { // 4-2-3-1
         structures: ["GK", "RB", "RCB", "LCB", "LB", "RW", "DMF", "DMF", "LW", "AMF", "ST"],
-        koordinat: [[25, 10], [25, 30], [25, 60], [25, 82], [50, 30], [50, 10], [50, 44.5], [55, 60], [55, 82], [75, 30]]
+        koordinat: [[25, 10], [25, 30], [25, 60], [25, 82], [42, 30], [42, 60], [60, 18], [58, 44.5], [60, 72], [75, 44.5]]
     },
     "dataFormation4": { // 4-4-1-1
         structures: ["GK", "RB", "RCB", "LCB", "LB", "RW", "DMF", "DMF", "LW", "SS", "ST"],
@@ -46,8 +46,8 @@ export default function Formations() {
 
     const playersList = {
         GK: [
-            {id : 1, name : "Fahmi Hidayat", age : 25},
-            {id : 2, name : "Cristiano", age : 39}
+            {id : 1, name : "Fahmi Hidayat", position:"DMF", age : 25},
+            {id : 2, name : "Cristiano", position:"DMF", age : 39}
             ],
         CB : [
             {id : 1, name : "Fahmi Hidayat", age : 25},
@@ -76,6 +76,11 @@ export default function Formations() {
                 localStorage.setItem("playersStructure",JSON.stringify(playersStructure));
         });
     }
+
+    // for(let player=0;player<players.length;player++){
+    //     players[player].style.bottom = formations['dataFormation3'].koordinat[player][0] + "%";
+    //     players[player].style.left = formations['dataFormation3'].koordinat[player][1] + "%";
+    // }
 }
 
 // Panggil fungsi setelah DOM dimuat

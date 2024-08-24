@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="starting.css">
-    <!-- Alpine -->
+    <!-- Include Alpine.js -->
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <!-- Feather Icons -->
-    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://unpkg.com/feather-icons" defer></script>
     
     <title>Starting Line Up</title>
 </head>
@@ -21,7 +21,7 @@
                 <div class="title">FORMATION</div>
             </div>
             <div class="menus">
-                <div class="menu starting-line-up">Starting Line Up</div>
+                <div class="menu formation"><a href="formation.html">Formation</a></div>
                 <div class="menu substitution">Substitution</div>
                 <div class="menu overview">Overview</div>
             </div>
@@ -49,6 +49,19 @@
                             <div class="age-fill">25</div>
                         </div>
                     </div>
+
+                    <template x-for="(player, index) in $store.formation.playersListX" x-key="index">
+                        <div class="card">
+                        <div class="header">Player Name</div>
+                        <div class="image"><img src="./img/logo1.png" alt=""></div>
+                        <div class="data">
+                            <div class="post">Position</div>
+                            <div class="post-fill">DMF</div>
+                            <div class="age">Age</div>
+                            <div class="age-fill">25</div>
+                        </div>
+                    </div>
+                    </template>
                 </div>
             </div>
 
@@ -73,8 +86,12 @@
     </div>
 
     <!-- Feather icons -->
-    <script>feather.replace();</script>
+    <script defer>
+        document.addEventListener("DOMContentLoaded", function() {
+            feather.replace();
+        });
+    </script>
     <!-- Starting script, let this load after Alpine.js -->
-    <script type="module" src="./starting.js" async></script>
+    <script type="module" src="starting.js"></script>
 </body>
 </html>

@@ -1,18 +1,23 @@
-document.addEventListener('alpine:init', () => {
-    // Inisialisasi store langsung pada saat Alpine diinisialisasi
+document.addEventListener("DOMContentLoaded", function(){
+    console.log("DOMContentLoaded event fired");
+
     const playersStructure = JSON.parse(localStorage.getItem("playersStructure")) || [];
     const playersList = JSON.parse(localStorage.getItem("playersList")) || {};
     console.log("Players Structure:", playersStructure);
     console.log("Players List:", playersList);
-    console.log("===========")
 
-    Alpine.store('formation', {
-        playersStructureX: playersStructure,
-        playersListX: playersList,
+    document.addEventListener('alpine:init', () => {
+        console.log("Alpine.js initialized");
+
+        Alpine.store('formation', {
+            playersStructureX: playersStructure,
+            playersListX: playersList,
+        });
+
+        setTimeout(()=>{
+            console.log("from starting file", Alpine.store('formation').playersStructureX);
+        },100)
     });
 
-    // Logging untuk memastikan data sudah terdaftar
-    console.log("from starting file", Alpine.store('formation').playersStructureX);
+    console.log("End of DOMContentLoaded function");
 });
-
-// console.log("///////////");

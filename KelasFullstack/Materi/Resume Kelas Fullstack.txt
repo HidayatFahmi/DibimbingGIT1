@@ -770,7 +770,8 @@ https://developer.mozilla.org/en-US/docs/Glossary/Semantics
 - container, row, col 
 - jumlah colom pada bootstrap adalah  12
 - freepik : https://www.freepik.com/
-- utilities bisa ditambahkan untuk memanipulasi element yang sudah memiliki karakteristik/behavior sendiri misalnya span yang memiliki dispaly default yaitu inline, dengan ditambhakna d-block maka span akan memiliki karakteristik block
+- utilities bisa ditambahkan untuk memanipulasi element yang sudah memiliki karakteristik/behavior sendiri misalnya span yang memiliki dispaly default yaitu inline, 
+dengan ditambhakna d-block maka span akan memiliki karakteristik block
 
 ********** Mendesain form dengan bootstrap
 - attribute : form-label, form-control, form-text
@@ -786,21 +787,65 @@ https://developer.mozilla.org/en-US/docs/Glossary/Semantics
 
 
 ********** Studi Kasus
-1. Museum Arkeologi 1
+1. Museum Arkeologi 
 - menmbahkanlibrary jquery
-
-2. Museum Arkeologi 2
 - navbar
 - google font
-
-3. Museum Arkeologi 3 
 - img-fluid L akan membuat gambar memenuhi element pembungku dan bersifat responsive
+- order
+
+
+
+
+=========================== 11 javascript
+============================================================== Ahmad Hakim 
+1. Tipe data primitif dan developer tools console
+- beberapa data primitif : number, string, boolean, null, undefined
+
+2 tipe data number
+- berbeda dengan nahasa pemrogrman kebanyakan pada javascript semua jenis bilangan numerik dikelompokan menjadi satu tipe data yang sama
+- eksponensial/perpangakatan = **;
+
+3. apa itu nilai Nan : adalah value yang merepresentasikan selain angka namun bertipe data number
+- misalnya 1 + Nan => Nan
+
+4. variabel dan kata kunci let
+- variabel bisa diasumsikan sebagai wadah yg bisa menyimpan nilai dengan tipe data masing2
+- aturan membuat variabel
+    1. tidak boleh diawali angka
+    2. tidak boleh menggunkan karakter unik selain underscore dan $
+    3. tidak boleh mengandung spasi
+    4. case sensitive
+    5. reversed keyword : tidak boleh memberi nama yang sudah menjadi perintah khusus javascript seperti if, var, else, function dll
+    6. camalcase : aturan pemulisan jika variabel merupukan gabungan 2 kata atau lebih 
+    - contoh : namaSaya,
+    7. Descriptive naming
+
+5. Memperbarui Nilai Number Di Dalam Variabel
+- ++, ==, += 
+
+6. kata kunci const dan var
+- const adalah variabel yang nilainya tidak bisa diubah/ konstan
+- const melindungi referensi terhadap pengubahan, tetapi tidak melindungi nilai di dalam referensi tersebut jika itu adalah objek atau array.
+- var adalah jenis variabel yang sudah jarang digunakan
+
+7. tipe data boolean 
+- bernilai true or false
+- pahami nialu truty and false
+
+8. mengenal tipe data string
+- tipe data string adalah kumpulan karakter yang dibungkus oleh tanda kutip
 
 
 
 
 
-https://dashboard.codepolitan.com/learn/courses/belajar-bootstrap-css-framework/lessons/7480
+
+
+
+
+
+https://dashboard.codepolitan.com/learn/courses/kelas-javascript/lessons/7710
 
 * resume Web : https://docs.google.com/spreadsheets/d/1gBgcYDhjnQXr5n7GhQFQEtNe9Fm76SC7_jPwB9LwFUw/edit?gid=0#gid=0
 
