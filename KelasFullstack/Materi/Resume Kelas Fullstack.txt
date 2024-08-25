@@ -835,6 +835,136 @@ dengan ditambhakna d-block maka span akan memiliki karakteristik block
 
 8. mengenal tipe data string
 - tipe data string adalah kumpulan karakter yang dibungkus oleh tanda kutip
+- tanda kutip bisa berupa single quote, double quote atau backtick tergantung kondisi dan kebutuhan
+
+9. index dan length pada string
+- index dimulai dari 0 dan lenght sesuai dengan banyak data
+- concat : menggabungkan beberapa data 
+- eksplisti anda implisit conversion
+
+10. method string javascript 
+- toUpperCase, toLowerCase, trim(), 
+- charAt(index)
+- charCodeAt(index);
+- concat, includes(), indexOf(substring), split, repeat, replace
+
+11. Argumen dan parameter
+
+12. template literal
+- dengan backtick (``) dan untuk memanggil nilai suatu variabel maka tambahkan ${namaVariabel} didalam backtick
+
+13.mengenal null dan undefined
+- null biasanya suatu value yang sengaja dibuat untuk diisi
+- undefined variabel yang dibuat tanpa value atau variabel yang belum ada
+
+14. object Math
+- Math.random():
+- Math.round() : pembulatan terdekat
+- Math.ceil() : pembulatan keatas
+- Math.floor() : pembulatan kebawah
+- Math.PI : 3.14
+- Math.E : 2.71
+- Math.abs(value) : nilai absolute
+
+15. Logika boolean
+16. Operator javascript
+- macam operator pada js : 
+  * operator aritmatika : +, -, *, **, /, %, ++, --
+  * operator perbandingan : ==, === (memperhatikan tipe data), !=, !==, >, <, >=, <=
+  * operator logika : &&, ||, !
+  * operator penugasan : =, +=, -=, *=, /=, %=, **=
+  * operator bitwise : &: AND
+    |: OR
+    ^: XOR
+    ~: NOT
+    <<: Shift kiri
+    >>: Shift kanan (mempertahankan tanda)
+    >>>: Shift kanan (tanpa tanda)
+    (let a = 5; // 0101 dalam biner
+    let b = 3; // 0011 dalam biner
+    console.log(a & b); // Output: 1 (0001 dalam biner)
+    )
+  * operator ternary 
+    a > b ? true : false
+  * operator string : +=, +
+  * operator type : typeof, instanceof
+  * Operator Lainnya
+      delete: Menghapus properti dari objek.
+      in: Memeriksa apakah properti ada di dalam objek.
+      void: Mengevaluasi ekspresi tanpa mengembalikan nilai.
+      new: Membuat instance dari objek.
+      this: Mengacu pada objek saat ini.
+      super: Mengacu pada objek induk, biasanya digunakan dalam kelas
+
+17. console alert dan prompt 
+- console.log, console.warning, console.error, console.dir
+- let name = prompt("What is your name?");
+
+18. menjalankan javascript
+- penempatan script ada didalam body dan ada yg didalam head
+
+19. if, else, else if statement
+20. cek kondisi berlapis
+21. operator logic and
+22. switch : alternatif if else namun ada beberapa kekurangan
+
+23. structure data Array 
+- adalah structure data yang bisa menmpung banyak data dengan tipe yang sama atau berbeda
+- medapatkan nilai dari index
+- memanipulasi nilai array
+
+24. method array
+- push, pop, concat, shift, unshift, slice, splice, map, find, filter, sort, forEach, reduce, reverse, join, split
+* push : menambhakan data diakhir index dari array
+* pop : menhapus data index terakhir dari array
+* shift : mengapush data index pertama dari array
+* unshift : menmbahkan data index pertam daru array
+* concat : merge 2 array atau lebih
+* indexOf : untuk melihat nomor index dari sebuah data jika tidak ada akan mengembalikan nilai -1
+* includes : melihat apakah suatu array memiliki data tertentu, maka akan mnegmbalikan true/false
+* sort : pengurutan data array 
+  - value.localeCompare(value)
+* splice : method untuk menghilngkan, menggantikan nilai dari suatu index Array
+  - value.splice(0,3,"fahmi","hidayat) : berarti menghilangkan index 0 dan 3 data didepannya digantikan dengan "fahmi" dan "hidayat"
+* slice : mengembalikan array baru tanpa mengubah array asli, sedangkan splice mengembalikan array  baru dan merubah array asli
+
+25. Mengubah nilai const dengan array 
+- pada array dan object nilai suatu array yg sudah di assign dengan const tretap bisa diubah
+
+26. Array multidimensi / nested array / array bersarang
+- data = [2,3,[4,5,6],"fahmi",["hidayat",2,3,8,9,10]]
+
+27. Apa itu object
+- adalah sekumpulan properties
+- terdiri dari key dan value
+- mengakses dengan custom keys
+
+28. structure of object data
+- bisa menamoung array atau bahkan onject lagi didalamnya
+
+29.  memanggil data dari object
+* dataFahmi = {
+  name : "fahmi",
+  age : 25,
+  homeTown : "Belitung Timur",
+}
+
+- cara memanggil dengan titik : dataFahmi.name
+- jika merupakan sebuah iterasi maka dengan cara berikut : dataFahmi["name"]
+
+30. cara memanipulasi object
+31. cara memanggil object didalam array
+- memanggil index dari array dan jika data didalmnya adalah object maka akses dgn cara 
+
+32.  Perulangan / Looping
+- melakukan operasi yang sama secara berulang sebanyak data atau kondisi
+- tipe perulangan : for, for...of, for...in, while, do while
+- infinite loops : perulangan tanpa batas
+- mendapatkan data dari array dari perulangan 
+- nested loop : perulangan bersarang
+
+33. perulangan dengan while
+- perulangan yang akan terus berulang berdasarkan konsisi yang ditentukan
 
 
 
@@ -845,7 +975,7 @@ dengan ditambhakna d-block maka span akan memiliki karakteristik block
 
 
 
-https://dashboard.codepolitan.com/learn/courses/kelas-javascript/lessons/7710
+https://dashboard.codepolitan.com/learn/courses/kelas-javascript/lessons/7801
 
 * resume Web : https://docs.google.com/spreadsheets/d/1gBgcYDhjnQXr5n7GhQFQEtNe9Fm76SC7_jPwB9LwFUw/edit?gid=0#gid=0
 
