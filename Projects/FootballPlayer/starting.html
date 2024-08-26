@@ -3,12 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="starting.css">
-    <!-- Include Alpine.js -->
-    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <!-- Feather Icons -->
     <script src="https://unpkg.com/feather-icons" defer></script>
-    
+    <!-- style -->
+    <link rel="stylesheet" href="starting.css">
+    <!-- Include Alpine.js -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.1/dist/cdn.min.js"></script>
+    <!-- App -->
+    <script type="module" src="src/app.js" async></script>
     <title>Starting Line Up</title>
 </head>
 <body>
@@ -39,26 +41,15 @@
                     <input type="text" placeholder="Search Player">
                 </div>
                 <div class="players-card">
-                    <div class="card">
-                        <div class="header">Player Name</div>
+                    <template x-for="(player, index) in $store.formation.playersListX.players" :key="index">
+                    <div class="card" @click="$store.formation.addReadyPlayers($el)">
+                        <div class="header" x-text="player.name">Player Name</div>
                         <div class="image"><img src="./img/logo1.png" alt=""></div>
                         <div class="data">
-                            <div class="post">Position</div>
-                            <div class="post-fill">DMF</div>
+                            <div class="post">Post</div>
+                            <div class="post-fill" x-text="player.position">DMF</div>
                             <div class="age">Age</div>
-                            <div class="age-fill">25</div>
-                        </div>
-                    </div>
-
-                    <template x-for="(player, index) in $store.formation.playersListX" x-key="index">
-                        <div class="card">
-                        <div class="header">Player Name</div>
-                        <div class="image"><img src="./img/logo1.png" alt=""></div>
-                        <div class="data">
-                            <div class="post">Position</div>
-                            <div class="post-fill">DMF</div>
-                            <div class="age">Age</div>
-                            <div class="age-fill">25</div>
+                            <div class="age-fill" x-text="player.age">25</div>
                         </div>
                     </div>
                     </template>
@@ -74,11 +65,13 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td class="position">AMD</td>
-                            <td>Fahmi Hidayat</td>
-                            <td class="remove">X</td>
-                        </tr>
+                        <template x-for="(player, index) in $store.formation.readyPlayers" :key="index">
+                            <tr>
+                                <td class="position" x-text="player.post">AMD</td>
+                                <td class="name" x-text="player.name">Fahmi Hidayat</td>
+                                <td class="remove">X</td>
+                            </tr>
+                        </template>
                     </tbody>
                 </table>
             </div>

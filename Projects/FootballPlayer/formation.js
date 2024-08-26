@@ -23,7 +23,7 @@ export default function Formations() {
     },
     "dataFormation5": { // 4-3-2-1
         structures: ["GK", "RB", "RCB", "LCB", "LB", "RW", "AMF", "DMF", "LW", "ST", "ST"],
-        koordinat: [[25, 10], [25, 30], [25, 60], [25, 82], [50, 10], [50, 30], [50, 82], [65, 30], [65, 60], [80, 44.5]]
+        koordinat: [[25, 10], [25, 30], [25, 60], [25, 82], [50, 10], [50, 44.5], [50, 82], [65, 30], [65, 60], [80, 44.5]]
     },
     "dataFormation6": { // 4-5-1
         structures: ["GK", "RB", "RCB", "LCB", "LB", "RW", "AMF", "DMF", "DMF", "LW", "ST"],
@@ -45,15 +45,14 @@ export default function Formations() {
 
 
     const playersList = {
-        GK: [
-            {id : 1, name : "Fahmi Hidayat", position:"DMF", age : 25},
-            {id : 2, name : "Cristiano", position:"DMF", age : 39}
-            ],
-        CB : [
-            {id : 1, name : "Fahmi Hidayat", age : 25},
-            {id : 2, name : "Cristiano", age : 39}
-            ],
+        players : [
+            {id : 1, name : "fahmi", position : "AMF", age : 25},
+            {id : 2, name : "hidayat", position : "DMF", age : 27},
+            {id : 3, name : "ronaldo", position : 'LW', age : 39},
+            {id : 4, name : "cristiano", position : 'RW', age : 29},
+        ]
     }
+
     localStorage.setItem("playersList",JSON.stringify(playersList));
 
     for (let i = 2; i <= 11; i++) {

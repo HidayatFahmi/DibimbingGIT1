@@ -966,16 +966,21 @@ dengan ditambhakna d-block maka span akan memiliki karakteristik block
 33. perulangan dengan while
 - perulangan yang akan terus berulang berdasarkan konsisi yang ditentukan
 
+34. Break untuk memberhentikan perulagan
+35. Tebak angka dengan while
+36. perulagan dengan for of
+    - perulangan untuk mendapatkan value tanpa menginputkan nilai index
+
+37. Perulangan dengan for in
+   - perulgan untuk object
+
+38. function pada javascript
 
 
 
 
-
-
-
-
-
-https://dashboard.codepolitan.com/learn/courses/kelas-javascript/lessons/7801
+======= Last materi
+https://dashboard.codepolitan.com/learn/courses/kelas-javascript/lessons/7805
 
 * resume Web : https://docs.google.com/spreadsheets/d/1gBgcYDhjnQXr5n7GhQFQEtNe9Fm76SC7_jPwB9LwFUw/edit?gid=0#gid=0
 

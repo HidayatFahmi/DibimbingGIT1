@@ -1,23 +1,6 @@
-document.addEventListener("DOMContentLoaded", function(){
-    console.log("DOMContentLoaded event fired");
+let players = document.querySelectorAll(".players-card .card");
+// console.log(`children from starting ${players[2].children}`);
 
-    const playersStructure = JSON.parse(localStorage.getItem("playersStructure")) || [];
-    const playersList = JSON.parse(localStorage.getItem("playersList")) || {};
-    console.log("Players Structure:", playersStructure);
-    console.log("Players List:", playersList);
-
-    document.addEventListener('alpine:init', () => {
-        console.log("Alpine.js initialized");
-
-        Alpine.store('formation', {
-            playersStructureX: playersStructure,
-            playersListX: playersList,
-        });
-
-        setTimeout(()=>{
-            console.log("from starting file", Alpine.store('formation').playersStructureX);
-        },100)
-    });
-
-    console.log("End of DOMContentLoaded function");
-});
+// players.forEach(card => {
+//     console.log(card.children);
+// })
