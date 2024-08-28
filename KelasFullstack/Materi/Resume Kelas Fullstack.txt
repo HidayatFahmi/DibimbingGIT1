@@ -975,6 +975,80 @@ dengan ditambhakna d-block maka span akan memiliki karakteristik block
    - perulgan untuk object
 
 38. function pada javascript
+- function adalah blok kode yang memiliki intruksi khusus, bmemudahkan mengoragnisir kode dan pengulangan kode
+
+39. Cara mendefenisikan dan memanggil function
+- function namaFungsi(){}
+- arrow function : const namaFungsi = () => {}
+
+40. argumen dan parameter
+- argumen adalah varibel yang diberikan ketika memanggil sebuah function
+- parameter adalah variabel yang nilainnya merupakan refensi dari argumen yang diberikan
+
+41. Multiparameter dan argumen
+42. statement return pada function
+- return akan mnegakhiri suatu prosesn dan mengembalikan nilai 
+
+43. scope variabel
+- global, function, block scope
+- var adalah variabel yang tidak memiliki blockinh scope sehinggan nilainya dapat berubah2
+
+44. Function Expression
+45. function sebagai argumen function lain
+* 
+      function chances2(fungsi) {
+          console.log(fungsi());
+          console.log(fungsi());
+      }
+
+      function throwDice(){
+          let nilai = Math.round(Math.random() * 5) + 1; // Perbaiki pembulatan dan skala
+          return nilai;
+      }
+
+      console.log(chances2(throwDice));
+
+
+46. function bernilai balik function
+- closure 
+  * 
+    function hitung() {
+    let count = 0;
+
+    return function () {
+      count += 1;
+      return count;
+    };
+    return count;
+    }
+
+    let hitung1 = hitung();
+    console.log(hitung1());
+    console.log(hitung1());
+
+47. definisi sebuah method
+48. keyword this
+- adalah variabel yang digunakan untuk mengakses variabel scope dari objek yang sama
+* const fahmi = {
+  nama: "fahmi hidayat",
+  usia: 25,
+  asal: "bangka belitung",
+  kenalan: function (nama) {
+      console.log(`hai nama saya ${this.nama} atau ${nama}`);
+    },
+  };
+
+  fahmi.kenalan("leo");
+
+49. Try and catch
+- ketika ada error atau kesalahan proses maka program akan tetap berjalan dan kesalahan akan ditampilkan
+* try {
+  console.log(`nama saya adalah ${nama}`);
+  } catch (err) {
+  console.log(err.message);
+  }
+
+
 
 
 
