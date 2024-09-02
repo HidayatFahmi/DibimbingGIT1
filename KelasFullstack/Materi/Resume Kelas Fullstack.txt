@@ -803,7 +803,7 @@ dengan ditambhakna d-block maka span akan memiliki karakteristik block
 - beberapa data primitif : number, string, boolean, null, undefined
 
 2 tipe data number
-- berbeda dengan nahasa pemrogrman kebanyakan pada javascript semua jenis bilangan numerik dikelompokan menjadi satu tipe data yang sama
+- berbeda dengan bahasa pemrogrman kebanyakan pada javascript semua jenis bilangan numerik dikelompokan menjadi satu tipe data yang sama
 - eksponensial/perpangakatan = **;
 
 3. apa itu nilai Nan : adalah value yang merepresentasikan selain angka namun bertipe data number
@@ -827,11 +827,11 @@ dengan ditambhakna d-block maka span akan memiliki karakteristik block
 6. kata kunci const dan var
 - const adalah variabel yang nilainya tidak bisa diubah/ konstan
 - const melindungi referensi terhadap pengubahan, tetapi tidak melindungi nilai di dalam referensi tersebut jika itu adalah objek atau array.
-- var adalah jenis variabel yang sudah jarang digunakan
+- var adalah jenis variabel yang sudah jarang digunakan karena mereferensi ke variabel global
 
 7. tipe data boolean 
 - bernilai true or false
-- pahami nialu truty and false
+- pahami nilai truty and falsy
 
 8. mengenal tipe data string
 - tipe data string adalah kumpulan karakter yang dibungkus oleh tanda kutip
@@ -929,18 +929,17 @@ dengan ditambhakna d-block maka span akan memiliki karakteristik block
 * slice : mengembalikan array baru tanpa mengubah array asli, sedangkan splice mengembalikan array  baru dan merubah array asli
 
 25. Mengubah nilai const dengan array 
-- pada array dan object nilai suatu array yg sudah di assign dengan const tretap bisa diubah
+- pada array dan object nilai suatu array yg sudah di assign dengan const tetap bisa diubah
 
 26. Array multidimensi / nested array / array bersarang
 - data = [2,3,[4,5,6],"fahmi",["hidayat",2,3,8,9,10]]
 
 27. Apa itu object
-- adalah sekumpulan properties
-- terdiri dari key dan value
+- adalah sekumpulan properties yang terdiri dari key dan value
 - mengakses dengan custom keys
 
 28. structure of object data
-- bisa menamoung array atau bahkan onject lagi didalamnya
+- bisa menampung array atau bahkan onject lagi didalamnya
 
 29.  memanggil data dari object
 * dataFahmi = {
@@ -972,7 +971,7 @@ dengan ditambhakna d-block maka span akan memiliki karakteristik block
     - perulangan untuk mendapatkan value tanpa menginputkan nilai index
 
 37. Perulangan dengan for in
-   - perulgan untuk object
+   - perulangan untuk object
 
 38. function pada javascript
 - function adalah blok kode yang memiliki intruksi khusus, bmemudahkan mengoragnisir kode dan pengulangan kode
@@ -1049,12 +1048,159 @@ dengan ditambhakna d-block maka span akan memiliki karakteristik block
   }
 
 
+50. forEach method
+- forEach tidak mengembalikan nilai
+- forEach akan secara otomatis meneruskan 3 argumen, contoh
+  * function print(element, index, array) {
+    console.log(element);
+    console.log(index);
+    console.log(array);
+    }
+
+    arrayAngka.forEach(print);
+
+51. map method
+- map mengembalikan nilai
+- nilai baliknya adalah array baru yang sudah dimodifikasi
+
+52. Arrow function
+-  const perkalian = (angka) => { return angka * angka };
+- return implisit : yaitu tanpa menuliskan return syaratnya jika instruksi didalm function sederhana/ 1 baris dan tanpa kurung kurawal
+* const random = () => Math.random() * 1000;
+* const addition = (a, b) => a + b;
+
+53. setTimeout dan setInterval
+- setTimeout program akan dijalankan setelah waktu yang ditentukan
+- setInterval, akan mengeksekusi berulang sesuai dengan waktu yang ditentukan
+- clearInterval : untuk mengehntikan setInterval yang berjalan 
+* const intervalX = setInterval(() => {
+  console.log(Math.random());
+  }, 1000);
+
+  setTimeout(() => {
+  clearInterval(intervalX);
+  }, 5000);
+
+54. filter method
+55. Every some method
+- every akan mnegembalikan nilai boolean, mencakup semua elment 
+- some juga akan mengembalikan nilai boolean, jika ada salah satu atau semua maka kan bernilai true
+
+56. reduce
+- terdiri dari 2 parameter utama yaitu accumulator dan current value, adapaun variabel lainnya adalah curent index, source array, initial value
+
+57. scope this
+- jika menggunakan arrow function maka this akan merefernsi ke window bukan pada scope induknya
+
+58. mengatur default value pada function
+59. Spread operator
+* const arrayAngka = [1,2,3,4,5];
+  const spreadOperator = (...arrayAngka)
+
+60. menggabungkan array dan object
+* const arrayAngka = [1, 2, 3, 4, 5, 6, 7, 8];
+  const arrayNama = ["fahmi", "hidayat", "leo", "chsris", "khabib"];
+
+  const mix = [...arrayAngka, ...arrayNama];
+  console.log(mix);
+
+* const dataFahmi = {
+  nama: "Fahmi Hidayat",
+  usia: 25,
+  asal: "Bangka Belitung",
+  }
+  const updateData = { ...dataFahmi, alamat: "Batam" };
+
+61. Rest parameter
+62. destructuring
+- membongkar/unpack array dan obejxt menjadi singular variabel
+  * const winner = ["fahmi", "hidayat", "leo", "thomas", "ali", "chris"];
+    const [gold, ...lainnya] = winner;
+
+  * const winnerData = {
+    name: "Fahmi Hidayat",
+    age: 25,
+    country: "Indonesia",
+    };
+
+    const { name } = winnerData;
+
+- berbeda dangan destructuring array yang bisa memubuat instance baru dari data index yang dibuat, maka pada object harus membuat dengan nama yang sama dengan nama properti dari object
+- jika ingin merubah maka buat alias : 
+  * const { name: nameDie } = winnerData;
+
+- destructuring object didalam function 
+  * const userData = ({ name }) => {
+    console.log(name);
+    };
+   userData(winnerData);
+
+
+
+=========================== 12 OOP Javascript
+============================================================== Ahmad 
+1. Perkenalan prototype js
+-  membuat instance baru di Array.prototype
+   * Array.prototype.bonjour = () => {
+    return `bonjour fahmi`;
+    };
+
+    const arrayBaru = [1, 2, 3, 4];
+    console.log(arrayBaru.bonjour());
+
+- override methode yang sudah ada
+  * Array.prototype.pop = () => {
+    return `method di nonaktifkan`;
+    };
+
+    console.log(arrayBaru.pop());
+    console.log(arrayBaru);
+
+2. Membuat object dengan factory function
+* function convertColor (r,g,b) {
+  const color = {};
+  color.r = r;
+  color.g = g;
+  color.b = b;
+
+  color.rgb = function(){
+  return `rgb(${this.r},${this.g},${this.b})`;
+  }
+
+  color.hex = function(){
+  const {r, g, b} = this
+  return `#` + ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1);
+  }
+  return color;
+  }
+
+  console.log(convertColor(100,80,90).rgb());
+  console.log(convertColor(100,80,90).hex());
+
+
+
+3. membuat object dengan constructor function
+-  menggunakan keyword new untuk membuat instance baru,
+- new akan membuat objeck kosong dan berada didalam berada di prototype yg seakan2 instance tersebut di registrasi ke build in prototype javascript
+- kelebihan menggunkaan contructor function ketimbang factory function yaitu, javascript tidak membuat instance/object baru 
+- jika ada perubahahn pada prototype maka instance akan mereferensi ke global
+
+
+4. Object dengan class
+5. OOP, Extends, super
+- extends adalah pewarisan sifat2 dari kelas induk/parent ke children
+
+
+
+
 
 
 
 
 ======= Last materi
-https://dashboard.codepolitan.com/learn/courses/kelas-javascript/lessons/7805
+https://dashboard.codepolitan.com/learn/courses/belajar-konsep-oop-di-javascript/lessons/8576
 
 * resume Web : https://docs.google.com/spreadsheets/d/1gBgcYDhjnQXr5n7GhQFQEtNe9Fm76SC7_jPwB9LwFUw/edit?gid=0#gid=0
 
+* germany
+https://www.youtube.com/playlist?list=PL5QyCnFPRx0GxaFjdAVkx7K9TfEklY4sg

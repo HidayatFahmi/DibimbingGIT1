@@ -1,90 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Feather Icons -->
     <script src="https://unpkg.com/feather-icons" defer></script>
     <!-- style -->
-    <link rel="stylesheet" href="starting.css">
+    <link rel="stylesheet" href="starting.css" />
     <!-- Include Alpine.js -->
-    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.1/dist/cdn.min.js"></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.1/dist/cdn.min.js"
+    ></script>
     <!-- App -->
     <script type="module" src="src/app.js" async></script>
     <title>Starting Line Up</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container" x-data>
-        <div class="navbar">
-            <div class="information">
-                <div class="logo">
-                    <img src="./img/logo1.png" alt="">
-                </div>
-                <div class="title">FORMATION</div>
-            </div>
-            <div class="menus">
-                <div class="menu formation"><a href="formation.html">Formation</a></div>
-                <div class="menu substitution">Substitution</div>
-                <div class="menu overview">Overview</div>
-            </div>
+      <div class="navbar">
+        <div class="information">
+          <div class="logo">
+            <img src="./img/logo1.png" alt="" />
+          </div>
+          <div class="title">FORMATION</div>
         </div>
-        
-        <div class="assign-player-area">
-            <div class="select-player">
-                <div class="option">
-                    <button>
-                        <p>GK</p>
-                        <div class="icon" data-feather="chevron-down"></div>
-                    </button>
-                </div>
-                <div class="search-player">
-                    <input type="text" placeholder="Search Player">
-                </div>
-                <div class="players-card">
-                    <template x-for="(player, index) in $store.formation.playersListX.players" :key="index">
-                    <div class="card" @click="$store.formation.addReadyPlayers($el)">
-                        <div class="header" x-text="player.name">Player Name</div>
-                        <div class="image"><img src="./img/logo1.png" alt=""></div>
-                        <div class="data">
-                            <div class="post">Post</div>
-                            <div class="post-fill" x-text="player.position">DMF</div>
-                            <div class="age">Age</div>
-                            <div class="age-fill" x-text="player.age">25</div>
-                        </div>
-                    </div>
-                    </template>
-                </div>
-            </div>
+        <div class="menus">
+          <div class="menu formation">
+            <a href="formation.html">Formation</a>
+          </div>
+          <div class="menu substitution">Substitution</div>
+          <div class="menu overview">Overview</div>
+        </div>
+      </div>
 
-            <div class="players-table">
-                <table class="ready-players">
-                    <thead>
-                        <tr>
-                            <th class="position">Position</th>
-                            <th colspan="2">Name</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <template x-for="(player, index) in $store.formation.readyPlayers" :key="index">
-                            <tr>
-                                <td class="position" x-text="player.post">AMD</td>
-                                <td class="name" x-text="player.name">Fahmi Hidayat</td>
-                                <td class="remove">X</td>
-                            </tr>
-                        </template>
-                    </tbody>
-                </table>
-            </div>
+      <div class="assign-player-area">
+        <div class="select-player">
+          <div class="option">
+            <button>
+              <p>GK</p>
+              <div class="icon" data-feather="chevron-down"></div>
+            </button>
+          </div>
+          <div class="search-player">
+            <input type="text" placeholder="Search Player" />
+          </div>
+          <div class="players-card">
+            <template
+              x-for="(player, index) in $store.formation.playersList.players"
+              :key="index"
+            >
+              <div class="card" @click="$store.formation.addReadyPlayers($el)">
+                <div class="header" x-text="player.name">Player Name</div>
+                <div class="image"><img src="./img/logo1.png" alt="" /></div>
+                <div class="data">
+                  <div class="post">Post</div>
+                  <div class="post-fill" x-text="player.position">DMF</div>
+                  <div class="age">Age</div>
+                  <div class="age-fill" x-text="player.age">25</div>
+                </div>
+              </div>
+            </template>
+          </div>
         </div>
+
+        <div class="players-table">
+          <table class="ready-players">
+            <thead>
+              <tr>
+                <th class="position">Position</th>
+                <th colspan="2">Name</th>
+              </tr>
+            </thead>
+            <tbody>
+              <template x-for="(player, index) in $store.formation.readyPlayers">
+                <tr>
+                  <td class="position" x-text="player.post">AMD</td>
+                  <td class="name" x-text="player.name">Fahmi Hidayat</td>
+                  <td
+                    class="remove" @click="$store.formation.removePlayer($el)"> X
+                  </td>
+                </tr>
+              </template>
+            </tbody>
+          </table>
+        </div>
+      </div>
     </div>
 
     <!-- Feather icons -->
     <script defer>
-        document.addEventListener("DOMContentLoaded", function() {
-            feather.replace();
-        });
+      document.addEventListener("DOMContentLoaded", function () {
+        feather.replace();
+      });
     </script>
     <!-- Starting script, let this load after Alpine.js -->
     <script type="module" src="starting.js"></script>
-</body>
+  </body>
 </html>

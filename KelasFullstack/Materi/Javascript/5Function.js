@@ -110,8 +110,12 @@
 // fahmi.kenalan("leo");
 
 // =========================== Try and catch
-try {
-  console.log(`nama saya adalah ${nama}`);
-} catch (err) {
-  console.log(err.message);
+function testTrycatch() {
+  try {
+    console.log(`nama saya adalah ${nama}`);
+  } catch (err) {
+    console.log(err.message);
+  }
 }
+
+testTrycatch();
