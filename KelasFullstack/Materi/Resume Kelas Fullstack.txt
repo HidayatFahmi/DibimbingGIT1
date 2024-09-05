@@ -1191,14 +1191,23 @@ dengan ditambhakna d-block maka span akan memiliki karakteristik block
 - extends adalah pewarisan sifat2 dari kelas induk/parent ke children
 
 
+=========================== 13 Javascript asyncronous
+============================================================== Ahmad 
+1. Mengenal call stack function
+- mekanisme memory javascript/ bagaimana interpreter eksekusi sebuah code
+- bagaiman flow function dipanggil
+- python tutor for visualize : https://pythontutor.com/render.html#mode=display
 
-
+2. Javascript single thread
+- javascript sesungguhnya dibaca secara sikronus / menjalankan satu proses dalam satu waktu
+- karena browser engine base c++ program sehingga code javascript bisa dijalankan secara multi thread dengan menggunakan beberapa fungsi pendukung
+- 
 
 
 
 
 ======= Last materi
-https://dashboard.codepolitan.com/learn/courses/belajar-konsep-oop-di-javascript/lessons/8576
+https://dashboard.codepolitan.com/learn/courses/belajar-javascript-asynchronous/lessons/8327
 
 * resume Web : https://docs.google.com/spreadsheets/d/1gBgcYDhjnQXr5n7GhQFQEtNe9Fm76SC7_jPwB9LwFUw/edit?gid=0#gid=0
 
