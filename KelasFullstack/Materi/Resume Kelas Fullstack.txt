@@ -1201,13 +1201,90 @@ dengan ditambhakna d-block maka span akan memiliki karakteristik block
 2. Javascript single thread
 - javascript sesungguhnya dibaca secara sikronus / menjalankan satu proses dalam satu waktu
 - karena browser engine base c++ program sehingga code javascript bisa dijalankan secara multi thread dengan menggunakan beberapa fungsi pendukung
-- 
+
+3. callBack Hell
+- cara alternatif untuk mengganti callback function yaitu promise
+- promise adalah cara menghandle fail dalam menjalankan intruksi atau mengambil data
+
+4. latihan request dengan callback function
+- promise adalah object dari suatu function yang dijalankan dan memiliki kembalian baik gagal 
+  atau berhasil tanpa menyebabkan browser error
+- const requestCallback = (url, success, failure) => {}
+
+5. latihan request dengan promise
+- cara unutk menghandle suatu proses atau function
+- outputnya adalah object baik prosesnya gagal atau berhasil
+- adalah solusi untuk mengatasi callback Hell
+* const requestPromise = (url) => {
+  return new Promise((resolve, reject) => {
+    const delay = Math.floor(Math.random() * 3000);
+    setTimeout(()=>{
+        if(delay <= 2000){
+            resolve("Success fetching data");
+        }
+        else{
+            reject("Failed fetching data")
+        }
+    }, delay)
+  })
+  }
+
+  requestPromise("google.com");
+
+- cara efektif menggunakan promise
+- cara membuat promise
+
+
+6. Async keyword
+- didalam asynchronous ada 2 keyword yitu async dan await
+- jika kita terapkan async pada function maka function akan menjadi promise secara instan
+- sehingga apabila sudah menjadi promise maka akan akan menghasilkan resolve yang datanya bisa diolah
+- jika didalam function ada object throw error, akak akan menjalankan bagian reject
+
+* const hello2 = async () => {
+    throw `maaf gak kenal`
+    return `Hello world`
+}
+
+hello2().then((res)=> {
+    console.log('response',res)
+}).catch((err) => {
+    console.log('Error : ', err);
+})
+
+
+6. Await keyword
+- keyword await hanya bisa diekseskusi oleh function yang memiliki await
+- await akan melakukan jeda proses selanjutnya didalam function, menunggu promise yang dijalankan resolve
+
+7. handle error pada async await
+- denga try and catch sehugga apabial suatu proses error/fail maka program akan tetap berjalan dengan menampilkan pesan error
+
+
+=========================== 14 Javascript DOM
+============================================================== Ahmad 
+1. Apa itu DOM 
+- document object model, sebuah representasi dari struktur dokumen html dalam bentuk tree oleh javascript
+- DOM memiliki struktur hierarkis, dimana setiap element dokumen merupakan child node dari element lain atau root node
+- documen adalah level tertinggi dari hierarki sebuah element html
+- dom hanya bekerja didalam browser
+- console.dir untuk melihat informasi apa yng dimiliki sebuah obejct html
+- document.all[nomor index]
+
+2. DOM Selection dengan ID
+- node.getElementById("Id_name")
+- menghasilkan elemnt
+
+3. DOM selection dengan Classes
+- parentNode.getElemntById("")[nomor index]
+- menghasilkan html collection
+
 
 
 
 
 ======= Last materi
-https://dashboard.codepolitan.com/learn/courses/belajar-javascript-asynchronous/lessons/8327
+https://dashboard.codepolitan.com/learn/courses/belajar-javascript-dom/lessons/8289
 
 * resume Web : https://docs.google.com/spreadsheets/d/1gBgcYDhjnQXr5n7GhQFQEtNe9Fm76SC7_jPwB9LwFUw/edit?gid=0#gid=0
 

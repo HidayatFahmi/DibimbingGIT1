@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spell Battle</title>
+    <link rel="stylesheet" href="spell-battle.css">
+    <!-- feather icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <!-- alpine  -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+     <!-- spell-battle script -->
+     <!-- <script src="spell-battle.js" defer></script> -->
+     <!-- app script -->
+     <script src="src/app.js"></script>
+</head>
+<body>
+    <div class="container" x-data>
+        <div class="content" x-data="{battleReady : false}">
+            <div class="menus">
+                <a href="index.html">
+                    <div class="home">
+                        <i class="icon" data-feather="home"></i>
+                        <p>Home</p>
+                    </div>
+                </a>
+                <div class="restart" x-show="battleReady" @click="$store.cart.handleRestart()">
+                    <i data-feather="refresh-ccw" class="icon"></i>
+                    <p>Restart</p>
+                </div>
+                <a :href="$store.cart.charReady && '#battle-ground'" x-show="!battleReady">
+                    <div class="battle" :class="$store.cart.charReady && 'grayscale'" @click="battleReady = true">
+                        <i class="icon"> <img src="media/vsLogo.png" alt=""></i>
+                        <p>Battle Ground</p>
+                    </div>
+                </a>
+                <div class="change-hero" x-show="battleReady" @click="battleReady = false">
+                    <i class="icon" data-feather="user"></i>
+                    <p>Change</p>
+                </div>
+                <div class="additional-menus" x-show="battleReady">
+                    <div class="set-round" @click="$store.cart.handleSetRound($el)">
+                        <input class="text-round" type="number" @keyup.debounce.500="$store.cart.handleSetRound($el)">
+                        <p>Set Round</p>
+                    </div>
+                    <div  @click="$store.cart.handleStartBattle()" class="start-battle" :class="$store.cart.startBattle && 'isActive'">
+                        <p>Start Battle</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- select hero -->
+             <div class="select-hero" x-show="!battleReady">
+                <h2 class="title">Select Hero</h2>
+                <div class="cards">
+                    <template x-for="(item, index) in $store.cart.characters" :key="index">
+                        <div class="card char'+characters.id" @click="$store.cart.handleChar()">
+                            <img :src="`media/${item.image}`" alt="">
+                             <p class="name" x-text="item.name">Harry Potter</p>
+                        </div>
+                    </template>
+                </div>
+             </div>
+
+             <!-- Battle ground -->
+              <div class="battle-ground" id="battle-ground" x-show="battleReady">
+                <div class="duel-frame">
+                    <div class="scores">
+                        <div class="player1">
+                            <div class="score score1" x-text="$store.cart.player1Score">0</div>
+                            <img :src="$store.cart.playerChar?.image" alt="">
+                        </div>
+    
+                        <div class="versus">
+                            <div class="score-title" x-text="$store.cart.result">Score</div>
+                            <div class="versus-title">
+                                <img src="media/vsLogo.png" alt="">
+                            </div>
+                        </div>
+    
+                        <div class="player-skill">
+                            <div class="skill1">
+                                <img :src="$store.cart.skillOn ? `${$store.cart.playerSkillImg}` : `media/skill6.png`" alt="">
+                            </div>
+                            <div class="skill2">
+                                <img src="media/skill2.png" alt="">
+                            </div>
+                        </div>
+    
+                        <div class="player2" >
+                            <div class="score score2" x-text="$store.cart.player2Score">0</div>
+                            <img :src="$store.cart.computerChar ? `media/${$store.cart.computerChar?.image}` : 'media/char1.png'" alt="xx">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="select-skill">
+                    <p class="title">Select Skills</p>
+                    <div class="skills">
+                        <template x-for="(skill, index) in $store.cart.skills" :key="index">
+                            <div class="skill" @click="$store.cart.handleSkill($el)">
+                                <img :src="`media/${skill.image}`" alt="">
+                                <div class="skill-name" x-text="skill.name">Expelliarmus</div>
+                                <span class="skill-alias" :alias-data="skill.alias"></span>
+                            </div>
+                        </template>
+                    </div>
+                </div>
+              </div>
+        </div>
+    </div>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            feather.replace();
+        });
+    </script>
+    <script src="spell-battle.js"></script>
+</body>
+</html>

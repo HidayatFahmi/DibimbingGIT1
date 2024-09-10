@@ -1,0 +1,61 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+img{
+    width: 100%;
+}
+
+.container{
+    padding-top: 10px;
+    background-image: url('media/wizardBg1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: auto;
+    height: 100vh;
+}
+
+.container .title{
+    text-align: center;
+    color: gold;
+    font-size: 1.5em;
+    margin-top: 30px;
+    /* background-color: aqua; */
+}
+
+.cards{
+    /* background-color: aqua; */
+    display: grid;
+    margin: 8% 10%;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 40px;
+    justify-content: center;
+}
+
+.card{
+    background-color: #00263B;
+    text-align: center;
+    padding: 5%;
+    box-sizing: border-box;
+}
+
+.card-title{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 3%;
+}
+
+.card img{
+    width: 100%;
+}
+
+.disabled{
+    filter: grayscale(100%);
+    pointer-events: none;
+    opacity: 82%;
+}
