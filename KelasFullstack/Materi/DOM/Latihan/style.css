@@ -1,0 +1,111 @@
+.container{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.content{
+    background-color: azure;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80vw;
+    gap: 20px;
+}
+
+.title{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: rgb(255, 192, 0);
+    padding: 10px;
+    width: 20%;
+    border-radius: 10px;
+    box-shadow: 3px 2px 1px rgba(0, 0, 0, 0.8);
+}
+
+.score-board{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.player1,
+.player2{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.p1-display,
+.p2-display{
+    background-color: rgb(41, 93, 103);
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 80px;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.p1-button, 
+.p2-button{
+    background-color: rgb(0, 0, 0);
+    width: 60%;
+    height: 4vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px;
+    border: 2px solid orange;
+    color: white;
+}
+
+.versus{
+    font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-shadow: 2px 2px 1px orange;
+}
+
+.max-score{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+
+.status{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    /* border: 3px solid rgb(184, 160, 160); */
+    font-size: 40px;
+    /* background-color: rgb(214, 209, 77); */
+    width: 50vw;
+    height: 20vw;
+}
+
+.max-score input{
+    text-align: center;
+}
+.reset{
+    width: 20%;
+    height: 5vw;
+    border-radius: 10px;
+    background-color: red;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.hidden{
+    display: none;
+}
