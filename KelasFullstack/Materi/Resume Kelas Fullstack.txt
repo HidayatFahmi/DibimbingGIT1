@@ -1191,7 +1191,7 @@ dengan ditambhakna d-block maka span akan memiliki karakteristik block
 - extends adalah pewarisan sifat2 dari kelas induk/parent ke children
 
 
-=========================== 13 Javascript asyncronous
+=========================== 13 Javascript asynchronous
 ============================================================== Ahmad 
 1. Mengenal call stack function
 - mekanisme memory javascript/ bagaimana interpreter eksekusi sebuah code
@@ -1275,16 +1275,85 @@ hello2().then((res)=> {
 - node.getElementById("Id_name")
 - menghasilkan elemnt
 
-3. DOM selection dengan Classes
+3. DOM selection dengan Class dan tag
 - parentNode.getElemntById("")[nomor index]
 - menghasilkan html collection
+- html collection tidaklah sama dengan array hanya mirip (array like object), sehingga tidak memiliki method map, forEach, filter
+
+4. DOM selection dengan query selector
+- menggambil/selction element html yang bisa diambil dengan berbagai cara baik dengan class, tag, id
+
+5. memahami innerHtml, innerText, dan textContent
+-select manipulate
+- proprties dan method yang penting unutk diketahui
+* classlist, getAttribute, setAttribute, appendChild, append, prepend, removeChild, remove, createElement, innertext, textContent, innerHTML, value, parentElement, children, nextSibling, previousSibling, style 
+- jika menggunakan textContent maka semua format pada sebuah teks didalam elemnt akan di diambil, seperti tab "\t"
+
+6. mendapatkan attribute yang dimiliki html
+- setAttribute, getAttribute
+
+7. melakukan styling dengan javascript
+document.style.backgroundColor = "red";
+
+8. memnafaatkan classList untuk styling dengan DOM
+- classList.add/remove/toggle/replace/contains/item("")
+
+9. DOM traversal
+- menjelajahi element parent, child and sibling
+- element.parentElement/children
+- element.nextSibling/previousSibling : menghasilkan nodelist
+- element.nextelementSibling : menghasilkan element
+
+10. Memahami Append dan Appendchild
+- appendChild akan membaca/merender semua tag yang kita buat
+- insertAdjacentElement("afterend/beforeend/afterBegin/beforeBegin", h2);
+
+11. Memahami remove dan removeChild
+- untuk menghapus child langkah pertam yaitu lakukan seleksi parent
+- jika ingin langsung remove mak gunakan element.remove  namun pastikan browser yang digunakan support untuk method ini
+
+12. Latihan memanggil pokemon dengan DOM
+- 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/'
+
+13. pengantar event DOM 
+- event adalah menindaklanjuti inputan yang diberikan atau aksi dari sebuah elemnt html yang dipilih
+- beberapa event yaitu : click, drag, drop, hover, scroll, form submission, key press, focus/blur, mouse wheel, double click, copy, paste, audio, screen resize, print
+
+14. Menjalankan event 
+- Menjalankan event pada inline items
+- menjalankan event melalui properti DOM
+- mengenal fungsi addEventListener
+* perbedaan menggunakan eventHandler dan event listener yaitu ketika mneggunakan event handler maka fungsi yang baru akan menimpa/replace fungsi yang lama sedangkan event listener akan menambahkan aksi
+
+- latihan event listener unutk generate color
+
+15. Keyword this pada event DOM
+16. belajar keyboard event dan mengenal object didalam event
+- keyup, keydown
+
+17. event prevent default
+- mencegah kasi default dari browser
+- e.preventDefault();
+
+18. event input dan change pada DOM
+- event input akan memberikan efek secara realtime sedangkan chnage ketika suatu aksi telah selesai dilakukan, misanya sebuah slider maka jika menggunakan inout maka nilainya akan dikirimkan setiap slide bergeser sedangkan jika dengan change nilai dari slider akan dikirm ketika slider dilepas
+
+19. event bubbling
+- menangani efek bubbling/berantai dari suatu aksi element, misalnya suatu element memiliki aksi dan elemt child juga memiliki aksi maka ketika children dijalankan maka aksi pada parent juga akan berjalan sehingga perlu diatasi
+- e.stopPropagation();
+
+20. event delegation
+- adalah elemnt dengan event yang mewakili suatu event dari element lainnya
+
+
+
 
 
 
 
 
 ======= Last materi
-https://dashboard.codepolitan.com/learn/courses/belajar-javascript-dom/lessons/8289
+https://dashboard.codepolitan.com/learn/courses/belajar-javascript-dom/lessons/8302
 
 * resume Web : https://docs.google.com/spreadsheets/d/1gBgcYDhjnQXr5n7GhQFQEtNe9Fm76SC7_jPwB9LwFUw/edit?gid=0#gid=0
 
